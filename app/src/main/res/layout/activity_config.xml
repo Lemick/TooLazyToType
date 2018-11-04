@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ConfigActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <Button
+        android:id="@+id/btnStartService"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="147dp"
+        android:text="Start Service" />
+
+    <Button
+        android:id="@+id/btnStopService"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="225dp"
+        android:text="Stop Service" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="186dp"
+        android:layout_height="143dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="106dp"
+        android:text="ceci est du text peut tu le lire s'il te plait ca me ferait plaisir" />
+
+    <Button
+        android:id="@+id/btnPermission"
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="42dp"
+        android:text="Set Permissions" />
+
+</RelativeLayout>
