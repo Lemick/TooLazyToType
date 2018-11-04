@@ -19,11 +19,13 @@ public class QuidQuestionAnalyzer extends TextAnalyzer {
     public static final int QUESTION_TITLE_DETECTED = 0x02;
     public static final int ANSWERS_LABEL_DETECTED = 0x04;
     public static final int LAST_ANSWER_TITLE_DETECTED = 0x08;
+    public static final int QUESTION_OPEN_LABEL_DETECTED = 0x10;
 
     private static final String LOG_TAG = "QuidQuestionAnalyzer";
     private static final String REG_QUESTION_LABEL = "Q\\.\\s[0-9]+$";
     private static final String REG_IGNORED = "([0-9]+:[0-9]+:[0-9]+)|(^[0-9]+s$)";
     private static final String REG_ANSWER_LABEL = "^[ABCD]$";
+    private static final String REG_OPEN_QUESTION_LABEL = "Q. 11";
 
     private static final int MAX_ANSWERS_COUNT = 4;
     private static Pattern patternQuestion;
@@ -53,7 +55,7 @@ public class QuidQuestionAnalyzer extends TextAnalyzer {
         this.textToAnalyse = text;
         if (!mustBeIgnored()) {
             doDetection();
-            if (isDetectionsPassed(QUESTION_LABEL_DETECTED, QUESTION_TITLE_DETECTED, LAST_ANSWER_TITLE_DETECTED)) {
+            if (isDetectionsPassed(QUESTION_LABEL_DETECTED, QUESTION_TITLE_DETECTED, LAST_ANSWER_TITLE_DETECTED) || isDetectionsPassed(QUESTION_OPEN_LABEL_DETECTED, QUESTION_TITLE_DETECTED)) {
                 String questionContextJson = gson.toJson(quidQuestionDTO);
                 action.trigger(questionContextJson);
                 detectionStatus = NONE;
@@ -62,8 +64,11 @@ public class QuidQuestionAnalyzer extends TextAnalyzer {
     }
 
     private void doDetection() {
-        if (doLabelDetection())
+        if (doLabelDetection()) {
             addDetectionStatus(QUESTION_LABEL_DETECTED);
+            if (isOpenQuestion())
+                addDetectionStatus(QUESTION_OPEN_LABEL_DETECTED);
+        }
         else if (doQuestionTitleDetection())
             addDetectionStatus(QUESTION_TITLE_DETECTED);
         else if (doAnswerLabelDetection())
@@ -73,6 +78,11 @@ public class QuidQuestionAnalyzer extends TextAnalyzer {
             if (isLastAnswerTitle())
                 addDetectionStatus(LAST_ANSWER_TITLE_DETECTED);
         }
+    }
+
+    private boolean isOpenQuestion() {
+        /** Open choice question item does not need an answer items parsing **/
+        return lastQuestionLabel.equals(REG_OPEN_QUESTION_LABEL);
     }
 
     private boolean isLastAnswerTitle() {
