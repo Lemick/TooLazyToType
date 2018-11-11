@@ -1,0 +1,179 @@
+2018-11-11 11:47:09,923 INFO c.t.l.TCPServer [Thread-1] TCP SERVER LAUNCHED
+2018-11-11 12:22:52,996 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-11 12:22:52,998 DEBUG t.OccurencesSearcher [main] D - nouveau gourvenement 			0 times found
+2018-11-11 12:22:52,998 DEBUG t.OccurencesSearcher [main] C - projecteur 			0 times found
+2018-11-11 12:22:52,998 DEBUG t.OccurencesSearcher [main] B - eau 			2 times found
+2018-11-11 12:22:52,999 DEBUG t.OccurencesSearcher [main] A - tresor 			4 times found
+2018-11-11 12:22:52,999 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-11 12:22:53,189 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-11 12:22:53,190 DEBUG t.OccurencesSearcher [main] B - ctrl + z 			2 times found
+2018-11-11 12:22:53,190 DEBUG t.OccurencesSearcher [main] D - ctrl + v 			0 times found
+2018-11-11 12:22:53,191 DEBUG t.OccurencesSearcher [main] A - ctrl + c 			0 times found
+2018-11-11 12:22:53,191 DEBUG t.OccurencesSearcher [main] C - ctrl + a 			0 times found
+2018-11-11 12:22:53,191 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-11 12:22:53,251 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-11 12:22:53,251 DEBUG t.OccurencesSearcher [main] B - rpg 			0 times found
+2018-11-11 12:22:53,251 DEBUG t.OccurencesSearcher [main] A - fps 			1 times found
+2018-11-11 12:22:53,251 DEBUG t.OccurencesSearcher [main] C - battle royale 			14 times found
+2018-11-11 12:22:53,252 DEBUG t.OccurencesSearcher [main] D - plateforme 			0 times found
+2018-11-11 12:22:53,252 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-11 12:28:59,096 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-11 12:28:59,099 DEBUG t.OccurencesSearcher [main] D - nouveau gourvenement 			0 times found
+2018-11-11 12:28:59,099 DEBUG t.OccurencesSearcher [main] A - tresor 			4 times found
+2018-11-11 12:28:59,099 DEBUG t.OccurencesSearcher [main] C - projecteur 			0 times found
+2018-11-11 12:28:59,099 DEBUG t.OccurencesSearcher [main] B - eau 			2 times found
+2018-11-11 12:28:59,099 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-11 12:28:59,290 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-11 12:28:59,290 DEBUG t.OccurencesSearcher [main] B - ctrl + z 			2 times found
+2018-11-11 12:28:59,290 DEBUG t.OccurencesSearcher [main] C - ctrl + a 			0 times found
+2018-11-11 12:28:59,290 DEBUG t.OccurencesSearcher [main] D - ctrl + v 			0 times found
+2018-11-11 12:28:59,290 DEBUG t.OccurencesSearcher [main] A - ctrl + c 			0 times found
+2018-11-11 12:28:59,290 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-11 12:28:59,350 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-11 12:28:59,350 DEBUG t.OccurencesSearcher [main] B - rpg 			0 times found
+2018-11-11 12:28:59,350 DEBUG t.OccurencesSearcher [main] D - plateforme 			0 times found
+2018-11-11 12:28:59,350 DEBUG t.OccurencesSearcher [main] C - battle royale 			14 times found
+2018-11-11 12:28:59,350 DEBUG t.OccurencesSearcher [main] A - fps 			1 times found
+2018-11-11 12:28:59,350 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-11 12:29:32,652 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-11 12:29:32,654 DEBUG t.OccurencesSearcher [main] D - nouveau gourvenement 			0 times found
+2018-11-11 12:29:32,654 DEBUG t.OccurencesSearcher [main] A - tresor 			4 times found
+2018-11-11 12:29:32,654 DEBUG t.OccurencesSearcher [main] C - projecteur 			0 times found
+2018-11-11 12:29:32,655 DEBUG t.OccurencesSearcher [main] B - eau 			2 times found
+2018-11-11 12:29:32,655 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-11 12:29:32,901 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-11 12:29:32,901 DEBUG t.OccurencesSearcher [main] C - ctrl + a 			0 times found
+2018-11-11 12:29:32,901 DEBUG t.OccurencesSearcher [main] B - ctrl + z 			2 times found
+2018-11-11 12:29:32,901 DEBUG t.OccurencesSearcher [main] A - ctrl + c 			0 times found
+2018-11-11 12:29:32,902 DEBUG t.OccurencesSearcher [main] D - ctrl + v 			0 times found
+2018-11-11 12:29:32,902 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-11 12:29:32,965 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-11 12:29:32,965 DEBUG t.OccurencesSearcher [main] D - plateforme 			0 times found
+2018-11-11 12:29:32,965 DEBUG t.OccurencesSearcher [main] B - rpg 			0 times found
+2018-11-11 12:29:32,965 DEBUG t.OccurencesSearcher [main] C - battle royale 			14 times found
+2018-11-11 12:29:32,966 DEBUG t.OccurencesSearcher [main] A - fps 			1 times found
+2018-11-11 12:29:32,966 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-11 12:29:52,098 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-11 12:29:52,101 DEBUG t.OccurencesSearcher [main] B - eau 			2 times found
+2018-11-11 12:29:52,101 DEBUG t.OccurencesSearcher [main] A - tresor 			4 times found
+2018-11-11 12:29:52,101 DEBUG t.OccurencesSearcher [main] D - nouveau gourvenement 			0 times found
+2018-11-11 12:29:52,101 DEBUG t.OccurencesSearcher [main] C - projecteur 			0 times found
+2018-11-11 12:29:52,101 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-11 12:30:57,689 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-11 12:30:57,690 DEBUG t.OccurencesSearcher [main] D - ctrl + v 			0 times found
+2018-11-11 12:30:57,690 DEBUG t.OccurencesSearcher [main] B - ctrl + z 			2 times found
+2018-11-11 12:30:57,690 DEBUG t.OccurencesSearcher [main] A - ctrl + c 			0 times found
+2018-11-11 12:30:57,690 DEBUG t.OccurencesSearcher [main] C - ctrl + a 			0 times found
+2018-11-11 12:30:57,690 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-11 12:30:57,760 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-11 12:30:57,760 DEBUG t.OccurencesSearcher [main] C - battle royale 			14 times found
+2018-11-11 12:30:57,761 DEBUG t.OccurencesSearcher [main] D - plateforme 			0 times found
+2018-11-11 12:30:57,761 DEBUG t.OccurencesSearcher [main] B - rpg 			0 times found
+2018-11-11 12:30:57,761 DEBUG t.OccurencesSearcher [main] A - fps 			1 times found
+2018-11-11 12:30:57,761 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-11 12:31:05,440 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-11 12:31:05,443 DEBUG t.OccurencesSearcher [main] B - eau 			2 times found
+2018-11-11 12:31:05,443 DEBUG t.OccurencesSearcher [main] D - nouveau gourvenement 			0 times found
+2018-11-11 12:31:05,443 DEBUG t.OccurencesSearcher [main] C - projecteur 			0 times found
+2018-11-11 12:31:05,444 DEBUG t.OccurencesSearcher [main] A - tresor 			4 times found
+2018-11-11 12:31:05,444 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-11 12:32:36,257 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-11 12:32:36,260 DEBUG t.OccurencesSearcher [main] B - eau 			2 times found
+2018-11-11 12:32:36,260 DEBUG t.OccurencesSearcher [main] C - projecteur 			0 times found
+2018-11-11 12:32:36,260 DEBUG t.OccurencesSearcher [main] D - nouveau gourvenement 			0 times found
+2018-11-11 12:32:36,260 DEBUG t.OccurencesSearcher [main] A - tresor 			4 times found
+2018-11-11 12:32:36,261 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-11 12:32:36,518 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-11 12:32:36,519 DEBUG t.OccurencesSearcher [main] D - ctrl + v 			0 times found
+2018-11-11 12:32:36,519 DEBUG t.OccurencesSearcher [main] C - ctrl + a 			0 times found
+2018-11-11 12:32:36,519 DEBUG t.OccurencesSearcher [main] B - ctrl + z 			2 times found
+2018-11-11 12:32:36,519 DEBUG t.OccurencesSearcher [main] A - ctrl + c 			0 times found
+2018-11-11 12:32:36,519 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-11 12:32:36,578 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-11 12:32:36,578 DEBUG t.OccurencesSearcher [main] B - rpg 			0 times found
+2018-11-11 12:32:36,578 DEBUG t.OccurencesSearcher [main] A - fps 			1 times found
+2018-11-11 12:32:36,579 DEBUG t.OccurencesSearcher [main] D - plateforme 			0 times found
+2018-11-11 12:32:36,579 DEBUG t.OccurencesSearcher [main] C - battle royale 			14 times found
+2018-11-11 12:32:36,579 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-11 12:33:22,017 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-11 12:33:22,019 DEBUG t.OccurencesSearcher [main] B - eau 			2 times found
+2018-11-11 12:33:22,019 DEBUG t.OccurencesSearcher [main] C - projecteur 			0 times found
+2018-11-11 12:33:22,020 DEBUG t.OccurencesSearcher [main] D - nouveau gourvenement 			0 times found
+2018-11-11 12:33:22,020 DEBUG t.OccurencesSearcher [main] A - tresor 			4 times found
+2018-11-11 12:33:22,020 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-11 12:33:22,268 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-11 12:33:22,268 DEBUG t.OccurencesSearcher [main] D - ctrl + v 			0 times found
+2018-11-11 12:33:22,268 DEBUG t.OccurencesSearcher [main] C - ctrl + a 			0 times found
+2018-11-11 12:33:22,268 DEBUG t.OccurencesSearcher [main] B - ctrl + z 			2 times found
+2018-11-11 12:33:22,269 DEBUG t.OccurencesSearcher [main] A - ctrl + c 			0 times found
+2018-11-11 12:33:22,269 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-11 12:33:22,326 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-11 12:33:22,326 DEBUG t.OccurencesSearcher [main] B - rpg 			0 times found
+2018-11-11 12:33:22,327 DEBUG t.OccurencesSearcher [main] A - fps 			1 times found
+2018-11-11 12:33:22,327 DEBUG t.OccurencesSearcher [main] D - plateforme 			0 times found
+2018-11-11 12:33:22,327 DEBUG t.OccurencesSearcher [main] C - battle royale 			14 times found
+2018-11-11 12:33:22,327 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-11 12:33:34,108 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-11 12:33:34,111 DEBUG t.OccurencesSearcher [main] B - eau 			2 times found
+2018-11-11 12:33:34,111 DEBUG t.OccurencesSearcher [main] D - nouveau gourvenement 			0 times found
+2018-11-11 12:33:34,112 DEBUG t.OccurencesSearcher [main] C - projecteur 			0 times found
+2018-11-11 12:33:34,112 DEBUG t.OccurencesSearcher [main] A - tresor 			4 times found
+2018-11-11 12:33:34,113 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-11 12:35:36,188 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-11 12:35:36,190 DEBUG t.OccurencesSearcher [main] D - nouveau gourvenement 			0 times found
+2018-11-11 12:35:36,190 DEBUG t.OccurencesSearcher [main] A - tresor 			4 times found
+2018-11-11 12:35:36,190 DEBUG t.OccurencesSearcher [main] C - projecteur 			0 times found
+2018-11-11 12:35:36,191 DEBUG t.OccurencesSearcher [main] B - eau 			2 times found
+2018-11-11 12:35:36,191 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-11 12:35:36,463 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-11 12:35:36,463 DEBUG t.OccurencesSearcher [main] C - ctrl + a 			0 times found
+2018-11-11 12:35:36,463 DEBUG t.OccurencesSearcher [main] B - ctrl + z 			2 times found
+2018-11-11 12:35:36,464 DEBUG t.OccurencesSearcher [main] A - ctrl + c 			0 times found
+2018-11-11 12:35:36,464 DEBUG t.OccurencesSearcher [main] D - ctrl + v 			0 times found
+2018-11-11 12:35:36,464 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-11 12:35:36,525 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-11 12:35:36,526 DEBUG t.OccurencesSearcher [main] D - plateforme 			0 times found
+2018-11-11 12:35:36,526 DEBUG t.OccurencesSearcher [main] B - rpg 			0 times found
+2018-11-11 12:35:36,526 DEBUG t.OccurencesSearcher [main] C - battle royale 			14 times found
+2018-11-11 12:35:36,526 DEBUG t.OccurencesSearcher [main] A - fps 			1 times found
+2018-11-11 12:35:36,526 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-11 12:35:45,280 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-11 12:35:45,282 DEBUG t.OccurencesSearcher [main] D - nouveau gourvenement 			0 times found
+2018-11-11 12:35:45,283 DEBUG t.OccurencesSearcher [main] A - tresor 			4 times found
+2018-11-11 12:35:45,283 DEBUG t.OccurencesSearcher [main] C - projecteur 			0 times found
+2018-11-11 12:35:45,283 DEBUG t.OccurencesSearcher [main] B - eau 			2 times found
+2018-11-11 12:35:45,283 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-11 12:35:45,553 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-11 12:35:45,553 DEBUG t.OccurencesSearcher [main] C - ctrl + a 			0 times found
+2018-11-11 12:35:45,553 DEBUG t.OccurencesSearcher [main] B - ctrl + z 			2 times found
+2018-11-11 12:35:45,554 DEBUG t.OccurencesSearcher [main] A - ctrl + c 			0 times found
+2018-11-11 12:35:45,554 DEBUG t.OccurencesSearcher [main] D - ctrl + v 			0 times found
+2018-11-11 12:35:45,554 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-11 12:35:45,615 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-11 12:35:45,615 DEBUG t.OccurencesSearcher [main] D - plateforme 			0 times found
+2018-11-11 12:35:45,616 DEBUG t.OccurencesSearcher [main] B - rpg 			0 times found
+2018-11-11 12:35:45,616 DEBUG t.OccurencesSearcher [main] C - battle royale 			14 times found
+2018-11-11 12:35:45,616 DEBUG t.OccurencesSearcher [main] A - fps 			1 times found
+2018-11-11 12:35:45,616 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-11 12:36:10,091 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-11 12:36:10,093 DEBUG t.OccurencesSearcher [main] D - nouveau gourvenement 			0 times found
+2018-11-11 12:36:10,093 DEBUG t.OccurencesSearcher [main] A - tresor 			4 times found
+2018-11-11 12:36:10,094 DEBUG t.OccurencesSearcher [main] C - projecteur 			0 times found
+2018-11-11 12:36:10,094 DEBUG t.OccurencesSearcher [main] B - eau 			2 times found
+2018-11-11 12:36:10,094 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-11 12:36:10,356 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-11 12:36:10,357 DEBUG t.OccurencesSearcher [main] C - ctrl + a 			0 times found
+2018-11-11 12:36:10,357 DEBUG t.OccurencesSearcher [main] B - ctrl + z 			2 times found
+2018-11-11 12:36:10,357 DEBUG t.OccurencesSearcher [main] A - ctrl + c 			0 times found
+2018-11-11 12:36:10,357 DEBUG t.OccurencesSearcher [main] D - ctrl + v 			0 times found
+2018-11-11 12:36:10,357 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-11 12:36:10,415 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-11 12:36:10,415 DEBUG t.OccurencesSearcher [main] C - battle royale 			14 times found
+2018-11-11 12:36:10,416 DEBUG t.OccurencesSearcher [main] D - plateforme 			0 times found
+2018-11-11 12:36:10,416 DEBUG t.OccurencesSearcher [main] B - rpg 			0 times found
+2018-11-11 12:36:10,416 DEBUG t.OccurencesSearcher [main] A - fps 			1 times found
+2018-11-11 12:36:10,416 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-11 13:12:09,069 INFO c.t.l.TCPServer [Thread-1] TCP SERVER LAUNCHED
+2018-11-11 13:28:42,590 DEBUG c.t.l.HTMLBuilder [main] Get URL : 
+2018-11-11 13:30:12,324 DEBUG c.t.l.HTMLBuilder [main] Get URL : https://www.google.com/search?q=En+quelle+ann%C3%A9e+eut+lieu+le+concert+du+Live-Aid%2C+consid%C3%A9r%C3%A9+comme+l%27un+des+plus+grands+concerts+de+l%27histoire+%3F
+2018-11-11 13:31:24,627 DEBUG c.t.l.HTMLBuilder [main] Get URL : https://www.google.com/search?q=En+quelle+ann%C3%A9e+eut+lieu+le+concert+du+Live-Aid%2C+consid%C3%A9r%C3%A9+comme+l%27un+des+plus+grands+concerts+de+l%27histoire+%3F

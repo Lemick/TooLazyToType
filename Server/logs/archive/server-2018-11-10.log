@@ -1,0 +1,2839 @@
+2018-11-11 15:32:31,884 ERROR c.t.l.Main [main] test
+2018-11-11 15:32:48,523 ERROR c.t.l.Main [main] test
+2018-11-10 15:35:59,616 INFO c.t.l.Main [main] test
+2018-11-10 15:36:00,846 INFO c.t.l.TCPServer [Thread-1] TCP SERVER LAUNCHED
+2018-11-10 15:38:05,296 INFO c.t.l.TCPServer [Thread-1] TCP SERVER LAUNCHED
+2018-11-10 15:39:08,753 INFO c.t.l.TCPServer [Thread-1] TCP SERVER LAUNCHED
+2018-11-10 15:41:54,034 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 15:41:54,037 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Le lapin"
+    },
+    {
+      "label": "B",
+      "title": "L\u0027ours"
+    },
+    {
+      "label": "C",
+      "title": "Le renard"
+    },
+    {
+      "label": "D",
+      "title": "La chèvre"
+    }
+  ],
+  "questionEntitled": "Avec la laine de quel animal fait-on du cachemire ?"
+}
+
+2018-11-10 15:41:54,242 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Avec+la+laine+de+quel+animal+fait-on+du+cachemire+%3F
+2018-11-10 15:41:55,011 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : D - La chèvre
+2018-11-10 15:41:55,011 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 15:48:45,302 INFO c.t.l.TCPServer [Thread-1] TCP SERVER LAUNCHED
+2018-11-10 15:48:51,147 INFO c.t.l.TCPServer [Thread-1] TCP SERVER LAUNCHED
+2018-11-10 15:48:56,645 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 15:48:56,646 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Abraham Lincoln"
+    },
+    {
+      "label": "B",
+      "title": "Donald Trump"
+    },
+    {
+      "label": "C",
+      "title": "George Washington"
+    },
+    {
+      "label": "D",
+      "title": "Barack Obama"
+    }
+  ],
+  "questionEntitled": "Sous quel président des Etats-Unis l\u0027esclavage a-t-il été aboli ?"
+}
+
+2018-11-10 15:48:56,757 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Sous+quel+pr%C3%A9sident+des+Etats-Unis+l%27esclavage+a-t-il+%C3%A9t%C3%A9+aboli+%3F
+2018-11-10 15:48:57,683 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : A - Abraham Lincoln
+2018-11-10 15:48:57,683 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 15:50:30,196 INFO c.t.l.TCPServer [Thread-1] TCP SERVER LAUNCHED
+2018-11-10 15:50:56,383 INFO c.t.l.TCPServer [Thread-1] TCP SERVER LAUNCHED
+2018-11-10 15:51:17,995 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 15:51:17,996 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Wuagadougou"
+    },
+    {
+      "label": "B",
+      "title": "Wagadoubou"
+    },
+    {
+      "label": "C",
+      "title": "Ouagadougou"
+    },
+    {
+      "label": "D",
+      "title": "Ouagadoudou"
+    }
+  ],
+  "questionEntitled": "Quelle est la capitale du Burkina Faso ?"
+}
+
+2018-11-10 15:51:18,097 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Quelle+est+la+capitale+du+Burkina+Faso+%3F
+2018-11-10 15:51:18,899 DEBUG c.t.l.OccurencesSearcher [Thread-1] A - Wuagadougou : 0 times found
+2018-11-10 15:51:18,899 DEBUG c.t.l.OccurencesSearcher [Thread-1] B - Wagadoubou : 0 times found
+2018-11-10 15:51:18,900 DEBUG c.t.l.OccurencesSearcher [Thread-1] C - Ouagadougou : 99 times found
+2018-11-10 15:51:18,900 DEBUG c.t.l.OccurencesSearcher [Thread-1] D - Ouagadoudou : 0 times found
+2018-11-10 15:51:18,905 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : C - Ouagadougou
+2018-11-10 15:51:18,905 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 15:52:13,251 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 15:52:13,252 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Escargots"
+    },
+    {
+      "label": "B",
+      "title": "Huîtres"
+    },
+    {
+      "label": "C",
+      "title": "Epagneuls"
+    },
+    {
+      "label": "D",
+      "title": "Hélicoptères"
+    }
+  ],
+  "questionEntitled": "L\u0027héliciculture est la méthode d\u0027élevage des :"
+}
+
+2018-11-10 15:52:13,274 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=L%27h%C3%A9liciculture+est+la+m%C3%A9thode+d%27%C3%A9levage+des+%3A
+2018-11-10 15:52:13,868 DEBUG c.t.l.OccurencesSearcher [Thread-1] A - Escargots : 64 times found
+2018-11-10 15:52:13,869 DEBUG c.t.l.OccurencesSearcher [Thread-1] B - Huîtres : 0 times found
+2018-11-10 15:52:13,869 DEBUG c.t.l.OccurencesSearcher [Thread-1] D - Hélicoptères : 0 times found
+2018-11-10 15:52:13,869 DEBUG c.t.l.OccurencesSearcher [Thread-1] C - Epagneuls : 0 times found
+2018-11-10 15:52:13,869 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : A - Escargots
+2018-11-10 15:52:13,869 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 15:52:58,420 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 15:52:58,420 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Ctrl + A"
+    },
+    {
+      "label": "B",
+      "title": "Ctrl + Z"
+    },
+    {
+      "label": "C",
+      "title": "Ctrl + C"
+    },
+    {
+      "label": "D",
+      "title": "Ctrl + V"
+    }
+  ],
+  "questionEntitled": "Sur PC, que faut-il taper sur son clavier pour annuler une action ?"
+}
+
+2018-11-10 15:52:58,449 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Sur+PC%2C+que+faut-il+taper+sur+son+clavier+pour+annuler+une+action+%3F
+2018-11-10 15:52:59,151 DEBUG c.t.l.OccurencesSearcher [Thread-1] C - Ctrl + C : 0 times found
+2018-11-10 15:52:59,151 DEBUG c.t.l.OccurencesSearcher [Thread-1] B - Ctrl + Z : 0 times found
+2018-11-10 15:52:59,151 DEBUG c.t.l.OccurencesSearcher [Thread-1] A - Ctrl + A : 0 times found
+2018-11-10 15:52:59,151 DEBUG c.t.l.OccurencesSearcher [Thread-1] D - Ctrl + V : 0 times found
+2018-11-10 15:52:59,151 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : D - Ctrl + V
+2018-11-10 15:52:59,151 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 15:54:17,198 INFO c.t.l.TCPServer [Thread-1] TCP SERVER LAUNCHED
+2018-11-10 15:59:07,146 DEBUG c.t.l.OccurencesSearcher [main] A - Un trésor : 0 times found
+2018-11-10 15:59:07,148 DEBUG c.t.l.OccurencesSearcher [main] D - Le nouveau gourvenement : 0 times found
+2018-11-10 15:59:07,148 DEBUG c.t.l.OccurencesSearcher [main] C - Un projecteur : 0 times found
+2018-11-10 15:59:07,148 DEBUG c.t.l.OccurencesSearcher [main] B - De l'eau : 0 times found
+2018-11-10 15:59:07,297 DEBUG c.t.l.OccurencesSearcher [main] C - Ctrl + A : 0 times found
+2018-11-10 15:59:07,297 DEBUG c.t.l.OccurencesSearcher [main] B - Ctrl + Z : 0 times found
+2018-11-10 15:59:07,298 DEBUG c.t.l.OccurencesSearcher [main] D - Ctrl + V : 0 times found
+2018-11-10 15:59:07,298 DEBUG c.t.l.OccurencesSearcher [main] A - Ctrl + C : 0 times found
+2018-11-10 15:59:07,321 DEBUG c.t.l.OccurencesSearcher [main] B - RPG : 1 times found
+2018-11-10 15:59:07,322 DEBUG c.t.l.OccurencesSearcher [main] A - FPS : 1 times found
+2018-11-10 15:59:07,322 DEBUG c.t.l.OccurencesSearcher [main] D - Plateforme : 0 times found
+2018-11-10 15:59:07,322 DEBUG c.t.l.OccurencesSearcher [main] C - Battle Royale : 14 times found
+2018-11-10 16:03:01,407 DEBUG c.t.l.OccurencesSearcher [main] B - De l'eau : 0 times found
+2018-11-10 16:03:01,410 DEBUG c.t.l.OccurencesSearcher [main] D - Le nouveau gourvenement : 0 times found
+2018-11-10 16:03:01,411 DEBUG c.t.l.OccurencesSearcher [main] C - Un projecteur : 0 times found
+2018-11-10 16:03:01,411 DEBUG c.t.l.OccurencesSearcher [main] A - Un trésor : 0 times found
+2018-11-10 16:03:01,579 DEBUG c.t.l.OccurencesSearcher [main] B - Ctrl + Z : 0 times found
+2018-11-10 16:03:01,579 DEBUG c.t.l.OccurencesSearcher [main] C - Ctrl + A : 0 times found
+2018-11-10 16:03:01,580 DEBUG c.t.l.OccurencesSearcher [main] A - Ctrl + C : 0 times found
+2018-11-10 16:03:01,580 DEBUG c.t.l.OccurencesSearcher [main] D - Ctrl + V : 0 times found
+2018-11-10 16:03:01,605 DEBUG c.t.l.OccurencesSearcher [main] C - Battle Royale : 14 times found
+2018-11-10 16:03:01,605 DEBUG c.t.l.OccurencesSearcher [main] A - FPS : 1 times found
+2018-11-10 16:03:01,605 DEBUG c.t.l.OccurencesSearcher [main] D - Plateforme : 0 times found
+2018-11-10 16:03:01,606 DEBUG c.t.l.OccurencesSearcher [main] B - RPG : 1 times found
+2018-11-10 16:07:50,556 DEBUG c.t.l.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 16:07:50,559 DEBUG c.t.l.OccurencesSearcher [main] D - Le nouveau gourvenement : 0 times found
+2018-11-10 16:07:50,559 DEBUG c.t.l.OccurencesSearcher [main] C - Un projecteur : 0 times found
+2018-11-10 16:07:50,560 DEBUG c.t.l.OccurencesSearcher [main] B - De l'eau : 0 times found
+2018-11-10 16:07:50,560 DEBUG c.t.l.OccurencesSearcher [main] A - Un trésor : 3 times found
+2018-11-10 16:07:50,560 DEBUG c.t.l.OccurencesSearcher [main] ---------------------------
+2018-11-10 16:07:50,719 DEBUG c.t.l.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 16:07:50,719 DEBUG c.t.l.OccurencesSearcher [main] C - Ctrl + A : 0 times found
+2018-11-10 16:07:50,720 DEBUG c.t.l.OccurencesSearcher [main] D - Ctrl + V : 0 times found
+2018-11-10 16:07:50,720 DEBUG c.t.l.OccurencesSearcher [main] A - Ctrl + C : 0 times found
+2018-11-10 16:07:50,720 DEBUG c.t.l.OccurencesSearcher [main] B - Ctrl + Z : 0 times found
+2018-11-10 16:07:50,720 DEBUG c.t.l.OccurencesSearcher [main] ---------------------------
+2018-11-10 16:07:50,767 DEBUG c.t.l.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 16:07:50,767 DEBUG c.t.l.OccurencesSearcher [main] B - RPG : 1 times found
+2018-11-10 16:07:50,767 DEBUG c.t.l.OccurencesSearcher [main] A - FPS : 1 times found
+2018-11-10 16:07:50,767 DEBUG c.t.l.OccurencesSearcher [main] C - Battle Royale : 14 times found
+2018-11-10 16:07:50,768 DEBUG c.t.l.OccurencesSearcher [main] D - Plateforme : 0 times found
+2018-11-10 16:07:50,768 DEBUG c.t.l.OccurencesSearcher [main] ---------------------------
+2018-11-10 16:08:32,132 DEBUG c.t.l.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 16:08:32,134 DEBUG c.t.l.OccurencesSearcher [main] D - Le nouveau gourvenement : 0 times found
+2018-11-10 16:08:32,135 DEBUG c.t.l.OccurencesSearcher [main] C - Un projecteur : 0 times found
+2018-11-10 16:08:32,135 DEBUG c.t.l.OccurencesSearcher [main] B - De l'eau : 0 times found
+2018-11-10 16:08:32,135 DEBUG c.t.l.OccurencesSearcher [main] A - Un trésor : 3 times found
+2018-11-10 16:08:32,135 DEBUG c.t.l.OccurencesSearcher [main] ---------------------------
+2018-11-10 16:08:32,285 DEBUG c.t.l.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 16:08:32,285 DEBUG c.t.l.OccurencesSearcher [main] C - Ctrl + A : 0 times found
+2018-11-10 16:08:32,286 DEBUG c.t.l.OccurencesSearcher [main] D - Ctrl + V : 0 times found
+2018-11-10 16:08:32,286 DEBUG c.t.l.OccurencesSearcher [main] A - Ctrl + C : 0 times found
+2018-11-10 16:08:32,286 DEBUG c.t.l.OccurencesSearcher [main] B - Ctrl + Z : 0 times found
+2018-11-10 16:08:32,286 DEBUG c.t.l.OccurencesSearcher [main] ---------------------------
+2018-11-10 16:08:32,329 DEBUG c.t.l.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 16:08:32,330 DEBUG c.t.l.OccurencesSearcher [main] B - RPG : 1 times found
+2018-11-10 16:08:32,330 DEBUG c.t.l.OccurencesSearcher [main] A - FPS : 1 times found
+2018-11-10 16:08:32,330 DEBUG c.t.l.OccurencesSearcher [main] C - Battle Royale : 14 times found
+2018-11-10 16:08:32,330 DEBUG c.t.l.OccurencesSearcher [main] D - Plateforme : 0 times found
+2018-11-10 16:08:32,330 DEBUG c.t.l.OccurencesSearcher [main] ---------------------------
+2018-11-10 16:16:26,839 DEBUG c.t.l.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 16:16:26,842 DEBUG c.t.l.OccurencesSearcher [main] B - De l'eau : 0 times found
+2018-11-10 16:16:26,842 DEBUG c.t.l.OccurencesSearcher [main] D - Le nouveau gourvenement : 0 times found
+2018-11-10 16:16:26,842 DEBUG c.t.l.OccurencesSearcher [main] C - Un projecteur : 0 times found
+2018-11-10 16:16:26,842 DEBUG c.t.l.OccurencesSearcher [main] A - Un trésor : 0 times found
+2018-11-10 16:16:26,842 DEBUG c.t.l.OccurencesSearcher [main] ---------------------------
+2018-11-10 16:16:26,990 DEBUG c.t.l.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 16:16:26,990 DEBUG c.t.l.OccurencesSearcher [main] C - Ctrl + A : 0 times found
+2018-11-10 16:16:26,990 DEBUG c.t.l.OccurencesSearcher [main] D - Ctrl + V : 0 times found
+2018-11-10 16:16:26,990 DEBUG c.t.l.OccurencesSearcher [main] A - Ctrl + C : 0 times found
+2018-11-10 16:16:26,991 DEBUG c.t.l.OccurencesSearcher [main] B - Ctrl + Z : 0 times found
+2018-11-10 16:16:26,991 DEBUG c.t.l.OccurencesSearcher [main] ---------------------------
+2018-11-10 16:16:27,014 DEBUG c.t.l.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 16:16:27,014 DEBUG c.t.l.OccurencesSearcher [main] B - RPG : 1 times found
+2018-11-10 16:16:27,014 DEBUG c.t.l.OccurencesSearcher [main] A - FPS : 1 times found
+2018-11-10 16:16:27,014 DEBUG c.t.l.OccurencesSearcher [main] C - Battle Royale : 14 times found
+2018-11-10 16:16:27,015 DEBUG c.t.l.OccurencesSearcher [main] D - Plateforme : 0 times found
+2018-11-10 16:16:27,015 DEBUG c.t.l.OccurencesSearcher [main] ---------------------------
+2018-11-10 16:17:44,582 DEBUG c.t.l.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 16:17:44,586 DEBUG c.t.l.OccurencesSearcher [main] D - Le nouveau gourvenement : 0 times found
+2018-11-10 16:17:44,587 DEBUG c.t.l.OccurencesSearcher [main] A - Un trésor : 0 times found
+2018-11-10 16:17:44,587 DEBUG c.t.l.OccurencesSearcher [main] B - De l'eau : 0 times found
+2018-11-10 16:17:44,588 DEBUG c.t.l.OccurencesSearcher [main] C - Un projecteur : 0 times found
+2018-11-10 16:17:44,588 DEBUG c.t.l.OccurencesSearcher [main] ---------------------------
+2018-11-10 16:18:24,141 DEBUG c.t.l.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 16:18:24,143 DEBUG c.t.l.OccurencesSearcher [main] C - Un projecteur : 0 times found
+2018-11-10 16:18:24,144 DEBUG c.t.l.OccurencesSearcher [main] D - Le nouveau gourvenement : 0 times found
+2018-11-10 16:18:24,144 DEBUG c.t.l.OccurencesSearcher [main] A - Un trésor : 3 times found
+2018-11-10 16:18:24,144 DEBUG c.t.l.OccurencesSearcher [main] B - De l'eau : 0 times found
+2018-11-10 16:18:24,145 DEBUG c.t.l.OccurencesSearcher [main] ---------------------------
+2018-11-10 16:18:49,374 DEBUG c.t.l.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 16:18:49,377 DEBUG c.t.l.OccurencesSearcher [main] D - Le nouveau gourvenement : 0 times found
+2018-11-10 16:18:49,378 DEBUG c.t.l.OccurencesSearcher [main] C - Un projecteur : 0 times found
+2018-11-10 16:18:49,378 DEBUG c.t.l.OccurencesSearcher [main] A - Un trésor : 3 times found
+2018-11-10 16:18:49,378 DEBUG c.t.l.OccurencesSearcher [main] B - De l'eau : 0 times found
+2018-11-10 16:18:49,378 DEBUG c.t.l.OccurencesSearcher [main] ---------------------------
+2018-11-10 16:19:29,521 DEBUG c.t.l.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 16:19:29,523 DEBUG c.t.l.OccurencesSearcher [main] B - Ctrl + Z : 0 times found
+2018-11-10 16:19:29,529 DEBUG c.t.l.OccurencesSearcher [main] C - Ctrl + A : 0 times found
+2018-11-10 16:19:29,529 DEBUG c.t.l.OccurencesSearcher [main] A - Ctrl + C : 0 times found
+2018-11-10 16:19:29,530 DEBUG c.t.l.OccurencesSearcher [main] D - Ctrl + V : 0 times found
+2018-11-10 16:19:29,530 DEBUG c.t.l.OccurencesSearcher [main] ---------------------------
+2018-11-10 16:19:29,579 DEBUG c.t.l.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 16:19:29,579 DEBUG c.t.l.OccurencesSearcher [main] C - Battle Royale : 14 times found
+2018-11-10 16:19:29,580 DEBUG c.t.l.OccurencesSearcher [main] A - FPS : 1 times found
+2018-11-10 16:19:29,580 DEBUG c.t.l.OccurencesSearcher [main] D - Plateforme : 0 times found
+2018-11-10 16:19:29,580 DEBUG c.t.l.OccurencesSearcher [main] B - RPG : 1 times found
+2018-11-10 16:19:29,580 DEBUG c.t.l.OccurencesSearcher [main] ---------------------------
+2018-11-10 16:19:33,569 DEBUG c.t.l.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 16:19:33,572 DEBUG c.t.l.OccurencesSearcher [main] D - Le nouveau gourvenement : 0 times found
+2018-11-10 16:19:33,573 DEBUG c.t.l.OccurencesSearcher [main] C - Un projecteur : 0 times found
+2018-11-10 16:19:33,574 DEBUG c.t.l.OccurencesSearcher [main] A - Un trésor : 3 times found
+2018-11-10 16:19:33,574 DEBUG c.t.l.OccurencesSearcher [main] B - De l'eau : 0 times found
+2018-11-10 16:19:33,574 DEBUG c.t.l.OccurencesSearcher [main] ---------------------------
+2018-11-10 16:22:24,965 DEBUG c.t.l.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 16:22:24,968 DEBUG c.t.l.OccurencesSearcher [main] D - Le nouveau gourvenement : 0 times found
+2018-11-10 16:22:24,969 DEBUG c.t.l.OccurencesSearcher [main] C - Un projecteur : 0 times found
+2018-11-10 16:22:24,969 DEBUG c.t.l.OccurencesSearcher [main] A - Un trésor : 3 times found
+2018-11-10 16:22:24,969 DEBUG c.t.l.OccurencesSearcher [main] B - De l'eau : 0 times found
+2018-11-10 16:22:24,969 DEBUG c.t.l.OccurencesSearcher [main] ---------------------------
+2018-11-10 16:22:56,299 DEBUG c.t.l.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 16:22:56,302 DEBUG c.t.l.OccurencesSearcher [main] D - Le nouveau gourvenement : 0 times found
+2018-11-10 16:22:56,303 DEBUG c.t.l.OccurencesSearcher [main] C - Un projecteur : 0 times found
+2018-11-10 16:22:56,304 DEBUG c.t.l.OccurencesSearcher [main] A - Un trésor : 3 times found
+2018-11-10 16:22:56,305 DEBUG c.t.l.OccurencesSearcher [main] B - De l'eau : 0 times found
+2018-11-10 16:22:56,305 DEBUG c.t.l.OccurencesSearcher [main] ---------------------------
+2018-11-10 16:24:06,186 DEBUG c.t.l.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 16:24:06,189 DEBUG c.t.l.OccurencesSearcher [main] D - Le nouveau gourvenement : 0 times found
+2018-11-10 16:24:06,189 DEBUG c.t.l.OccurencesSearcher [main] C - Un projecteur : 0 times found
+2018-11-10 16:24:06,189 DEBUG c.t.l.OccurencesSearcher [main] B - De l'eau : 0 times found
+2018-11-10 16:24:06,190 DEBUG c.t.l.OccurencesSearcher [main] A - Un trésor : 3 times found
+2018-11-10 16:24:06,190 DEBUG c.t.l.OccurencesSearcher [main] ---------------------------
+2018-11-10 16:24:06,386 DEBUG c.t.l.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 16:24:06,386 DEBUG c.t.l.OccurencesSearcher [main] C - Ctrl + A : 0 times found
+2018-11-10 16:24:06,387 DEBUG c.t.l.OccurencesSearcher [main] D - Ctrl + V : 0 times found
+2018-11-10 16:24:06,387 DEBUG c.t.l.OccurencesSearcher [main] A - Ctrl + C : 0 times found
+2018-11-10 16:24:06,387 DEBUG c.t.l.OccurencesSearcher [main] B - Ctrl + Z : 2 times found
+2018-11-10 16:24:06,387 DEBUG c.t.l.OccurencesSearcher [main] ---------------------------
+2018-11-10 16:24:06,423 DEBUG c.t.l.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 16:24:06,424 DEBUG c.t.l.OccurencesSearcher [main] B - RPG : 1 times found
+2018-11-10 16:24:06,424 DEBUG c.t.l.OccurencesSearcher [main] A - FPS : 1 times found
+2018-11-10 16:24:06,424 DEBUG c.t.l.OccurencesSearcher [main] C - Battle Royale : 14 times found
+2018-11-10 16:24:06,424 DEBUG c.t.l.OccurencesSearcher [main] D - Plateforme : 0 times found
+2018-11-10 16:24:06,424 DEBUG c.t.l.OccurencesSearcher [main] ---------------------------
+2018-11-10 16:24:15,116 DEBUG c.t.l.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 16:24:15,119 DEBUG c.t.l.OccurencesSearcher [main] D - Le nouveau gourvenement : 0 times found
+2018-11-10 16:24:15,119 DEBUG c.t.l.OccurencesSearcher [main] C - Un projecteur : 0 times found
+2018-11-10 16:24:15,119 DEBUG c.t.l.OccurencesSearcher [main] B - De l'eau : 0 times found
+2018-11-10 16:24:15,120 DEBUG c.t.l.OccurencesSearcher [main] A - Un trésor : 3 times found
+2018-11-10 16:24:15,120 DEBUG c.t.l.OccurencesSearcher [main] ---------------------------
+2018-11-10 16:24:15,306 DEBUG c.t.l.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 16:24:15,306 DEBUG c.t.l.OccurencesSearcher [main] A - Ctrl + C : 0 times found
+2018-11-10 16:24:15,307 DEBUG c.t.l.OccurencesSearcher [main] B - Ctrl + Z : 2 times found
+2018-11-10 16:24:15,307 DEBUG c.t.l.OccurencesSearcher [main] D - Ctrl + V : 0 times found
+2018-11-10 16:24:15,307 DEBUG c.t.l.OccurencesSearcher [main] C - Ctrl + A : 0 times found
+2018-11-10 16:24:15,307 DEBUG c.t.l.OccurencesSearcher [main] ---------------------------
+2018-11-10 16:24:15,351 DEBUG c.t.l.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 16:24:15,351 DEBUG c.t.l.OccurencesSearcher [main] C - Battle Royale : 14 times found
+2018-11-10 16:24:15,352 DEBUG c.t.l.OccurencesSearcher [main] A - FPS : 1 times found
+2018-11-10 16:24:15,352 DEBUG c.t.l.OccurencesSearcher [main] B - RPG : 1 times found
+2018-11-10 16:24:15,352 DEBUG c.t.l.OccurencesSearcher [main] D - Plateforme : 0 times found
+2018-11-10 16:24:15,352 DEBUG c.t.l.OccurencesSearcher [main] ---------------------------
+2018-11-10 16:24:43,927 DEBUG c.t.l.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 16:24:43,932 DEBUG c.t.l.OccurencesSearcher [main] D - Le nouveau gourvenement : 0 times found
+2018-11-10 16:24:43,933 DEBUG c.t.l.OccurencesSearcher [main] C - Un projecteur : 0 times found
+2018-11-10 16:24:43,933 DEBUG c.t.l.OccurencesSearcher [main] B - De l'eau : 0 times found
+2018-11-10 16:24:43,933 DEBUG c.t.l.OccurencesSearcher [main] A - Un trésor : 3 times found
+2018-11-10 16:24:43,933 DEBUG c.t.l.OccurencesSearcher [main] ---------------------------
+2018-11-10 16:24:44,140 DEBUG c.t.l.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 16:24:44,140 DEBUG c.t.l.OccurencesSearcher [main] A - Ctrl + C : 0 times found
+2018-11-10 16:24:44,141 DEBUG c.t.l.OccurencesSearcher [main] B - Ctrl + Z : 2 times found
+2018-11-10 16:24:44,141 DEBUG c.t.l.OccurencesSearcher [main] D - Ctrl + V : 0 times found
+2018-11-10 16:24:44,141 DEBUG c.t.l.OccurencesSearcher [main] C - Ctrl + A : 0 times found
+2018-11-10 16:24:44,141 DEBUG c.t.l.OccurencesSearcher [main] ---------------------------
+2018-11-10 16:24:44,181 DEBUG c.t.l.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 16:24:44,181 DEBUG c.t.l.OccurencesSearcher [main] D - Plateforme : 0 times found
+2018-11-10 16:24:44,182 DEBUG c.t.l.OccurencesSearcher [main] B - RPG : 1 times found
+2018-11-10 16:24:44,182 DEBUG c.t.l.OccurencesSearcher [main] C - Battle Royale : 14 times found
+2018-11-10 16:24:44,183 DEBUG c.t.l.OccurencesSearcher [main] A - FPS : 1 times found
+2018-11-10 16:24:44,183 DEBUG c.t.l.OccurencesSearcher [main] ---------------------------
+2018-11-10 16:25:08,505 DEBUG c.t.l.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 16:25:08,508 DEBUG c.t.l.OccurencesSearcher [main] D - Le nouveau gourvenement : 0 times found
+2018-11-10 16:25:08,508 DEBUG c.t.l.OccurencesSearcher [main] C - Un projecteur : 0 times found
+2018-11-10 16:25:08,508 DEBUG c.t.l.OccurencesSearcher [main] B - De l'eau : 0 times found
+2018-11-10 16:25:08,508 DEBUG c.t.l.OccurencesSearcher [main] A - Un trésor : 3 times found
+2018-11-10 16:25:08,508 DEBUG c.t.l.OccurencesSearcher [main] ---------------------------
+2018-11-10 16:25:08,707 DEBUG c.t.l.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 16:25:08,707 DEBUG c.t.l.OccurencesSearcher [main] B - Ctrl + Z : 2 times found
+2018-11-10 16:25:08,707 DEBUG c.t.l.OccurencesSearcher [main] D - Ctrl + V : 0 times found
+2018-11-10 16:25:08,707 DEBUG c.t.l.OccurencesSearcher [main] A - Ctrl + C : 0 times found
+2018-11-10 16:25:08,708 DEBUG c.t.l.OccurencesSearcher [main] C - Ctrl + A : 0 times found
+2018-11-10 16:25:08,708 DEBUG c.t.l.OccurencesSearcher [main] ---------------------------
+2018-11-10 16:25:08,744 DEBUG c.t.l.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 16:25:08,745 DEBUG c.t.l.OccurencesSearcher [main] B - RPG : 1 times found
+2018-11-10 16:25:08,745 DEBUG c.t.l.OccurencesSearcher [main] D - Plateforme : 0 times found
+2018-11-10 16:25:08,745 DEBUG c.t.l.OccurencesSearcher [main] C - Battle Royale : 14 times found
+2018-11-10 16:25:08,745 DEBUG c.t.l.OccurencesSearcher [main] A - FPS : 1 times found
+2018-11-10 16:25:08,745 DEBUG c.t.l.OccurencesSearcher [main] ---------------------------
+2018-11-10 16:25:34,463 DEBUG c.t.l.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 16:25:34,465 DEBUG c.t.l.OccurencesSearcher [main] D - Le nouveau gourvenement : 0 times found
+2018-11-10 16:25:34,466 DEBUG c.t.l.OccurencesSearcher [main] C - Un projecteur : 0 times found
+2018-11-10 16:25:34,466 DEBUG c.t.l.OccurencesSearcher [main] B - De l'eau : 0 times found
+2018-11-10 16:25:34,466 DEBUG c.t.l.OccurencesSearcher [main] A - Un trésor : 3 times found
+2018-11-10 16:25:34,466 DEBUG c.t.l.OccurencesSearcher [main] ---------------------------
+2018-11-10 16:25:34,669 DEBUG c.t.l.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 16:25:34,670 DEBUG c.t.l.OccurencesSearcher [main] B - Ctrl + Z : 2 times found
+2018-11-10 16:25:34,670 DEBUG c.t.l.OccurencesSearcher [main] D - Ctrl + V : 0 times found
+2018-11-10 16:25:34,670 DEBUG c.t.l.OccurencesSearcher [main] A - Ctrl + C : 0 times found
+2018-11-10 16:25:34,670 DEBUG c.t.l.OccurencesSearcher [main] C - Ctrl + A : 0 times found
+2018-11-10 16:25:34,670 DEBUG c.t.l.OccurencesSearcher [main] ---------------------------
+2018-11-10 16:25:34,710 DEBUG c.t.l.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 16:25:34,710 DEBUG c.t.l.OccurencesSearcher [main] B - RPG : 1 times found
+2018-11-10 16:25:34,710 DEBUG c.t.l.OccurencesSearcher [main] D - Plateforme : 0 times found
+2018-11-10 16:25:34,710 DEBUG c.t.l.OccurencesSearcher [main] C - Battle Royale : 14 times found
+2018-11-10 16:25:34,711 DEBUG c.t.l.OccurencesSearcher [main] A - FPS : 1 times found
+2018-11-10 16:25:34,711 DEBUG c.t.l.OccurencesSearcher [main] ---------------------------
+2018-11-10 16:25:37,946 INFO c.t.l.TCPServer [Thread-1] TCP SERVER LAUNCHED
+2018-11-10 16:26:33,043 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 16:26:33,045 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "La grand-voile"
+    },
+    {
+      "label": "B",
+      "title": "Le spi"
+    },
+    {
+      "label": "C",
+      "title": "Le paravent"
+    },
+    {
+      "label": "D",
+      "title": "Le foc"
+    }
+  ],
+  "questionEntitled": "Comment s\u0027appelle la petite voile triangulaire à l\u0027avant d\u0027un bateau à voile ?"
+}
+
+2018-11-10 16:26:33,158 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Comment+s%27appelle+la+petite+voile+triangulaire+%C3%A0+l%27avant+d%27un+bateau+%C3%A0+voile+%3F
+2018-11-10 16:26:33,898 DEBUG c.t.l.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 16:26:33,899 DEBUG c.t.l.OccurencesSearcher [Thread-1] A - La grand-voile : 0 times found
+2018-11-10 16:26:33,899 DEBUG c.t.l.OccurencesSearcher [Thread-1] B - Le spi : 0 times found
+2018-11-10 16:26:33,899 DEBUG c.t.l.OccurencesSearcher [Thread-1] D - Le foc : 1 times found
+2018-11-10 16:26:33,899 DEBUG c.t.l.OccurencesSearcher [Thread-1] C - Le paravent : 0 times found
+2018-11-10 16:26:33,899 DEBUG c.t.l.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 16:26:33,905 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : D - Le foc
+2018-11-10 16:26:33,905 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 16:27:56,236 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 16:27:56,237 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "De nuages"
+    },
+    {
+      "label": "B",
+      "title": "De résonance"
+    },
+    {
+      "label": "C",
+      "title": "De magnétisme"
+    },
+    {
+      "label": "D",
+      "title": "De marées"
+    }
+  ],
+  "questionEntitled": "Le Mammatus désigne un phénomène :"
+}
+
+2018-11-10 16:27:56,263 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Le+Mammatus+d%C3%A9signe+un+ph%C3%A9nom%C3%A8ne+%3A
+2018-11-10 16:27:56,966 DEBUG c.t.l.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 16:27:56,966 DEBUG c.t.l.OccurencesSearcher [Thread-1] C - De magnétisme : 0 times found
+2018-11-10 16:27:56,966 DEBUG c.t.l.OccurencesSearcher [Thread-1] D - De marées : 0 times found
+2018-11-10 16:27:56,966 DEBUG c.t.l.OccurencesSearcher [Thread-1] B - De résonance : 0 times found
+2018-11-10 16:27:56,967 DEBUG c.t.l.OccurencesSearcher [Thread-1] A - De nuages : 1 times found
+2018-11-10 16:27:56,967 DEBUG c.t.l.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 16:27:56,967 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : A - De nuages
+2018-11-10 16:27:56,967 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 16:28:53,986 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 16:28:53,987 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [],
+  "questionEntitled": "En quelle année Christophe Colomb a-t-il découvert l\u0027Amérique ?"
+}
+
+2018-11-10 16:28:54,011 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=En+quelle+ann%C3%A9e+Christophe+Colomb+a-t-il+d%C3%A9couvert+l%27Am%C3%A9rique+%3F
+2018-11-10 16:28:54,784 DEBUG c.t.l.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 16:28:54,785 DEBUG c.t.l.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 16:28:54,786 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 18:29:00,871 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 18:29:00,874 DEBUG t.OccurencesSearcher [main] C - Un projecteur : 0 times found
+2018-11-10 18:29:00,875 DEBUG t.OccurencesSearcher [main] B - De l'eau : 9 times found
+2018-11-10 18:29:00,875 DEBUG t.OccurencesSearcher [main] A - Un trésor : 4 times found
+2018-11-10 18:29:00,875 DEBUG t.OccurencesSearcher [main] D - Le nouveau gourvenement : 0 times found
+2018-11-10 18:29:00,875 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-10 18:29:01,088 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 18:29:01,089 DEBUG t.OccurencesSearcher [main] C - Ctrl + A : 0 times found
+2018-11-10 18:29:01,089 DEBUG t.OccurencesSearcher [main] B - Ctrl + Z : 2 times found
+2018-11-10 18:29:01,089 DEBUG t.OccurencesSearcher [main] D - Ctrl + V : 0 times found
+2018-11-10 18:29:01,089 DEBUG t.OccurencesSearcher [main] A - Ctrl + C : 0 times found
+2018-11-10 18:29:01,089 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-10 18:29:01,131 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 18:29:01,132 DEBUG t.OccurencesSearcher [main] C - Battle Royale : 14 times found
+2018-11-10 18:29:01,132 DEBUG t.OccurencesSearcher [main] A - FPS : 1 times found
+2018-11-10 18:29:01,132 DEBUG t.OccurencesSearcher [main] B - RPG : 1 times found
+2018-11-10 18:29:01,132 DEBUG t.OccurencesSearcher [main] D - Plateforme : 0 times found
+2018-11-10 18:29:01,132 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-10 18:35:02,855 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 18:35:02,858 DEBUG t.OccurencesSearcher [main] A - Un trésor : 4 times found
+2018-11-10 18:35:02,858 DEBUG t.OccurencesSearcher [main] C - Un projecteur : 0 times found
+2018-11-10 18:35:02,858 DEBUG t.OccurencesSearcher [main] D - Le nouveau gourvenement : 0 times found
+2018-11-10 18:35:02,859 DEBUG t.OccurencesSearcher [main] B - De l'eau : 2 times found
+2018-11-10 18:35:02,859 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-10 18:35:03,176 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 18:35:03,177 DEBUG t.OccurencesSearcher [main] C - Ctrl + A : 0 times found
+2018-11-10 18:35:03,177 DEBUG t.OccurencesSearcher [main] D - Ctrl + V : 0 times found
+2018-11-10 18:35:03,177 DEBUG t.OccurencesSearcher [main] B - Ctrl + Z : 2 times found
+2018-11-10 18:35:03,177 DEBUG t.OccurencesSearcher [main] A - Ctrl + C : 0 times found
+2018-11-10 18:35:03,177 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-10 18:35:03,244 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 18:35:03,245 DEBUG t.OccurencesSearcher [main] C - Battle Royale : 14 times found
+2018-11-10 18:35:03,245 DEBUG t.OccurencesSearcher [main] B - RPG : 0 times found
+2018-11-10 18:35:03,245 DEBUG t.OccurencesSearcher [main] A - FPS : 1 times found
+2018-11-10 18:35:03,245 DEBUG t.OccurencesSearcher [main] D - Plateforme : 0 times found
+2018-11-10 18:35:03,246 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-10 18:35:48,138 INFO c.t.l.TCPServer [Thread-1] TCP SERVER LAUNCHED
+2018-11-10 18:36:08,371 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 18:36:08,371 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Barbalala"
+    },
+    {
+      "label": "B",
+      "title": "Barbamama"
+    },
+    {
+      "label": "C",
+      "title": "Jacqueline"
+    },
+    {
+      "label": "D",
+      "title": "Barbadaronne"
+    }
+  ],
+  "questionEntitled": "Quel est le nom de la maman des Barbapapa ?"
+}
+
+2018-11-10 18:36:08,505 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Quel+est+le+nom+de+la+maman+des+Barbapapa+%3F
+2018-11-10 18:36:09,243 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 18:36:09,244 DEBUG t.OccurencesSearcher [Thread-1] C - Jacqueline : 0 times found
+2018-11-10 18:36:09,244 DEBUG t.OccurencesSearcher [Thread-1] B - Barbamama : 4 times found
+2018-11-10 18:36:09,244 DEBUG t.OccurencesSearcher [Thread-1] D - Barbadaronne : 0 times found
+2018-11-10 18:36:09,245 DEBUG t.OccurencesSearcher [Thread-1] A - Barbalala : 2 times found
+2018-11-10 18:36:09,245 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 18:36:09,249 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : B - Barbamama
+2018-11-10 18:36:09,250 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 18:36:28,008 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 18:36:28,009 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Le lapin"
+    },
+    {
+      "label": "B",
+      "title": "L\u0027ours"
+    },
+    {
+      "label": "C",
+      "title": "Le renard"
+    },
+    {
+      "label": "D",
+      "title": "La chèvre"
+    }
+  ],
+  "questionEntitled": "Avec la laine de quel animal fait-on du cachemire ?"
+}
+
+2018-11-10 18:36:28,025 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Avec+la+laine+de+quel+animal+fait-on+du+cachemire+%3F
+2018-11-10 18:36:28,719 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 18:36:28,719 DEBUG t.OccurencesSearcher [Thread-1] D - La chèvre : 5 times found
+2018-11-10 18:36:28,720 DEBUG t.OccurencesSearcher [Thread-1] B - L'ours : 0 times found
+2018-11-10 18:36:28,720 DEBUG t.OccurencesSearcher [Thread-1] A - Le lapin : 1 times found
+2018-11-10 18:36:28,720 DEBUG t.OccurencesSearcher [Thread-1] C - Le renard : 0 times found
+2018-11-10 18:36:28,721 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 18:36:28,721 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : D - La chèvre
+2018-11-10 18:36:28,721 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 18:36:44,894 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 18:36:44,895 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Abraham Lincoln"
+    },
+    {
+      "label": "B",
+      "title": "Donald Trump"
+    },
+    {
+      "label": "C",
+      "title": "George Washington"
+    },
+    {
+      "label": "D",
+      "title": "Barack Obama"
+    }
+  ],
+  "questionEntitled": "Sous quel président des Etats-Unis l\u0027esclavage a-t-il été aboli ?"
+}
+
+2018-11-10 18:36:44,912 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Sous+quel+pr%C3%A9sident+des+Etats-Unis+l%27esclavage+a-t-il+%C3%A9t%C3%A9+aboli+%3F
+2018-11-10 18:36:45,855 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 18:36:45,855 DEBUG t.OccurencesSearcher [Thread-1] D - Barack Obama : 0 times found
+2018-11-10 18:36:45,856 DEBUG t.OccurencesSearcher [Thread-1] B - Donald Trump : 0 times found
+2018-11-10 18:36:45,856 DEBUG t.OccurencesSearcher [Thread-1] A - Abraham Lincoln : 9 times found
+2018-11-10 18:36:45,857 DEBUG t.OccurencesSearcher [Thread-1] C - George Washington : 0 times found
+2018-11-10 18:36:45,857 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 18:36:45,857 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : A - Abraham Lincoln
+2018-11-10 18:36:45,857 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 18:37:01,172 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 18:37:01,173 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Bachi-bouzouk"
+    },
+    {
+      "label": "B",
+      "title": "Éctoplasme"
+    },
+    {
+      "label": "C",
+      "title": "Par Toutatis"
+    },
+    {
+      "label": "D",
+      "title": "Moule à gaufres"
+    }
+  ],
+  "questionEntitled": "Parmi ces jurons, lequel n\u0027est pas utilisé par le Capitaine Haddock ?"
+}
+
+2018-11-10 18:37:01,188 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Parmi+ces+jurons%2C+lequel+n%27est+pas+utilis%C3%A9+par+le+Capitaine+Haddock+%3F
+2018-11-10 18:37:01,974 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 18:37:01,974 DEBUG t.OccurencesSearcher [Thread-1] A - Bachi-bouzouk : 0 times found
+2018-11-10 18:37:01,975 DEBUG t.OccurencesSearcher [Thread-1] C - Par Toutatis : 0 times found
+2018-11-10 18:37:01,975 DEBUG t.OccurencesSearcher [Thread-1] D - Moule à gaufres : 1 times found
+2018-11-10 18:37:01,975 DEBUG t.OccurencesSearcher [Thread-1] B - Éctoplasme : 0 times found
+2018-11-10 18:37:01,975 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 18:37:01,976 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : D - Moule à gaufres
+2018-11-10 18:37:01,976 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 18:37:31,597 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 18:37:31,598 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "0"
+    },
+    {
+      "label": "B",
+      "title": "18"
+    },
+    {
+      "label": "C",
+      "title": "20"
+    },
+    {
+      "label": "D",
+      "title": "24"
+    }
+  ],
+  "questionEntitled": "Combien de titres de Grand Chelem Roger Federer a-t-il remportés ?"
+}
+
+2018-11-10 18:37:31,615 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Combien+de+titres+de+Grand+Chelem+Roger+Federer+a-t-il+remport%C3%A9s+%3F
+2018-11-10 18:37:32,614 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 18:37:32,614 DEBUG t.OccurencesSearcher [Thread-1] C - 20 : 17 times found
+2018-11-10 18:37:32,614 DEBUG t.OccurencesSearcher [Thread-1] D - 24 : 30 times found
+2018-11-10 18:37:32,615 DEBUG t.OccurencesSearcher [Thread-1] B - 18 : 11 times found
+2018-11-10 18:37:32,615 DEBUG t.OccurencesSearcher [Thread-1] A - 0 : 2987 times found
+2018-11-10 18:37:32,615 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 18:37:32,615 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : A - 0
+2018-11-10 18:37:32,615 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 18:38:45,342 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 18:38:45,344 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Wuagadougou"
+    },
+    {
+      "label": "B",
+      "title": "Wagadoubou"
+    },
+    {
+      "label": "C",
+      "title": "Ouagadougou"
+    },
+    {
+      "label": "D",
+      "title": "Ouagadoudou"
+    }
+  ],
+  "questionEntitled": "Quelle est la capitale du Burkina Faso ?"
+}
+
+2018-11-10 18:38:45,361 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Quelle+est+la+capitale+du+Burkina+Faso+%3F
+2018-11-10 18:38:46,241 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 18:38:46,242 DEBUG t.OccurencesSearcher [Thread-1] B - Wagadoubou : 0 times found
+2018-11-10 18:38:46,242 DEBUG t.OccurencesSearcher [Thread-1] D - Ouagadoudou : 0 times found
+2018-11-10 18:38:46,242 DEBUG t.OccurencesSearcher [Thread-1] C - Ouagadougou : 73 times found
+2018-11-10 18:38:46,242 DEBUG t.OccurencesSearcher [Thread-1] A - Wuagadougou : 0 times found
+2018-11-10 18:38:46,244 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 18:38:46,245 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : C - Ouagadougou
+2018-11-10 18:38:46,245 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 18:38:59,796 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 18:38:59,797 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Escargots"
+    },
+    {
+      "label": "B",
+      "title": "Huîtres"
+    },
+    {
+      "label": "C",
+      "title": "Epagneuls"
+    },
+    {
+      "label": "D",
+      "title": "Hélicoptères"
+    }
+  ],
+  "questionEntitled": "L\u0027héliciculture est la méthode d\u0027élevage des :"
+}
+
+2018-11-10 18:38:59,814 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=L%27h%C3%A9liciculture+est+la+m%C3%A9thode+d%27%C3%A9levage+des+%3A
+2018-11-10 18:39:00,549 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 18:39:00,549 DEBUG t.OccurencesSearcher [Thread-1] B - Huîtres : 0 times found
+2018-11-10 18:39:00,549 DEBUG t.OccurencesSearcher [Thread-1] C - Epagneuls : 0 times found
+2018-11-10 18:39:00,549 DEBUG t.OccurencesSearcher [Thread-1] A - Escargots : 54 times found
+2018-11-10 18:39:00,549 DEBUG t.OccurencesSearcher [Thread-1] D - Hélicoptères : 0 times found
+2018-11-10 18:39:00,549 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 18:39:00,549 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : A - Escargots
+2018-11-10 18:39:00,550 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 18:39:15,403 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 18:39:15,404 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Ctrl + A"
+    },
+    {
+      "label": "B",
+      "title": "Ctrl + Z"
+    },
+    {
+      "label": "C",
+      "title": "Ctrl + C"
+    },
+    {
+      "label": "D",
+      "title": "Ctrl + V"
+    }
+  ],
+  "questionEntitled": "Sur PC, que faut-il taper sur son clavier pour annuler une action ?"
+}
+
+2018-11-10 18:39:15,419 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Sur+PC%2C+que+faut-il+taper+sur+son+clavier+pour+annuler+une+action+%3F
+2018-11-10 18:39:16,078 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 18:39:16,078 DEBUG t.OccurencesSearcher [Thread-1] B - Ctrl + Z : 2 times found
+2018-11-10 18:39:16,078 DEBUG t.OccurencesSearcher [Thread-1] A - Ctrl + A : 0 times found
+2018-11-10 18:39:16,079 DEBUG t.OccurencesSearcher [Thread-1] C - Ctrl + C : 0 times found
+2018-11-10 18:39:16,079 DEBUG t.OccurencesSearcher [Thread-1] D - Ctrl + V : 0 times found
+2018-11-10 18:39:16,079 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 18:39:16,079 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : B - Ctrl + Z
+2018-11-10 18:39:16,079 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 18:39:29,510 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 18:39:29,511 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "La grand-voile"
+    },
+    {
+      "label": "B",
+      "title": "Le spi"
+    },
+    {
+      "label": "C",
+      "title": "Le paravent"
+    },
+    {
+      "label": "D",
+      "title": "Le foc"
+    }
+  ],
+  "questionEntitled": "Comment s\u0027appelle la petite voile triangulaire à l\u0027avant d\u0027un bateau à voile ?"
+}
+
+2018-11-10 18:39:29,525 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Comment+s%27appelle+la+petite+voile+triangulaire+%C3%A0+l%27avant+d%27un+bateau+%C3%A0+voile+%3F
+2018-11-10 18:39:30,210 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 18:39:30,210 DEBUG t.OccurencesSearcher [Thread-1] C - Le paravent : 0 times found
+2018-11-10 18:39:30,210 DEBUG t.OccurencesSearcher [Thread-1] B - Le spi : 0 times found
+2018-11-10 18:39:30,210 DEBUG t.OccurencesSearcher [Thread-1] D - Le foc : 8 times found
+2018-11-10 18:39:30,211 DEBUG t.OccurencesSearcher [Thread-1] A - La grand-voile : 0 times found
+2018-11-10 18:39:30,211 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 18:39:30,211 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : D - Le foc
+2018-11-10 18:39:30,211 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 18:39:49,968 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 18:39:49,969 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "De nuages"
+    },
+    {
+      "label": "B",
+      "title": "De résonance"
+    },
+    {
+      "label": "C",
+      "title": "De magnétisme"
+    },
+    {
+      "label": "D",
+      "title": "De marées"
+    }
+  ],
+  "questionEntitled": "Le Mammatus désigne un phénomène :"
+}
+
+2018-11-10 18:39:49,984 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Le+Mammatus+d%C3%A9signe+un+ph%C3%A9nom%C3%A8ne+%3A
+2018-11-10 18:39:50,625 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 18:39:50,625 DEBUG t.OccurencesSearcher [Thread-1] C - De magnétisme : 0 times found
+2018-11-10 18:39:50,625 DEBUG t.OccurencesSearcher [Thread-1] B - De résonance : 0 times found
+2018-11-10 18:39:50,625 DEBUG t.OccurencesSearcher [Thread-1] D - De marées : 0 times found
+2018-11-10 18:39:50,625 DEBUG t.OccurencesSearcher [Thread-1] A - De nuages : 21 times found
+2018-11-10 18:39:50,625 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 18:39:50,626 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : A - De nuages
+2018-11-10 18:39:50,626 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 18:40:05,460 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 18:40:05,461 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [],
+  "questionEntitled": "En quelle année Christophe Colomb a-t-il découvert l\u0027Amérique ?"
+}
+
+2018-11-10 18:40:05,474 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=En+quelle+ann%C3%A9e+Christophe+Colomb+a-t-il+d%C3%A9couvert+l%27Am%C3%A9rique+%3F
+2018-11-10 18:40:06,121 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 18:40:06,121 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 18:40:06,122 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 18:41:50,601 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 18:41:50,602 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Le corbeau"
+    },
+    {
+      "label": "B",
+      "title": "La fourmi"
+    },
+    {
+      "label": "C",
+      "title": "Le loup"
+    },
+    {
+      "label": "D",
+      "title": "Marie-Antoinette"
+    }
+  ],
+  "questionEntitled": "\"Qui a dit \"\"Eh bien : dansez maintenant.\"\" ?\""
+}
+
+2018-11-10 18:41:50,639 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=%22Qui+a+dit+%22%22Eh+bien+%3A+dansez+maintenant.%22%22+%3F%22
+2018-11-10 18:41:51,139 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 18:41:51,139 DEBUG t.OccurencesSearcher [Thread-1] A - Le corbeau : 2 times found
+2018-11-10 18:41:51,139 DEBUG t.OccurencesSearcher [Thread-1] B - La fourmi : 2 times found
+2018-11-10 18:41:51,139 DEBUG t.OccurencesSearcher [Thread-1] C - Le loup : 0 times found
+2018-11-10 18:41:51,140 DEBUG t.OccurencesSearcher [Thread-1] D - Marie-Antoinette : 0 times found
+2018-11-10 18:41:51,140 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 18:41:51,140 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : B - La fourmi
+2018-11-10 18:41:51,140 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 18:43:51,007 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 18:43:51,008 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Limoges"
+    },
+    {
+      "label": "B",
+      "title": "Los Angeles"
+    },
+    {
+      "label": "C",
+      "title": "Tokyo"
+    },
+    {
+      "label": "D",
+      "title": "Paris"
+    }
+  ],
+  "questionEntitled": "Dans quelle ville les JO de 2024 se dérouleront-ils ?"
+}
+
+2018-11-10 18:43:51,030 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Dans+quelle+ville+les+JO+de+2024+se+d%C3%A9rouleront-ils+%3F
+2018-11-10 18:43:51,748 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 18:43:51,748 DEBUG t.OccurencesSearcher [Thread-1] A - Limoges : 0 times found
+2018-11-10 18:43:51,748 DEBUG t.OccurencesSearcher [Thread-1] D - Paris : 56 times found
+2018-11-10 18:43:51,749 DEBUG t.OccurencesSearcher [Thread-1] C - Tokyo : 0 times found
+2018-11-10 18:43:51,750 DEBUG t.OccurencesSearcher [Thread-1] B - Los Angeles : 1 times found
+2018-11-10 18:43:51,750 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 18:43:51,750 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : D - Paris
+2018-11-10 18:43:51,750 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 18:44:06,688 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 18:44:06,689 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Jimmy Hendrix"
+    },
+    {
+      "label": "B",
+      "title": "Eddie Van Halen"
+    },
+    {
+      "label": "C",
+      "title": "Francis Lalanne"
+    },
+    {
+      "label": "D",
+      "title": "Eric Clapton"
+    }
+  ],
+  "questionEntitled": "\"Quel guitariste a exécuté le solo de guitare de \"\"Beat it\"\" de Michael Jackson ?\""
+}
+
+2018-11-10 18:44:06,707 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=%22Quel+guitariste+a+ex%C3%A9cut%C3%A9+le+solo+de+guitare+de+%22%22Beat+it%22%22+de+Michael+Jackson+%3F%22
+2018-11-10 18:44:07,751 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 18:44:07,751 DEBUG t.OccurencesSearcher [Thread-1] B - Eddie Van Halen : 7 times found
+2018-11-10 18:44:07,751 DEBUG t.OccurencesSearcher [Thread-1] A - Jimmy Hendrix : 0 times found
+2018-11-10 18:44:07,752 DEBUG t.OccurencesSearcher [Thread-1] C - Francis Lalanne : 0 times found
+2018-11-10 18:44:07,752 DEBUG t.OccurencesSearcher [Thread-1] D - Eric Clapton : 0 times found
+2018-11-10 18:44:07,752 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 18:44:07,752 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : B - Eddie Van Halen
+2018-11-10 18:44:07,752 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 18:44:21,085 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 18:44:21,085 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Le précepteur d\u0027Alexandre le Grand"
+    },
+    {
+      "label": "B",
+      "title": "Le disciple de Platon"
+    },
+    {
+      "label": "C",
+      "title": "Le mari d\u0027Ariellis Domballa"
+    },
+    {
+      "label": "D",
+      "title": "Le créateur du Lycée"
+    }
+  ],
+  "questionEntitled": "Qui Aristote ne fut-il pas ?"
+}
+
+2018-11-10 18:44:21,101 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Qui+Aristote+ne+fut-il+pas+%3F
+2018-11-10 18:44:21,843 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 18:44:21,844 DEBUG t.OccurencesSearcher [Thread-1] A - Le précepteur d'Alexandre le Grand : 0 times found
+2018-11-10 18:44:21,844 DEBUG t.OccurencesSearcher [Thread-1] B - Le disciple de Platon : 0 times found
+2018-11-10 18:44:21,844 DEBUG t.OccurencesSearcher [Thread-1] D - Le créateur du Lycée : 0 times found
+2018-11-10 18:44:21,844 DEBUG t.OccurencesSearcher [Thread-1] C - Le mari d'Ariellis Domballa : 0 times found
+2018-11-10 18:44:21,844 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 18:44:21,844 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : C - Le mari d'Ariellis Domballa
+2018-11-10 18:44:21,844 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 18:45:09,020 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 18:45:09,021 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Une lionne"
+    },
+    {
+      "label": "B",
+      "title": "Une louve"
+    },
+    {
+      "label": "C",
+      "title": "Une chèvre"
+    },
+    {
+      "label": "D",
+      "title": "Une nymphe"
+    }
+  ],
+  "questionEntitled": "Selon la légende Romulus et Rémus furent allaités par :"
+}
+
+2018-11-10 18:45:09,037 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Selon+la+l%C3%A9gende+Romulus+et+R%C3%A9mus+furent+allait%C3%A9s+par+%3A
+2018-11-10 18:45:09,720 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 18:45:09,721 DEBUG t.OccurencesSearcher [Thread-1] D - Une nymphe : 0 times found
+2018-11-10 18:45:09,722 DEBUG t.OccurencesSearcher [Thread-1] A - Une lionne : 0 times found
+2018-11-10 18:45:09,722 DEBUG t.OccurencesSearcher [Thread-1] B - Une louve : 18 times found
+2018-11-10 18:45:09,722 DEBUG t.OccurencesSearcher [Thread-1] C - Une chèvre : 0 times found
+2018-11-10 18:45:09,722 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 18:45:09,722 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : B - Une louve
+2018-11-10 18:45:09,722 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 18:45:25,302 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 18:45:25,304 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Le téléphone mobile"
+    },
+    {
+      "label": "B",
+      "title": "La radio"
+    },
+    {
+      "label": "C",
+      "title": "L\u0027appareil photographique"
+    },
+    {
+      "label": "D",
+      "title": "Le Minitel"
+    }
+  ],
+  "questionEntitled": "Laquelle de ces inventions a-t-elle vu le jour la première ?"
+}
+
+2018-11-10 18:45:25,318 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Laquelle+de+ces+inventions+a-t-elle+vu+le+jour+la+premi%C3%A8re+%3F
+2018-11-10 18:45:26,277 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 18:45:26,277 DEBUG t.OccurencesSearcher [Thread-1] C - L'appareil photographique : 0 times found
+2018-11-10 18:45:26,277 DEBUG t.OccurencesSearcher [Thread-1] D - Le Minitel : 0 times found
+2018-11-10 18:45:26,277 DEBUG t.OccurencesSearcher [Thread-1] A - Le téléphone mobile : 0 times found
+2018-11-10 18:45:26,277 DEBUG t.OccurencesSearcher [Thread-1] B - La radio : 12 times found
+2018-11-10 18:45:26,277 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 18:45:26,277 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : B - La radio
+2018-11-10 18:45:26,278 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 18:46:41,182 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 18:46:41,183 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Le guépard"
+    },
+    {
+      "label": "B",
+      "title": "La gazelle"
+    },
+    {
+      "label": "C",
+      "title": "Le léopard"
+    },
+    {
+      "label": "D",
+      "title": "Le lévrier"
+    }
+  ],
+  "questionEntitled": "Quel est l\u0027animal le plus rapide sur terre ?"
+}
+
+2018-11-10 18:46:41,198 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Quel+est+l%27animal+le+plus+rapide+sur+terre+%3F
+2018-11-10 18:46:41,932 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 18:46:41,932 DEBUG t.OccurencesSearcher [Thread-1] C - Le léopard : 7 times found
+2018-11-10 18:46:41,932 DEBUG t.OccurencesSearcher [Thread-1] A - Le guépard : 24 times found
+2018-11-10 18:46:41,932 DEBUG t.OccurencesSearcher [Thread-1] B - La gazelle : 0 times found
+2018-11-10 18:46:41,933 DEBUG t.OccurencesSearcher [Thread-1] D - Le lévrier : 0 times found
+2018-11-10 18:46:41,933 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 18:46:41,933 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : A - Le guépard
+2018-11-10 18:46:41,933 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 18:46:56,859 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 18:46:56,861 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Peugeot 3008"
+    },
+    {
+      "label": "B",
+      "title": "Audi Q5"
+    },
+    {
+      "label": "C",
+      "title": "Mercedes Classe A"
+    },
+    {
+      "label": "D",
+      "title": "Fiat 500"
+    }
+  ],
+  "questionEntitled": "Quelle voiture a été élue voiture de l\u0027année 2017 ?"
+}
+
+2018-11-10 18:46:56,877 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Quelle+voiture+a+%C3%A9t%C3%A9+%C3%A9lue+voiture+de+l%27ann%C3%A9e+2017+%3F
+2018-11-10 18:46:57,593 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 18:46:57,593 DEBUG t.OccurencesSearcher [Thread-1] A - Peugeot 3008 : 6 times found
+2018-11-10 18:46:57,594 DEBUG t.OccurencesSearcher [Thread-1] C - Mercedes Classe A : 0 times found
+2018-11-10 18:46:57,594 DEBUG t.OccurencesSearcher [Thread-1] B - Audi Q5 : 0 times found
+2018-11-10 18:46:57,594 DEBUG t.OccurencesSearcher [Thread-1] D - Fiat 500 : 0 times found
+2018-11-10 18:46:57,594 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 18:46:57,596 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : A - Peugeot 3008
+2018-11-10 18:46:57,596 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 18:47:12,222 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 18:47:12,224 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Monet"
+    },
+    {
+      "label": "B",
+      "title": "Picasso"
+    },
+    {
+      "label": "C",
+      "title": "Derain"
+    },
+    {
+      "label": "D",
+      "title": "Dali"
+    }
+  ],
+  "questionEntitled": "Lequel de ces peintres est une figure emblématique du cubisme ?"
+}
+
+2018-11-10 18:47:12,242 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Lequel+de+ces+peintres+est+une+figure+embl%C3%A9matique+du+cubisme+%3F
+2018-11-10 18:47:12,917 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 18:47:12,917 DEBUG t.OccurencesSearcher [Thread-1] B - Picasso : 19 times found
+2018-11-10 18:47:12,917 DEBUG t.OccurencesSearcher [Thread-1] A - Monet : 0 times found
+2018-11-10 18:47:12,917 DEBUG t.OccurencesSearcher [Thread-1] D - Dali : 4 times found
+2018-11-10 18:47:12,917 DEBUG t.OccurencesSearcher [Thread-1] C - Derain : 0 times found
+2018-11-10 18:47:12,917 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 18:47:12,918 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : B - Picasso
+2018-11-10 18:47:12,918 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 18:47:27,383 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 18:47:27,384 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "6"
+    },
+    {
+      "label": "B",
+      "title": "7"
+    },
+    {
+      "label": "C",
+      "title": "8"
+    },
+    {
+      "label": "D",
+      "title": "9"
+    }
+  ],
+  "questionEntitled": "Combien de côtés possède un heptagone ?"
+}
+
+2018-11-10 18:47:27,398 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Combien+de+c%C3%B4t%C3%A9s+poss%C3%A8de+un+heptagone+%3F
+2018-11-10 18:47:28,139 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 18:47:28,139 DEBUG t.OccurencesSearcher [Thread-1] A - 6 : 60 times found
+2018-11-10 18:47:28,139 DEBUG t.OccurencesSearcher [Thread-1] B - 7 : 29 times found
+2018-11-10 18:47:28,140 DEBUG t.OccurencesSearcher [Thread-1] D - 9 : 59 times found
+2018-11-10 18:47:28,140 DEBUG t.OccurencesSearcher [Thread-1] C - 8 : 52 times found
+2018-11-10 18:47:28,140 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 18:47:28,141 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : A - 6
+2018-11-10 18:47:28,141 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 18:47:53,164 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 18:47:53,165 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Un chien"
+    },
+    {
+      "label": "B",
+      "title": "Un loup"
+    },
+    {
+      "label": "C",
+      "title": "Une fleur"
+    },
+    {
+      "label": "D",
+      "title": "Un lion"
+    }
+  ],
+  "questionEntitled": "Quel est le symbole de la famille Stark dans Game of Thrones ?"
+}
+
+2018-11-10 18:47:53,182 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Quel+est+le+symbole+de+la+famille+Stark+dans+Game+of+Thrones+%3F
+2018-11-10 18:47:54,097 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 18:47:54,097 DEBUG t.OccurencesSearcher [Thread-1] C - Une fleur : 0 times found
+2018-11-10 18:47:54,097 DEBUG t.OccurencesSearcher [Thread-1] D - Un lion : 0 times found
+2018-11-10 18:47:54,097 DEBUG t.OccurencesSearcher [Thread-1] A - Un chien : 0 times found
+2018-11-10 18:47:54,097 DEBUG t.OccurencesSearcher [Thread-1] B - Un loup : 0 times found
+2018-11-10 18:47:54,097 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 18:47:54,097 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : B - Un loup
+2018-11-10 18:47:54,097 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 18:48:30,025 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 18:48:30,026 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Sucre"
+    },
+    {
+      "label": "B",
+      "title": "Beurre"
+    },
+    {
+      "label": "C",
+      "title": "Œuf"
+    },
+    {
+      "label": "D",
+      "title": "Lait"
+    }
+  ],
+  "questionEntitled": "Lequel de ces ingrédients n\u0027est pas dans le quatre-quarts ?"
+}
+
+2018-11-10 18:48:30,050 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Lequel+de+ces+ingr%C3%A9dients+n%27est+pas+dans+le+quatre-quarts+%3F
+2018-11-10 18:48:30,778 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 18:48:30,778 DEBUG t.OccurencesSearcher [Thread-1] A - Sucre : 4 times found
+2018-11-10 18:48:30,778 DEBUG t.OccurencesSearcher [Thread-1] D - Lait : 0 times found
+2018-11-10 18:48:30,778 DEBUG t.OccurencesSearcher [Thread-1] B - Beurre : 6 times found
+2018-11-10 18:48:30,778 DEBUG t.OccurencesSearcher [Thread-1] C - Œuf : 1 times found
+2018-11-10 18:48:30,778 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 18:48:30,778 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : B - Beurre
+2018-11-10 18:48:30,778 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 18:48:56,300 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 18:48:56,301 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "L\u0027Espagne"
+    },
+    {
+      "label": "B",
+      "title": "La France"
+    },
+    {
+      "label": "C",
+      "title": "L\u0027Uruguay"
+    },
+    {
+      "label": "D",
+      "title": "L\u0027Angleterre"
+    }
+  ],
+  "questionEntitled": "Lequel de ces pays a remporté le plus de Coupes du monde de football en 2017 ?"
+}
+
+2018-11-10 18:48:56,325 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Lequel+de+ces+pays+a+remport%C3%A9+le+plus+de+Coupes+du+monde+de+football+en+2017+%3F
+2018-11-10 18:48:57,633 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 18:48:57,634 DEBUG t.OccurencesSearcher [Thread-1] D - L'Angleterre : 7 times found
+2018-11-10 18:48:57,634 DEBUG t.OccurencesSearcher [Thread-1] A - L'Espagne : 8 times found
+2018-11-10 18:48:57,634 DEBUG t.OccurencesSearcher [Thread-1] C - L'Uruguay : 12 times found
+2018-11-10 18:48:57,634 DEBUG t.OccurencesSearcher [Thread-1] B - La France : 29 times found
+2018-11-10 18:48:57,634 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 18:48:57,635 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : B - La France
+2018-11-10 18:48:57,635 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 18:49:52,056 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 18:49:52,056 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Politique Interne Belge"
+    },
+    {
+      "label": "B",
+      "title": "Problème d\u0027Idée de Blague"
+    },
+    {
+      "label": "C",
+      "title": "Produit Intérieur Brut"
+    },
+    {
+      "label": "D",
+      "title": "Planche Idéale de Billets"
+    }
+  ],
+  "questionEntitled": "Que signifient les initiales P.I.B. ?"
+}
+
+2018-11-10 18:49:52,080 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Que+signifient+les+initiales+P.I.B.+%3F
+2018-11-10 18:49:52,712 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 18:49:52,712 DEBUG t.OccurencesSearcher [Thread-1] A - Politique Interne Belge : 0 times found
+2018-11-10 18:49:52,712 DEBUG t.OccurencesSearcher [Thread-1] C - Produit Intérieur Brut : 12 times found
+2018-11-10 18:49:52,712 DEBUG t.OccurencesSearcher [Thread-1] D - Planche Idéale de Billets : 0 times found
+2018-11-10 18:49:52,713 DEBUG t.OccurencesSearcher [Thread-1] B - Problème d'Idée de Blague : 0 times found
+2018-11-10 18:49:52,713 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 18:49:52,713 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : C - Produit Intérieur Brut
+2018-11-10 18:49:52,713 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 18:50:08,039 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 18:50:08,040 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "La mozzarella"
+    },
+    {
+      "label": "B",
+      "title": "L\u0027œuf"
+    },
+    {
+      "label": "C",
+      "title": "La crème fraîche"
+    },
+    {
+      "label": "D",
+      "title": "Les lardons"
+    }
+  ],
+  "questionEntitled": "Quel ingrédient n\u0027est pas dans la quiche lorraine ?"
+}
+
+2018-11-10 18:50:08,064 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Quel+ingr%C3%A9dient+n%27est+pas+dans+la+quiche+lorraine+%3F
+2018-11-10 18:50:08,775 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 18:50:08,775 DEBUG t.OccurencesSearcher [Thread-1] C - La crème fraîche : 0 times found
+2018-11-10 18:50:08,775 DEBUG t.OccurencesSearcher [Thread-1] D - Les lardons : 15 times found
+2018-11-10 18:50:08,775 DEBUG t.OccurencesSearcher [Thread-1] A - La mozzarella : 0 times found
+2018-11-10 18:50:08,775 DEBUG t.OccurencesSearcher [Thread-1] B - L'œuf : 0 times found
+2018-11-10 18:50:08,775 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 18:50:08,776 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : D - Les lardons
+2018-11-10 18:50:08,776 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 18:50:29,837 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 18:50:29,839 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Le baptême de Napoléon"
+    },
+    {
+      "label": "B",
+      "title": "L\u0027armistice de 1945"
+    },
+    {
+      "label": "C",
+      "title": "L\u0027armistice de 1918"
+    },
+    {
+      "label": "D",
+      "title": "La fête des morts"
+    }
+  ],
+  "questionEntitled": "Que célèbre-t-on le 11 Novembre ?"
+}
+
+2018-11-10 18:50:29,862 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Que+c%C3%A9l%C3%A8bre-t-on+le+11+Novembre+%3F
+2018-11-10 18:50:30,616 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 18:50:30,617 DEBUG t.OccurencesSearcher [Thread-1] C - L'armistice de 1918 : 3 times found
+2018-11-10 18:50:30,617 DEBUG t.OccurencesSearcher [Thread-1] B - L'armistice de 1945 : 0 times found
+2018-11-10 18:50:30,617 DEBUG t.OccurencesSearcher [Thread-1] A - Le baptême de Napoléon : 0 times found
+2018-11-10 18:50:30,617 DEBUG t.OccurencesSearcher [Thread-1] D - La fête des morts : 0 times found
+2018-11-10 18:50:30,617 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 18:50:30,617 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : C - L'armistice de 1918
+2018-11-10 18:50:30,617 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 18:51:01,461 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 18:51:01,462 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Un œil"
+    },
+    {
+      "label": "B",
+      "title": "Une main"
+    },
+    {
+      "label": "C",
+      "title": "Une oreille"
+    },
+    {
+      "label": "D",
+      "title": "Un casque Beats"
+    }
+  ],
+  "questionEntitled": "Que manque-t-il à Vincent Van Gogh ?"
+}
+
+2018-11-10 18:51:01,488 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Que+manque-t-il+%C3%A0+Vincent+Van+Gogh+%3F
+2018-11-10 18:51:02,310 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 18:51:02,310 DEBUG t.OccurencesSearcher [Thread-1] B - Une main : 13 times found
+2018-11-10 18:51:02,310 DEBUG t.OccurencesSearcher [Thread-1] C - Une oreille : 17 times found
+2018-11-10 18:51:02,310 DEBUG t.OccurencesSearcher [Thread-1] A - Un œil : 0 times found
+2018-11-10 18:51:02,310 DEBUG t.OccurencesSearcher [Thread-1] D - Un casque Beats : 0 times found
+2018-11-10 18:51:02,311 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 18:51:02,311 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : C - Une oreille
+2018-11-10 18:51:02,311 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 18:51:42,040 INFO c.t.l.TCPServer [Thread-1] TCP SERVER LAUNCHED
+2018-11-10 18:57:25,470 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 18:57:25,473 DEBUG t.OccurencesSearcher [main] D - Le nouveau gourvenement : 0 times found
+2018-11-10 18:57:25,473 DEBUG t.OccurencesSearcher [main] C - Un projecteur : 0 times found
+2018-11-10 18:57:25,473 DEBUG t.OccurencesSearcher [main] B - De l'eau : 2 times found
+2018-11-10 18:57:25,473 DEBUG t.OccurencesSearcher [main] A - Un trésor : 4 times found
+2018-11-10 18:57:25,473 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-10 18:57:25,808 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 18:57:25,808 DEBUG t.OccurencesSearcher [main] A - Ctrl + C : 0 times found
+2018-11-10 18:57:25,808 DEBUG t.OccurencesSearcher [main] B - Ctrl + Z : 2 times found
+2018-11-10 18:57:25,808 DEBUG t.OccurencesSearcher [main] D - Ctrl + V : 0 times found
+2018-11-10 18:57:25,809 DEBUG t.OccurencesSearcher [main] C - Ctrl + A : 0 times found
+2018-11-10 18:57:25,809 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-10 18:57:25,868 DEBUG t.OccurencesSearcher [main] --------Occurences---------
+2018-11-10 18:57:25,868 DEBUG t.OccurencesSearcher [main] D - Plateforme : 0 times found
+2018-11-10 18:57:25,868 DEBUG t.OccurencesSearcher [main] B - RPG : 0 times found
+2018-11-10 18:57:25,869 DEBUG t.OccurencesSearcher [main] C - Battle Royale : 14 times found
+2018-11-10 18:57:25,869 DEBUG t.OccurencesSearcher [main] A - FPS : 1 times found
+2018-11-10 18:57:25,869 DEBUG t.OccurencesSearcher [main] ---------------------------
+2018-11-10 18:59:05,619 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 18:59:05,621 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Camille Lacourt"
+    },
+    {
+      "label": "B",
+      "title": "Une serviette"
+    },
+    {
+      "label": "C",
+      "title": "Un poisson rouge"
+    },
+    {
+      "label": "D",
+      "title": "Un sèche-cheveux"
+    }
+  ],
+  "questionEntitled": "Quand je sèche, je me mouille. Qui suis-je ?"
+}
+
+2018-11-10 18:59:05,647 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Quand+je+s%C3%A8che%2C+je+me+mouille.+Qui+suis-je+%3F
+2018-11-10 18:59:06,291 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 18:59:06,291 DEBUG t.OccurencesSearcher [Thread-1] A - Camille Lacourt : 0 times found
+2018-11-10 18:59:06,291 DEBUG t.OccurencesSearcher [Thread-1] D - Un sèche-cheveux : 0 times found
+2018-11-10 18:59:06,291 DEBUG t.OccurencesSearcher [Thread-1] C - Un poisson rouge : 0 times found
+2018-11-10 18:59:06,291 DEBUG t.OccurencesSearcher [Thread-1] B - Une serviette : 1 times found
+2018-11-10 18:59:06,291 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 18:59:06,292 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : B - Une serviette
+2018-11-10 18:59:06,292 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 18:59:35,469 INFO c.t.l.TCPServer [Thread-1] TCP SERVER LAUNCHED
+2018-11-10 18:59:55,092 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 18:59:55,093 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Cuisinier"
+    },
+    {
+      "label": "B",
+      "title": "Lutteur"
+    },
+    {
+      "label": "C",
+      "title": "Boxeur"
+    },
+    {
+      "label": "D",
+      "title": "Chanteur"
+    }
+  ],
+  "questionEntitled": "Quel était le métier de Marcel Cerdan ?"
+}
+
+2018-11-10 18:59:55,116 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Quel+%C3%A9tait+le+m%C3%A9tier+de+Marcel+Cerdan+%3F
+2018-11-10 18:59:55,788 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 18:59:55,788 DEBUG t.OccurencesSearcher [Thread-1] A - Cuisinier : 0 times found
+2018-11-10 18:59:55,788 DEBUG t.OccurencesSearcher [Thread-1] B - Lutteur : 0 times found
+2018-11-10 18:59:55,788 DEBUG t.OccurencesSearcher [Thread-1] D - Chanteur : 0 times found
+2018-11-10 18:59:55,788 DEBUG t.OccurencesSearcher [Thread-1] C - Boxeur : 5 times found
+2018-11-10 18:59:55,788 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 18:59:55,788 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : C - Boxeur
+2018-11-10 18:59:55,789 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:00:12,812 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:00:12,813 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "De la choucroute"
+    },
+    {
+      "label": "B",
+      "title": "Du strudel"
+    },
+    {
+      "label": "C",
+      "title": "De la bière"
+    },
+    {
+      "label": "D",
+      "title": "Du schnaps"
+    }
+  ],
+  "questionEntitled": "L\u0027Oktoberfest est le nom donné à la célèbre fête :"
+}
+
+2018-11-10 19:00:12,835 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=L%27Oktoberfest+est+le+nom+donn%C3%A9+%C3%A0+la+c%C3%A9l%C3%A8bre+f%C3%AAte+%3A
+2018-11-10 19:00:13,569 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:00:13,569 DEBUG t.OccurencesSearcher [Thread-1] A - De la choucroute : 0 times found
+2018-11-10 19:00:13,569 DEBUG t.OccurencesSearcher [Thread-1] C - De la bière : 31 times found
+2018-11-10 19:00:13,569 DEBUG t.OccurencesSearcher [Thread-1] B - Du strudel : 0 times found
+2018-11-10 19:00:13,569 DEBUG t.OccurencesSearcher [Thread-1] D - Du schnaps : 0 times found
+2018-11-10 19:00:13,569 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:00:13,570 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : C - De la bière
+2018-11-10 19:00:13,570 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:00:30,113 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:00:30,116 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Mort"
+    },
+    {
+      "label": "B",
+      "title": "Obtus"
+    },
+    {
+      "label": "C",
+      "title": "Aigu"
+    },
+    {
+      "label": "D",
+      "title": "De tir"
+    }
+  ],
+  "questionEntitled": "Un angle dont la mesure est comprise entre 90° et 180° est un angle :"
+}
+
+2018-11-10 19:00:30,140 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Un+angle+dont+la+mesure+est+comprise+entre+90%C2%B0+et+180%C2%B0+est+un+angle+%3A
+2018-11-10 19:00:31,071 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:00:31,072 DEBUG t.OccurencesSearcher [Thread-1] C - Aigu : 14 times found
+2018-11-10 19:00:31,072 DEBUG t.OccurencesSearcher [Thread-1] D - De tir : 0 times found
+2018-11-10 19:00:31,072 DEBUG t.OccurencesSearcher [Thread-1] A - Mort : 0 times found
+2018-11-10 19:00:31,072 DEBUG t.OccurencesSearcher [Thread-1] B - Obtus : 18 times found
+2018-11-10 19:00:31,072 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:00:31,072 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : B - Obtus
+2018-11-10 19:00:31,072 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:00:47,944 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:00:47,945 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "ABBA"
+    },
+    {
+      "label": "B",
+      "title": "Kiss"
+    },
+    {
+      "label": "C",
+      "title": "a-ha"
+    },
+    {
+      "label": "D",
+      "title": "Simple Minds"
+    }
+  ],
+  "questionEntitled": "Qui interprète le titre \"Take on Me\" ?"
+}
+
+2018-11-10 19:00:47,970 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Qui+interpr%C3%A8te+le+titre+%22Take+on+Me%22+%3F
+2018-11-10 19:00:49,103 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:00:49,103 DEBUG t.OccurencesSearcher [Thread-1] C - a-ha : 96 times found
+2018-11-10 19:00:49,104 DEBUG t.OccurencesSearcher [Thread-1] A - ABBA : 0 times found
+2018-11-10 19:00:49,104 DEBUG t.OccurencesSearcher [Thread-1] D - Simple Minds : 0 times found
+2018-11-10 19:00:49,104 DEBUG t.OccurencesSearcher [Thread-1] B - Kiss : 0 times found
+2018-11-10 19:00:49,104 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:00:49,104 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : C - a-ha
+2018-11-10 19:00:49,104 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:01:02,979 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:01:02,980 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Basketball"
+    },
+    {
+      "label": "B",
+      "title": "Handball"
+    },
+    {
+      "label": "C",
+      "title": "Rugby"
+    },
+    {
+      "label": "D",
+      "title": "Volley"
+    }
+  ],
+  "questionEntitled": "En 2017, la France est devenue championne pour la 6ème fois de :"
+}
+
+2018-11-10 19:01:03,003 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=En+2017%2C+la+France+est+devenue+championne+pour+la+6%C3%A8me+fois+de+%3A
+2018-11-10 19:01:03,800 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:01:03,800 DEBUG t.OccurencesSearcher [Thread-1] D - Volley : 0 times found
+2018-11-10 19:01:03,800 DEBUG t.OccurencesSearcher [Thread-1] B - Handball : 22 times found
+2018-11-10 19:01:03,800 DEBUG t.OccurencesSearcher [Thread-1] A - Basketball : 0 times found
+2018-11-10 19:01:03,800 DEBUG t.OccurencesSearcher [Thread-1] C - Rugby : 13 times found
+2018-11-10 19:01:03,800 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:01:03,800 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : B - Handball
+2018-11-10 19:01:03,800 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:01:23,545 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:01:23,546 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Quark Tempo Emergent"
+    },
+    {
+      "label": "B",
+      "title": "Quiz Très Erudit"
+    },
+    {
+      "label": "C",
+      "title": "Quota Trop Elevé"
+    },
+    {
+      "label": "D",
+      "title": "Un Quick Time Event"
+    }
+  ],
+  "questionEntitled": "Dans un jeu vidéo, on appelle un QTE un :"
+}
+
+2018-11-10 19:01:23,571 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Dans+un+jeu+vid%C3%A9o%2C+on+appelle+un+QTE+un+%3A
+2018-11-10 19:01:24,261 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:01:24,262 DEBUG t.OccurencesSearcher [Thread-1] B - Quiz Très Erudit : 0 times found
+2018-11-10 19:01:24,262 DEBUG t.OccurencesSearcher [Thread-1] C - Quota Trop Elevé : 0 times found
+2018-11-10 19:01:24,262 DEBUG t.OccurencesSearcher [Thread-1] D - Un Quick Time Event : 7 times found
+2018-11-10 19:01:24,262 DEBUG t.OccurencesSearcher [Thread-1] A - Quark Tempo Emergent : 0 times found
+2018-11-10 19:01:24,262 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:01:24,262 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : D - Un Quick Time Event
+2018-11-10 19:01:24,262 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:01:40,156 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:01:40,157 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Boîtes d\u0027allumettes"
+    },
+    {
+      "label": "B",
+      "title": "Tickets de bus"
+    },
+    {
+      "label": "C",
+      "title": "Papillons"
+    },
+    {
+      "label": "D",
+      "title": "Jokers Quidol"
+    }
+  ],
+  "questionEntitled": "Un lépidoptérophile est un collectionneur de :"
+}
+
+2018-11-10 19:01:40,180 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Un+l%C3%A9pidopt%C3%A9rophile+est+un+collectionneur+de+%3A
+2018-11-10 19:01:40,758 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:01:40,759 DEBUG t.OccurencesSearcher [Thread-1] C - Papillons : 12 times found
+2018-11-10 19:01:40,759 DEBUG t.OccurencesSearcher [Thread-1] A - Boîtes d'allumettes : 0 times found
+2018-11-10 19:01:40,759 DEBUG t.OccurencesSearcher [Thread-1] B - Tickets de bus : 0 times found
+2018-11-10 19:01:40,759 DEBUG t.OccurencesSearcher [Thread-1] D - Jokers Quidol : 0 times found
+2018-11-10 19:01:40,759 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:01:40,759 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : C - Papillons
+2018-11-10 19:01:40,759 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:02:00,135 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:02:00,136 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "En chutant de cheval"
+    },
+    {
+      "label": "B",
+      "title": "Assassiné"
+    },
+    {
+      "label": "C",
+      "title": "Dans son sommeil"
+    },
+    {
+      "label": "D",
+      "title": "En avalant une mouche"
+    }
+  ],
+  "questionEntitled": "Selon la légende, le pape Adrien IV est mort :"
+}
+
+2018-11-10 19:02:00,158 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Selon+la+l%C3%A9gende%2C+le+pape+Adrien+IV+est+mort+%3A
+2018-11-10 19:02:00,851 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:02:00,851 DEBUG t.OccurencesSearcher [Thread-1] B - Assassiné : 0 times found
+2018-11-10 19:02:00,851 DEBUG t.OccurencesSearcher [Thread-1] A - En chutant de cheval : 0 times found
+2018-11-10 19:02:00,851 DEBUG t.OccurencesSearcher [Thread-1] C - Dans son sommeil : 0 times found
+2018-11-10 19:02:00,851 DEBUG t.OccurencesSearcher [Thread-1] D - En avalant une mouche : 0 times found
+2018-11-10 19:02:00,851 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:02:00,851 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : D - En avalant une mouche
+2018-11-10 19:02:00,851 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:02:52,899 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:02:52,900 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [],
+  "questionEntitled": "Combien y a-t-il de litres dans un mètre cube ?"
+}
+
+2018-11-10 19:02:52,926 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Combien+y+a-t-il+de+litres+dans+un+m%C3%A8tre+cube+%3F
+2018-11-10 19:02:53,624 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:02:53,624 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:02:53,625 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:03:18,131 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:03:18,131 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Maître Capello"
+    },
+    {
+      "label": "B",
+      "title": "Marcel Campion"
+    },
+    {
+      "label": "C",
+      "title": "Franck Ribéry"
+    },
+    {
+      "label": "D",
+      "title": "Fred Hamster"
+    }
+  ],
+  "questionEntitled": "Qui a déclaré : \"J\u0027espère que la routourne va vite tourner\" ?"
+}
+
+2018-11-10 19:03:18,155 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Qui+a+d%C3%A9clar%C3%A9+%3A+%22J%27esp%C3%A8re+que+la+routourne+va+vite+tourner%22+%3F
+2018-11-10 19:03:18,812 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:03:18,812 DEBUG t.OccurencesSearcher [Thread-1] C - Franck Ribéry : 10 times found
+2018-11-10 19:03:18,812 DEBUG t.OccurencesSearcher [Thread-1] D - Fred Hamster : 0 times found
+2018-11-10 19:03:18,812 DEBUG t.OccurencesSearcher [Thread-1] B - Marcel Campion : 0 times found
+2018-11-10 19:03:18,812 DEBUG t.OccurencesSearcher [Thread-1] A - Maître Capello : 0 times found
+2018-11-10 19:03:18,812 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:03:18,812 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : C - Franck Ribéry
+2018-11-10 19:03:18,812 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:03:34,745 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:03:34,747 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Le Vatican"
+    },
+    {
+      "label": "B",
+      "title": "La Russie"
+    },
+    {
+      "label": "C",
+      "title": "Le Bénin"
+    },
+    {
+      "label": "D",
+      "title": "La Belgique"
+    }
+  ],
+  "questionEntitled": "Quel est le plus petit Etat du monde ?"
+}
+
+2018-11-10 19:03:34,771 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Quel+est+le+plus+petit+Etat+du+monde+%3F
+2018-11-10 19:03:35,443 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:03:35,443 DEBUG t.OccurencesSearcher [Thread-1] A - Le Vatican : 14 times found
+2018-11-10 19:03:35,443 DEBUG t.OccurencesSearcher [Thread-1] B - La Russie : 1 times found
+2018-11-10 19:03:35,444 DEBUG t.OccurencesSearcher [Thread-1] C - Le Bénin : 0 times found
+2018-11-10 19:03:35,444 DEBUG t.OccurencesSearcher [Thread-1] D - La Belgique : 0 times found
+2018-11-10 19:03:35,444 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:03:35,444 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : A - Le Vatican
+2018-11-10 19:03:35,444 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:04:08,234 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:04:08,235 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Le chat"
+    },
+    {
+      "label": "B",
+      "title": "Le fromage"
+    },
+    {
+      "label": "C",
+      "title": "La souris"
+    },
+    {
+      "label": "D",
+      "title": "Rien"
+    }
+  ],
+  "questionEntitled": "La souris mange le fromage. Le chat mange la souris. Que reste-t-il ?"
+}
+
+2018-11-10 19:04:08,259 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=La+souris+mange+le+fromage.+Le+chat+mange+la+souris.+Que+reste-t-il+%3F
+2018-11-10 19:04:09,024 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:04:09,024 DEBUG t.OccurencesSearcher [Thread-1] D - Rien : 0 times found
+2018-11-10 19:04:09,024 DEBUG t.OccurencesSearcher [Thread-1] A - Le chat : 72 times found
+2018-11-10 19:04:09,025 DEBUG t.OccurencesSearcher [Thread-1] B - Le fromage : 69 times found
+2018-11-10 19:04:09,025 DEBUG t.OccurencesSearcher [Thread-1] C - La souris : 123 times found
+2018-11-10 19:04:09,025 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:04:09,025 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : C - La souris
+2018-11-10 19:04:09,025 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:04:49,698 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:04:49,698 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "La balle"
+    },
+    {
+      "label": "B",
+      "title": "Le club"
+    },
+    {
+      "label": "C",
+      "title": "Le fleuret"
+    },
+    {
+      "label": "D",
+      "title": "Le tee"
+    }
+  ],
+  "questionEntitled": "Cherchez l\u0027erreur dans cette liste :"
+}
+
+2018-11-10 19:04:49,722 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Cherchez+l%27erreur+dans+cette+liste+%3A
+2018-11-10 19:04:50,382 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:04:50,382 DEBUG t.OccurencesSearcher [Thread-1] B - Le club : 0 times found
+2018-11-10 19:04:50,382 DEBUG t.OccurencesSearcher [Thread-1] D - Le tee : 0 times found
+2018-11-10 19:04:50,382 DEBUG t.OccurencesSearcher [Thread-1] C - Le fleuret : 0 times found
+2018-11-10 19:04:50,382 DEBUG t.OccurencesSearcher [Thread-1] A - La balle : 0 times found
+2018-11-10 19:04:50,382 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:04:50,382 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : A - La balle
+2018-11-10 19:04:50,383 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:05:34,235 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:05:34,236 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "La roue de secours"
+    },
+    {
+      "label": "B",
+      "title": "Le feu vert"
+    },
+    {
+      "label": "C",
+      "title": "Le pneu neige"
+    },
+    {
+      "label": "D",
+      "title": "Le camion citerne"
+    }
+  ],
+  "questionEntitled": "Laquelle de ces cartes ne fait pas partie du Mille Bornes ?"
+}
+
+2018-11-10 19:05:34,260 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Laquelle+de+ces+cartes+ne+fait+pas+partie+du+Mille+Bornes+%3F
+2018-11-10 19:05:35,015 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:05:35,015 DEBUG t.OccurencesSearcher [Thread-1] B - Le feu vert : 0 times found
+2018-11-10 19:05:35,015 DEBUG t.OccurencesSearcher [Thread-1] D - Le camion citerne : 0 times found
+2018-11-10 19:05:35,015 DEBUG t.OccurencesSearcher [Thread-1] A - La roue de secours : 0 times found
+2018-11-10 19:05:35,015 DEBUG t.OccurencesSearcher [Thread-1] C - Le pneu neige : 0 times found
+2018-11-10 19:05:35,015 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:05:35,015 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : C - Le pneu neige
+2018-11-10 19:05:35,015 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:05:55,138 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:05:55,139 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Ton père"
+    },
+    {
+      "label": "B",
+      "title": "Ton grand-père"
+    },
+    {
+      "label": "C",
+      "title": "Ton oncle"
+    },
+    {
+      "label": "D",
+      "title": "Ton arrière grand-père"
+    }
+  ],
+  "questionEntitled": "Si je suis le père de l\u0027oncle de ta mère, je suis :"
+}
+
+2018-11-10 19:05:55,162 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Si+je+suis+le+p%C3%A8re+de+l%27oncle+de+ta+m%C3%A8re%2C+je+suis+%3A
+2018-11-10 19:05:55,834 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:05:55,835 DEBUG t.OccurencesSearcher [Thread-1] D - Ton arrière grand-père : 0 times found
+2018-11-10 19:05:55,835 DEBUG t.OccurencesSearcher [Thread-1] B - Ton grand-père : 0 times found
+2018-11-10 19:05:55,835 DEBUG t.OccurencesSearcher [Thread-1] C - Ton oncle : 0 times found
+2018-11-10 19:05:55,835 DEBUG t.OccurencesSearcher [Thread-1] A - Ton père : 0 times found
+2018-11-10 19:05:55,835 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:05:55,835 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : A - Ton père
+2018-11-10 19:05:55,835 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:06:25,835 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:06:25,836 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Hermès"
+    },
+    {
+      "label": "B",
+      "title": "Hadès"
+    },
+    {
+      "label": "C",
+      "title": "Poséidon"
+    },
+    {
+      "label": "D",
+      "title": "Dionysos"
+    }
+  ],
+  "questionEntitled": "Quel est le dieu de la mer et des océans dans la mythologie grecque ?"
+}
+
+2018-11-10 19:06:25,861 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Quel+est+le+dieu+de+la+mer+et+des+oc%C3%A9ans+dans+la+mythologie+grecque+%3F
+2018-11-10 19:06:26,734 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:06:26,734 DEBUG t.OccurencesSearcher [Thread-1] B - Hadès : 1 times found
+2018-11-10 19:06:26,734 DEBUG t.OccurencesSearcher [Thread-1] C - Poséidon : 15 times found
+2018-11-10 19:06:26,734 DEBUG t.OccurencesSearcher [Thread-1] A - Hermès : 0 times found
+2018-11-10 19:06:26,734 DEBUG t.OccurencesSearcher [Thread-1] D - Dionysos : 0 times found
+2018-11-10 19:06:26,734 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:06:26,735 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : C - Poséidon
+2018-11-10 19:06:26,735 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:06:40,910 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:06:40,912 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "La force tranquille"
+    },
+    {
+      "label": "B",
+      "title": "Le monopole du coeur"
+    },
+    {
+      "label": "C",
+      "title": "La France pour tous"
+    },
+    {
+      "label": "D",
+      "title": "Rendez-vous dans 10 ans"
+    }
+  ],
+  "questionEntitled": "Quel était le slogan de campagne de François Mitterrand en 1981 ?"
+}
+
+2018-11-10 19:06:40,935 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Quel+%C3%A9tait+le+slogan+de+campagne+de+Fran%C3%A7ois+Mitterrand+en+1981+%3F
+2018-11-10 19:06:41,515 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:06:41,515 DEBUG t.OccurencesSearcher [Thread-1] D - Rendez-vous dans 10 ans : 0 times found
+2018-11-10 19:06:41,515 DEBUG t.OccurencesSearcher [Thread-1] B - Le monopole du coeur : 0 times found
+2018-11-10 19:06:41,515 DEBUG t.OccurencesSearcher [Thread-1] A - La force tranquille : 7 times found
+2018-11-10 19:06:41,515 DEBUG t.OccurencesSearcher [Thread-1] C - La France pour tous : 0 times found
+2018-11-10 19:06:41,515 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:06:41,516 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : A - La force tranquille
+2018-11-10 19:06:41,516 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:07:06,723 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:07:06,724 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Hermès"
+    },
+    {
+      "label": "B",
+      "title": "Hadès"
+    },
+    {
+      "label": "C",
+      "title": "Poséidon"
+    },
+    {
+      "label": "D",
+      "title": "Dionysos"
+    }
+  ],
+  "questionEntitled": "Quel est le dieu de la mer et des océans dans la mythologie grecque ?"
+}
+
+2018-11-10 19:07:06,748 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Quel+est+le+dieu+de+la+mer+et+des+oc%C3%A9ans+dans+la+mythologie+grecque+%3F
+2018-11-10 19:07:07,347 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:07:07,347 DEBUG t.OccurencesSearcher [Thread-1] C - Poséidon : 15 times found
+2018-11-10 19:07:07,347 DEBUG t.OccurencesSearcher [Thread-1] A - Hermès : 0 times found
+2018-11-10 19:07:07,347 DEBUG t.OccurencesSearcher [Thread-1] B - Hadès : 1 times found
+2018-11-10 19:07:07,347 DEBUG t.OccurencesSearcher [Thread-1] D - Dionysos : 0 times found
+2018-11-10 19:07:07,347 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:07:07,347 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : C - Poséidon
+2018-11-10 19:07:07,347 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:07:19,013 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:07:19,014 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "La force tranquille"
+    },
+    {
+      "label": "B",
+      "title": "Le monopole du coeur"
+    },
+    {
+      "label": "C",
+      "title": "La France pour tous"
+    },
+    {
+      "label": "D",
+      "title": "Rendez-vous dans 10 ans"
+    }
+  ],
+  "questionEntitled": "Quel était le slogan de campagne de François Mitterrand en 1981 ?"
+}
+
+2018-11-10 19:07:19,027 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Quel+%C3%A9tait+le+slogan+de+campagne+de+Fran%C3%A7ois+Mitterrand+en+1981+%3F
+2018-11-10 19:07:19,503 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:07:19,504 DEBUG t.OccurencesSearcher [Thread-1] D - Rendez-vous dans 10 ans : 0 times found
+2018-11-10 19:07:19,504 DEBUG t.OccurencesSearcher [Thread-1] C - La France pour tous : 0 times found
+2018-11-10 19:07:19,504 DEBUG t.OccurencesSearcher [Thread-1] B - Le monopole du coeur : 0 times found
+2018-11-10 19:07:19,504 DEBUG t.OccurencesSearcher [Thread-1] A - La force tranquille : 7 times found
+2018-11-10 19:07:19,504 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:07:19,504 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : A - La force tranquille
+2018-11-10 19:07:19,504 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:07:33,431 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:07:33,433 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Le cactus"
+    },
+    {
+      "label": "B",
+      "title": "L\u0027argousier"
+    },
+    {
+      "label": "C",
+      "title": "Le coq"
+    },
+    {
+      "label": "D",
+      "title": "Le chardon"
+    }
+  ],
+  "questionEntitled": "Quel est l\u0027emblème de l\u0027équipe écossaise de rugby à XV ?"
+}
+
+2018-11-10 19:07:33,456 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Quel+est+l%27embl%C3%A8me+de+l%27%C3%A9quipe+%C3%A9cossaise+de+rugby+%C3%A0+XV+%3F
+2018-11-10 19:07:34,413 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:07:34,413 DEBUG t.OccurencesSearcher [Thread-1] B - L'argousier : 0 times found
+2018-11-10 19:07:34,414 DEBUG t.OccurencesSearcher [Thread-1] C - Le coq : 5 times found
+2018-11-10 19:07:34,414 DEBUG t.OccurencesSearcher [Thread-1] A - Le cactus : 1 times found
+2018-11-10 19:07:34,414 DEBUG t.OccurencesSearcher [Thread-1] D - Le chardon : 18 times found
+2018-11-10 19:07:34,414 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:07:34,414 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : D - Le chardon
+2018-11-10 19:07:34,414 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:07:51,243 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:07:51,244 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Willy Wonka"
+    },
+    {
+      "label": "B",
+      "title": "Roald Dahl"
+    },
+    {
+      "label": "C",
+      "title": "Quentin Blake"
+    },
+    {
+      "label": "D",
+      "title": "Charlie Bucket"
+    }
+  ],
+  "questionEntitled": "Qui est l\u0027auteur de Charlie et la Chocolaterie ?"
+}
+
+2018-11-10 19:07:51,270 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Qui+est+l%27auteur+de+Charlie+et+la+Chocolaterie+%3F
+2018-11-10 19:07:51,956 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:07:51,956 DEBUG t.OccurencesSearcher [Thread-1] C - Quentin Blake : 4 times found
+2018-11-10 19:07:51,956 DEBUG t.OccurencesSearcher [Thread-1] D - Charlie Bucket : 0 times found
+2018-11-10 19:07:51,956 DEBUG t.OccurencesSearcher [Thread-1] B - Roald Dahl : 26 times found
+2018-11-10 19:07:51,956 DEBUG t.OccurencesSearcher [Thread-1] A - Willy Wonka : 1 times found
+2018-11-10 19:07:51,956 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:07:51,956 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : B - Roald Dahl
+2018-11-10 19:07:51,956 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:08:08,457 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:08:08,458 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Victoire de Samothrace"
+    },
+    {
+      "label": "B",
+      "title": "Guernica"
+    },
+    {
+      "label": "C",
+      "title": "Les Sabines"
+    },
+    {
+      "label": "D",
+      "title": "La Joconde"
+    }
+  ],
+  "questionEntitled": "Laquelle de ces œuvres n\u0027est pas au Louvre ?"
+}
+
+2018-11-10 19:08:08,482 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Laquelle+de+ces+%C5%93uvres+n%27est+pas+au+Louvre+%3F
+2018-11-10 19:08:09,286 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:08:09,286 DEBUG t.OccurencesSearcher [Thread-1] B - Guernica : 0 times found
+2018-11-10 19:08:09,286 DEBUG t.OccurencesSearcher [Thread-1] A - Victoire de Samothrace : 4 times found
+2018-11-10 19:08:09,286 DEBUG t.OccurencesSearcher [Thread-1] D - La Joconde : 5 times found
+2018-11-10 19:08:09,287 DEBUG t.OccurencesSearcher [Thread-1] C - Les Sabines : 0 times found
+2018-11-10 19:08:09,287 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:08:09,287 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : D - La Joconde
+2018-11-10 19:08:09,287 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:08:41,929 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:08:41,930 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "La carte à puce"
+    },
+    {
+      "label": "B",
+      "title": "Le Minitel"
+    },
+    {
+      "label": "C",
+      "title": "Le cœur artificiel"
+    },
+    {
+      "label": "D",
+      "title": "Nadine"
+    }
+  ],
+  "questionEntitled": "Qu\u0027a inventé le Français Roland Moreno ?"
+}
+
+2018-11-10 19:08:41,955 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Qu%27a+invent%C3%A9+le+Fran%C3%A7ais+Roland+Moreno+%3F
+2018-11-10 19:08:42,508 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:08:42,508 DEBUG t.OccurencesSearcher [Thread-1] C - Le cœur artificiel : 0 times found
+2018-11-10 19:08:42,508 DEBUG t.OccurencesSearcher [Thread-1] A - La carte à puce : 15 times found
+2018-11-10 19:08:42,508 DEBUG t.OccurencesSearcher [Thread-1] B - Le Minitel : 0 times found
+2018-11-10 19:08:42,508 DEBUG t.OccurencesSearcher [Thread-1] D - Nadine : 0 times found
+2018-11-10 19:08:42,508 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:08:42,508 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : A - La carte à puce
+2018-11-10 19:08:42,508 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:09:00,991 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:09:00,993 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "FIFA 16"
+    },
+    {
+      "label": "B",
+      "title": "League of Legends"
+    },
+    {
+      "label": "C",
+      "title": "Counter-Strike"
+    },
+    {
+      "label": "D",
+      "title": "StarCraft II"
+    }
+  ],
+  "questionEntitled": "Quel jeu détient le record d\u0027audience pour une compétition eSport avec 43 millions de spectateurs ?"
+}
+
+2018-11-10 19:09:01,016 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Quel+jeu+d%C3%A9tient+le+record+d%27audience+pour+une+comp%C3%A9tition+eSport+avec+43+millions+de+spectateurs+%3F
+2018-11-10 19:09:01,862 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:09:01,862 DEBUG t.OccurencesSearcher [Thread-1] D - StarCraft II : 0 times found
+2018-11-10 19:09:01,862 DEBUG t.OccurencesSearcher [Thread-1] B - League of Legends : 6 times found
+2018-11-10 19:09:01,862 DEBUG t.OccurencesSearcher [Thread-1] C - Counter-Strike : 0 times found
+2018-11-10 19:09:01,862 DEBUG t.OccurencesSearcher [Thread-1] A - FIFA 16 : 0 times found
+2018-11-10 19:09:01,862 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:09:01,862 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : B - League of Legends
+2018-11-10 19:09:01,863 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:09:17,290 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:09:17,291 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Hier Encore"
+    },
+    {
+      "label": "B",
+      "title": "Et pourtant"
+    },
+    {
+      "label": "C",
+      "title": "Nantes"
+    },
+    {
+      "label": "D",
+      "title": "Les Deux Guitares"
+    }
+  ],
+  "questionEntitled": "Lequel de ces titres n\u0027appartient pas au répertoire de Charles Aznavour?"
+}
+
+2018-11-10 19:09:17,315 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Lequel+de+ces+titres+n%27appartient+pas+au+r%C3%A9pertoire+de+Charles+Aznavour%3F
+2018-11-10 19:09:18,045 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:09:18,046 DEBUG t.OccurencesSearcher [Thread-1] B - Et pourtant : 0 times found
+2018-11-10 19:09:18,046 DEBUG t.OccurencesSearcher [Thread-1] A - Hier Encore : 4 times found
+2018-11-10 19:09:18,046 DEBUG t.OccurencesSearcher [Thread-1] D - Les Deux Guitares : 0 times found
+2018-11-10 19:09:18,046 DEBUG t.OccurencesSearcher [Thread-1] C - Nantes : 0 times found
+2018-11-10 19:09:18,046 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:09:18,046 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : A - Hier Encore
+2018-11-10 19:09:18,046 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:09:58,444 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:09:58,446 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Savant"
+    },
+    {
+      "label": "B",
+      "title": "À lunettes"
+    },
+    {
+      "label": "C",
+      "title": "Professeur"
+    },
+    {
+      "label": "D",
+      "title": "Intelligent"
+    }
+  ],
+  "questionEntitled": "Le Schtroumpf à lunettes s\u0027appelle Schtroumpf :"
+}
+
+2018-11-10 19:09:58,470 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Le+Schtroumpf+%C3%A0+lunettes+s%27appelle+Schtroumpf+%3A
+2018-11-10 19:09:59,162 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:09:59,162 DEBUG t.OccurencesSearcher [Thread-1] A - Savant : 0 times found
+2018-11-10 19:09:59,162 DEBUG t.OccurencesSearcher [Thread-1] D - Intelligent : 0 times found
+2018-11-10 19:09:59,162 DEBUG t.OccurencesSearcher [Thread-1] C - Professeur : 0 times found
+2018-11-10 19:09:59,162 DEBUG t.OccurencesSearcher [Thread-1] B - À lunettes : 31 times found
+2018-11-10 19:09:59,162 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:09:59,162 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : B - À lunettes
+2018-11-10 19:09:59,162 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:10:14,097 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:10:14,098 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "L\u0027Étranger"
+    },
+    {
+      "label": "B",
+      "title": "Da Vinci Code"
+    },
+    {
+      "label": "C",
+      "title": "Harry Potter"
+    },
+    {
+      "label": "D",
+      "title": "Ben Hur"
+    }
+  ],
+  "questionEntitled": "Quel livre a été écrit par une chômeuse dans un café et adapté à Hollywood ?"
+}
+
+2018-11-10 19:10:14,121 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Quel+livre+a+%C3%A9t%C3%A9+%C3%A9crit+par+une+ch%C3%B4meuse+dans+un+caf%C3%A9+et+adapt%C3%A9+%C3%A0+Hollywood+%3F
+2018-11-10 19:10:14,848 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:10:14,849 DEBUG t.OccurencesSearcher [Thread-1] A - L'Étranger : 0 times found
+2018-11-10 19:10:14,849 DEBUG t.OccurencesSearcher [Thread-1] C - Harry Potter : 0 times found
+2018-11-10 19:10:14,849 DEBUG t.OccurencesSearcher [Thread-1] D - Ben Hur : 0 times found
+2018-11-10 19:10:14,849 DEBUG t.OccurencesSearcher [Thread-1] B - Da Vinci Code : 0 times found
+2018-11-10 19:10:14,849 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:10:14,849 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : B - Da Vinci Code
+2018-11-10 19:10:14,849 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:10:57,244 INFO c.t.l.TCPServer [Thread-1] TCP SERVER LAUNCHED
+2018-11-10 19:11:06,323 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:11:06,324 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Absconse"
+    },
+    {
+      "label": "B",
+      "title": "Bègue"
+    },
+    {
+      "label": "C",
+      "title": "Limpide"
+    },
+    {
+      "label": "D",
+      "title": "Velue"
+    }
+  ],
+  "questionEntitled": "On dit d\u0027une théorie difficile à comprendre qu\u0027elle est :"
+}
+
+2018-11-10 19:11:06,445 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=On+dit+d%27une+th%C3%A9orie+difficile+%C3%A0+comprendre+qu%27elle+est+%3A
+2018-11-10 19:11:07,255 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:11:07,255 DEBUG t.OccurencesSearcher [Thread-1] C - Limpide 			0 times found
+2018-11-10 19:11:07,256 DEBUG t.OccurencesSearcher [Thread-1] D - Velue 			0 times found
+2018-11-10 19:11:07,256 DEBUG t.OccurencesSearcher [Thread-1] B - Bègue 			0 times found
+2018-11-10 19:11:07,256 DEBUG t.OccurencesSearcher [Thread-1] A - Absconse 			0 times found
+2018-11-10 19:11:07,256 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:11:07,262 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : A - Absconse
+2018-11-10 19:11:07,262 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:22:10,666 INFO c.t.l.TCPServer [Thread-1] TCP SERVER LAUNCHED
+2018-11-10 19:22:32,945 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:22:32,947 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Le Vatican"
+    },
+    {
+      "label": "B",
+      "title": "La Russie"
+    },
+    {
+      "label": "C",
+      "title": "Le Bénin"
+    },
+    {
+      "label": "D",
+      "title": "La Belgique"
+    }
+  ],
+  "questionEntitled": "Quel est le plus petit Etat du monde ?"
+}
+
+2018-11-10 19:22:33,055 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Quel+est+le+plus+petit+Etat+du+monde+%3F
+2018-11-10 19:22:33,837 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:22:33,837 DEBUG t.OccurencesSearcher [Thread-1] A - Le Vatican 		14 times found
+2018-11-10 19:22:33,837 DEBUG t.OccurencesSearcher [Thread-1] B - La Russie 		1 times found
+2018-11-10 19:22:33,838 DEBUG t.OccurencesSearcher [Thread-1] D - La Belgique 		0 times found
+2018-11-10 19:22:33,839 DEBUG t.OccurencesSearcher [Thread-1] C - Le Bénin 		0 times found
+2018-11-10 19:22:33,840 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:22:33,840 ERROR c.t.l.TCPServer [Thread-1] Exception during most relevant answer calculation : class text.NoPredictionException
+2018-11-10 19:22:33,840 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:24:51,022 INFO c.t.l.TCPServer [Thread-1] TCP SERVER LAUNCHED
+2018-11-10 19:25:00,010 INFO c.t.l.TCPServer [Thread-1] TCP SERVER LAUNCHED
+2018-11-10 19:25:08,361 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:25:08,363 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Le chat"
+    },
+    {
+      "label": "B",
+      "title": "Le fromage"
+    },
+    {
+      "label": "C",
+      "title": "La souris"
+    },
+    {
+      "label": "D",
+      "title": "Rien"
+    }
+  ],
+  "questionEntitled": "La souris mange le fromage. Le chat mange la souris. Que reste-t-il ?"
+}
+
+2018-11-10 19:25:08,507 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=La+souris+mange+le+fromage.+Le+chat+mange+la+souris.+Que+reste-t-il+%3F
+2018-11-10 19:25:09,337 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:25:09,337 DEBUG t.OccurencesSearcher [Thread-1] A - Le chat 		71 times found
+2018-11-10 19:25:09,338 DEBUG t.OccurencesSearcher [Thread-1] D - Rien 		0 times found
+2018-11-10 19:25:09,338 DEBUG t.OccurencesSearcher [Thread-1] C - La souris 		126 times found
+2018-11-10 19:25:09,338 DEBUG t.OccurencesSearcher [Thread-1] B - Le fromage 		70 times found
+2018-11-10 19:25:09,338 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:25:09,345 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : C - La souris
+2018-11-10 19:25:09,345 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:25:26,481 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:25:26,483 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "La Statue de la Liberté"
+    },
+    {
+      "label": "B",
+      "title": "La Tour d\u0027Argent"
+    },
+    {
+      "label": "C",
+      "title": "Le Golden Gate"
+    },
+    {
+      "label": "D",
+      "title": "Le Centre Pompidou"
+    }
+  ],
+  "questionEntitled": "Gustave Eiffel fut l\u0027ingénieur de la célèbre Dame de fer et de :"
+}
+
+2018-11-10 19:25:26,499 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Gustave+Eiffel+fut+l%27ing%C3%A9nieur+de+la+c%C3%A9l%C3%A8bre+Dame+de+fer+et+de+%3A
+2018-11-10 19:25:27,483 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:25:27,483 DEBUG t.OccurencesSearcher [Thread-1] B - La Tour d'Argent 		0 times found
+2018-11-10 19:25:27,483 DEBUG t.OccurencesSearcher [Thread-1] D - Le Centre Pompidou 		0 times found
+2018-11-10 19:25:27,483 DEBUG t.OccurencesSearcher [Thread-1] C - Le Golden Gate 		0 times found
+2018-11-10 19:25:27,484 DEBUG t.OccurencesSearcher [Thread-1] A - La Statue de la Liberté 		4 times found
+2018-11-10 19:25:27,484 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:25:27,484 ERROR c.t.l.TCPServer [Thread-1] Cannot predict most relevant answer
+2018-11-10 19:25:27,484 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:26:19,644 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:26:19,645 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Georges Moustaki"
+    },
+    {
+      "label": "B",
+      "title": "Yves Montand"
+    },
+    {
+      "label": "C",
+      "title": "Théo Sarapo"
+    },
+    {
+      "label": "D",
+      "title": "Charles Aznavour"
+    }
+  ],
+  "questionEntitled": "Edith Piaf a chanté la chanson \" À quoi ça sert l\u0027amour\" avec :"
+}
+
+2018-11-10 19:26:19,664 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Edith+Piaf+a+chant%C3%A9+la+chanson+%22+%C3%80+quoi+%C3%A7a+sert+l%27amour%22+avec+%3A
+2018-11-10 19:26:20,286 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:26:20,286 DEBUG t.OccurencesSearcher [Thread-1] C - Théo Sarapo 		6 times found
+2018-11-10 19:26:20,286 DEBUG t.OccurencesSearcher [Thread-1] D - Charles Aznavour 		0 times found
+2018-11-10 19:26:20,287 DEBUG t.OccurencesSearcher [Thread-1] A - Georges Moustaki 		0 times found
+2018-11-10 19:26:20,287 DEBUG t.OccurencesSearcher [Thread-1] B - Yves Montand 		0 times found
+2018-11-10 19:26:20,287 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:26:20,288 ERROR c.t.l.TCPServer [Thread-1] Cannot predict most relevant answer
+2018-11-10 19:26:20,288 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:35:40,407 INFO c.t.l.TCPServer [Thread-1] TCP SERVER LAUNCHED
+2018-11-10 19:35:55,642 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:35:55,644 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Abu"
+    },
+    {
+      "label": "B",
+      "title": "Savate"
+    },
+    {
+      "label": "C",
+      "title": "Babouche"
+    },
+    {
+      "label": "D",
+      "title": "Pantoufle"
+    }
+  ],
+  "questionEntitled": "Dans le dessin animé homonyme, comment s\u0027appelle le meilleur ami de Dora l\u0027exploratrice ?"
+}
+
+2018-11-10 19:35:55,776 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Dans+le+dessin+anim%C3%A9+homonyme%2C+comment+s%27appelle+le+meilleur+ami+de+Dora+l%27exploratrice+%3F
+2018-11-10 19:35:56,625 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:35:56,626 DEBUG t.OccurencesSearcher [Thread-1] A - Abu 			0 times found
+2018-11-10 19:35:56,626 DEBUG t.OccurencesSearcher [Thread-1] C - Babouche 			7 times found
+2018-11-10 19:35:56,627 DEBUG t.OccurencesSearcher [Thread-1] D - Pantoufle 			0 times found
+2018-11-10 19:35:56,627 DEBUG t.OccurencesSearcher [Thread-1] B - Savate 			0 times found
+2018-11-10 19:35:56,627 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:35:56,634 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : C - Babouche
+2018-11-10 19:35:56,634 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:36:11,608 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:36:11,610 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "La Piscine"
+    },
+    {
+      "label": "B",
+      "title": "Le Guépard"
+    },
+    {
+      "label": "C",
+      "title": "Plein Soleil"
+    },
+    {
+      "label": "D",
+      "title": "Rocco et ses frères"
+    }
+  ],
+  "questionEntitled": "De quel film est tirée la réplique : \"Si nous voulons que tout reste tel que c\u0027est, il faut que tout change\" ?"
+}
+
+2018-11-10 19:36:11,636 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=De+quel+film+est+tir%C3%A9e+la+r%C3%A9plique+%3A+%22Si+nous+voulons+que+tout+reste+tel+que+c%27est%2C+il+faut+que+tout+change%22+%3F
+2018-11-10 19:36:12,432 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:36:12,432 DEBUG t.OccurencesSearcher [Thread-1] B - Le Guépard 			19 times found
+2018-11-10 19:36:12,433 DEBUG t.OccurencesSearcher [Thread-1] D - Rocco et ses frères 			0 times found
+2018-11-10 19:36:12,433 DEBUG t.OccurencesSearcher [Thread-1] A - La Piscine 			0 times found
+2018-11-10 19:36:12,433 DEBUG t.OccurencesSearcher [Thread-1] C - Plein Soleil 			0 times found
+2018-11-10 19:36:12,433 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:36:12,433 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : B - Le Guépard
+2018-11-10 19:36:12,433 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 19:36:47,253 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 19:36:47,254 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "116 ans"
+    },
+    {
+      "label": "B",
+      "title": "101 ans"
+    },
+    {
+      "label": "C",
+      "title": "108 ans"
+    },
+    {
+      "label": "D",
+      "title": "100 ans"
+    }
+  ],
+  "questionEntitled": "Combien d\u0027années la guerre de Cent Ans a-t-elle duré ?"
+}
+
+2018-11-10 19:36:47,278 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Combien+d%27ann%C3%A9es+la+guerre+de+Cent+Ans+a-t-elle+dur%C3%A9+%3F
+2018-11-10 19:36:48,162 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 19:36:48,162 DEBUG t.OccurencesSearcher [Thread-1] B - 101 ans 			0 times found
+2018-11-10 19:36:48,162 DEBUG t.OccurencesSearcher [Thread-1] A - 116 ans 			1 times found
+2018-11-10 19:36:48,163 DEBUG t.OccurencesSearcher [Thread-1] C - 108 ans 			0 times found
+2018-11-10 19:36:48,163 DEBUG t.OccurencesSearcher [Thread-1] D - 100 ans 			9 times found
+2018-11-10 19:36:48,163 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 19:36:48,163 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : D - 100 ans
+2018-11-10 19:36:48,164 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 20:32:04,444 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 20:32:04,445 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Elvis Presley"
+    },
+    {
+      "label": "B",
+      "title": "Michael Jackson"
+    },
+    {
+      "label": "C",
+      "title": "John Lennon"
+    },
+    {
+      "label": "D",
+      "title": "Johnny Hallyday"
+    }
+  ],
+  "questionEntitled": "Qui interprète ce titre ?"
+}
+
+2018-11-10 20:32:04,465 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Qui+interpr%C3%A8te+ce+titre+%3F
+2018-11-10 20:32:05,063 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 20:32:05,063 DEBUG t.OccurencesSearcher [Thread-1] D - Johnny Hallyday 			0 times found
+2018-11-10 20:32:05,063 DEBUG t.OccurencesSearcher [Thread-1] B - Michael Jackson 			0 times found
+2018-11-10 20:32:05,064 DEBUG t.OccurencesSearcher [Thread-1] C - John Lennon 			0 times found
+2018-11-10 20:32:05,065 DEBUG t.OccurencesSearcher [Thread-1] A - Elvis Presley 			0 times found
+2018-11-10 20:32:05,065 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 20:32:05,065 ERROR c.t.l.TCPServer [Thread-1] Cannot predict most relevant answer
+2018-11-10 20:32:05,065 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 20:33:11,480 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 20:33:11,481 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Ella Fitzgerald"
+    },
+    {
+      "label": "B",
+      "title": "Nina Simone"
+    },
+    {
+      "label": "C",
+      "title": "Stevie Wonder"
+    },
+    {
+      "label": "D",
+      "title": "Marvin Gaye"
+    }
+  ],
+  "questionEntitled": "Quel artiste a été remixé dans ce titre ?"
+}
+
+2018-11-10 20:33:11,506 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Quel+artiste+a+%C3%A9t%C3%A9+remix%C3%A9+dans+ce+titre+%3F
+2018-11-10 20:33:12,129 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 20:33:12,129 DEBUG t.OccurencesSearcher [Thread-1] A - Ella Fitzgerald 			0 times found
+2018-11-10 20:33:12,129 DEBUG t.OccurencesSearcher [Thread-1] C - Stevie Wonder 			0 times found
+2018-11-10 20:33:12,129 DEBUG t.OccurencesSearcher [Thread-1] B - Nina Simone 			0 times found
+2018-11-10 20:33:12,131 DEBUG t.OccurencesSearcher [Thread-1] D - Marvin Gaye 			0 times found
+2018-11-10 20:33:12,131 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 20:33:12,131 ERROR c.t.l.TCPServer [Thread-1] Cannot predict most relevant answer
+2018-11-10 20:33:12,132 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 20:34:13,610 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 20:34:13,612 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Bob Sinclar"
+    },
+    {
+      "label": "B",
+      "title": "Stardust"
+    },
+    {
+      "label": "C",
+      "title": "Modjo"
+    },
+    {
+      "label": "D",
+      "title": "Skrillex"
+    }
+  ],
+  "questionEntitled": "Quel DJ interprète ce titre ?"
+}
+
+2018-11-10 20:34:13,626 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Quel+DJ+interpr%C3%A8te+ce+titre+%3F
+2018-11-10 20:34:14,295 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 20:34:14,295 DEBUG t.OccurencesSearcher [Thread-1] D - Skrillex 			0 times found
+2018-11-10 20:34:14,299 DEBUG t.OccurencesSearcher [Thread-1] C - Modjo 			0 times found
+2018-11-10 20:34:14,299 DEBUG t.OccurencesSearcher [Thread-1] B - Stardust 			0 times found
+2018-11-10 20:34:14,299 DEBUG t.OccurencesSearcher [Thread-1] A - Bob Sinclar 			0 times found
+2018-11-10 20:34:14,300 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 20:34:14,301 ERROR c.t.l.TCPServer [Thread-1] Cannot predict most relevant answer
+2018-11-10 20:34:14,301 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 20:35:17,865 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 20:35:17,867 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Martin Garrix"
+    },
+    {
+      "label": "B",
+      "title": "David Guetta"
+    },
+    {
+      "label": "C",
+      "title": "Bob Sinclar"
+    },
+    {
+      "label": "D",
+      "title": "Alan Walker"
+    }
+  ],
+  "questionEntitled": "Quel DJ est à l\u0027origine de ce titre ?"
+}
+
+2018-11-10 20:35:17,881 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Quel+DJ+est+%C3%A0+l%27origine+de+ce+titre+%3F
+2018-11-10 20:35:18,482 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 20:35:18,483 DEBUG t.OccurencesSearcher [Thread-1] A - Martin Garrix 			4 times found
+2018-11-10 20:35:18,483 DEBUG t.OccurencesSearcher [Thread-1] D - Alan Walker 			0 times found
+2018-11-10 20:35:18,483 DEBUG t.OccurencesSearcher [Thread-1] B - David Guetta 			6 times found
+2018-11-10 20:35:18,484 DEBUG t.OccurencesSearcher [Thread-1] C - Bob Sinclar 			4 times found
+2018-11-10 20:35:18,484 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 20:35:18,484 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : B - David Guetta
+2018-11-10 20:35:18,484 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 20:36:47,165 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 20:36:47,165 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Chantons sous la pluie"
+    },
+    {
+      "label": "B",
+      "title": "Mamma Mia !"
+    },
+    {
+      "label": "C",
+      "title": "Grease"
+    },
+    {
+      "label": "D",
+      "title": "La La Land"
+    }
+  ],
+  "questionEntitled": "Dans quel film peut-on entendre ce titre ?"
+}
+
+2018-11-10 20:36:47,193 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Dans+quel+film+peut-on+entendre+ce+titre+%3F
+2018-11-10 20:36:47,814 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 20:36:47,814 DEBUG t.OccurencesSearcher [Thread-1] A - Chantons sous la pluie 			0 times found
+2018-11-10 20:36:47,814 DEBUG t.OccurencesSearcher [Thread-1] C - Grease 			0 times found
+2018-11-10 20:36:47,814 DEBUG t.OccurencesSearcher [Thread-1] D - La La Land 			0 times found
+2018-11-10 20:36:47,814 DEBUG t.OccurencesSearcher [Thread-1] B - Mamma Mia ! 			0 times found
+2018-11-10 20:36:47,815 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 20:36:47,815 ERROR c.t.l.TCPServer [Thread-1] Cannot predict most relevant answer
+2018-11-10 20:36:47,815 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 20:37:52,673 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 20:37:52,673 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Lomepal et Roméo Elvis"
+    },
+    {
+      "label": "B",
+      "title": "Black M"
+    },
+    {
+      "label": "C",
+      "title": "Bigflo et Oli"
+    },
+    {
+      "label": "D",
+      "title": "Damso"
+    }
+  ],
+  "questionEntitled": "Quels rappeurs interprètent ce titre ?"
+}
+
+2018-11-10 20:37:52,691 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Quels+rappeurs+interpr%C3%A8tent+ce+titre+%3F
+2018-11-10 20:37:53,246 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 20:37:53,246 DEBUG t.OccurencesSearcher [Thread-1] A - Lomepal et Roméo Elvis 			0 times found
+2018-11-10 20:37:53,246 DEBUG t.OccurencesSearcher [Thread-1] C - Bigflo et Oli 			0 times found
+2018-11-10 20:37:53,246 DEBUG t.OccurencesSearcher [Thread-1] B - Black M 			0 times found
+2018-11-10 20:37:53,246 DEBUG t.OccurencesSearcher [Thread-1] D - Damso 			0 times found
+2018-11-10 20:37:53,246 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 20:37:53,247 ERROR c.t.l.TCPServer [Thread-1] Cannot predict most relevant answer
+2018-11-10 20:37:53,247 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 20:39:03,954 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 20:39:03,955 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Simple Plan"
+    },
+    {
+      "label": "B",
+      "title": "Green Day"
+    },
+    {
+      "label": "C",
+      "title": "Fall Out Boy"
+    },
+    {
+      "label": "D",
+      "title": "Sum 41"
+    }
+  ],
+  "questionEntitled": "Quel groupe de rock interprète ce titre ?"
+}
+
+2018-11-10 20:39:03,987 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Quel+groupe+de+rock+interpr%C3%A8te+ce+titre+%3F
+2018-11-10 20:39:04,677 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 20:39:04,677 DEBUG t.OccurencesSearcher [Thread-1] B - Green Day 			0 times found
+2018-11-10 20:39:04,677 DEBUG t.OccurencesSearcher [Thread-1] D - Sum 41 			0 times found
+2018-11-10 20:39:04,678 DEBUG t.OccurencesSearcher [Thread-1] C - Fall Out Boy 			0 times found
+2018-11-10 20:39:04,679 DEBUG t.OccurencesSearcher [Thread-1] A - Simple Plan 			0 times found
+2018-11-10 20:39:04,679 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 20:39:04,679 ERROR c.t.l.TCPServer [Thread-1] Cannot predict most relevant answer
+2018-11-10 20:39:04,679 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 20:40:35,226 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 20:40:35,232 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Kenzo"
+    },
+    {
+      "label": "B",
+      "title": "Chanel"
+    },
+    {
+      "label": "C",
+      "title": "Bulgari"
+    },
+    {
+      "label": "D",
+      "title": "Valentino"
+    }
+  ],
+  "questionEntitled": "Dans la publicité de quelle marque peut-on entendre ce titre ?"
+}
+
+2018-11-10 20:40:35,256 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Dans+la+publicit%C3%A9+de+quelle+marque+peut-on+entendre+ce+titre+%3F
+2018-11-10 20:40:36,029 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 20:40:36,030 DEBUG t.OccurencesSearcher [Thread-1] A - Kenzo 			0 times found
+2018-11-10 20:40:36,030 DEBUG t.OccurencesSearcher [Thread-1] C - Bulgari 			0 times found
+2018-11-10 20:40:36,030 DEBUG t.OccurencesSearcher [Thread-1] B - Chanel 			0 times found
+2018-11-10 20:40:36,031 DEBUG t.OccurencesSearcher [Thread-1] D - Valentino 			0 times found
+2018-11-10 20:40:36,031 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 20:40:36,031 ERROR c.t.l.TCPServer [Thread-1] Cannot predict most relevant answer
+2018-11-10 20:40:36,031 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 20:41:57,959 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 20:41:57,960 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Les Européennes de Fortnite"
+    },
+    {
+      "label": "B",
+      "title": "Les Worlds de League of Legends"
+    },
+    {
+      "label": "C",
+      "title": "La DreamHack Dallas de Counter-Strike"
+    },
+    {
+      "label": "D",
+      "title": "Les All Stars de League of Legends"
+    }
+  ],
+  "questionEntitled": "De quelle compétition de e-sport ce titre, Rise, a-t-il été la musique officielle ?"
+}
+
+2018-11-10 20:41:57,985 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=De+quelle+comp%C3%A9tition+de+e-sport+ce+titre%2C+Rise%2C+a-t-il+%C3%A9t%C3%A9+la+musique+officielle+%3F
+2018-11-10 20:41:59,278 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 20:41:59,279 DEBUG t.OccurencesSearcher [Thread-1] A - Les Européennes de Fortnite 			0 times found
+2018-11-10 20:41:59,279 DEBUG t.OccurencesSearcher [Thread-1] B - Les Worlds de League of Legends 			0 times found
+2018-11-10 20:41:59,279 DEBUG t.OccurencesSearcher [Thread-1] D - Les All Stars de League of Legends 			0 times found
+2018-11-10 20:41:59,279 DEBUG t.OccurencesSearcher [Thread-1] C - La DreamHack Dallas de Counter-Strike 			0 times found
+2018-11-10 20:41:59,279 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 20:41:59,279 ERROR c.t.l.TCPServer [Thread-1] Cannot predict most relevant answer
+2018-11-10 20:41:59,280 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 20:43:36,485 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 20:43:36,486 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "L\u0027electro-funk"
+    },
+    {
+      "label": "B",
+      "title": "La Fun pop"
+    },
+    {
+      "label": "C",
+      "title": "La K-Pop"
+    },
+    {
+      "label": "D",
+      "title": "L\u0027Asia pop"
+    }
+  ],
+  "questionEntitled": "Quel est le genre musical du clip que vous avez regardé ?"
+}
+
+2018-11-10 20:43:36,501 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Quesl+est+le+genre+musical+du+clip+que+vous+avez+regard%C3%A9+%3F
+2018-11-10 20:43:37,512 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 20:43:37,512 DEBUG t.OccurencesSearcher [Thread-1] B - La Fun pop 			0 times found
+2018-11-10 20:43:37,513 DEBUG t.OccurencesSearcher [Thread-1] D - L'Asia pop 			0 times found
+2018-11-10 20:43:37,513 DEBUG t.OccurencesSearcher [Thread-1] C - La K-Pop 			0 times found
+2018-11-10 20:43:37,513 DEBUG t.OccurencesSearcher [Thread-1] A - L'electro-funk 			0 times found
+2018-11-10 20:43:37,513 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-10 20:43:37,513 ERROR c.t.l.TCPServer [Thread-1] Cannot predict most relevant answer
+2018-11-10 20:43:37,513 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-10 20:45:11,703 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-10 20:45:11,703 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [],
+  "questionEntitled": "En quelle année eut lieu le concert du Live-Aid, considéré comme l\u0027un des plus grands concerts de l\u0027histoire ?"
+}
+
+2018-11-10 20:45:11,731 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=En+quelle+ann%C3%A9e+eut+lieu+le+concert+du+Live-Aid%2C+consid%C3%A9r%C3%A9+comme+l%27un+des+plus+grands+concerts+de+l%27histoire+%3F
+2018-11-10 20:45:12,624 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-10 20:45:12,624 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
