@@ -1,179 +1,330 @@
-2018-11-11 11:47:09,923 INFO c.t.l.TCPServer [Thread-1] TCP SERVER LAUNCHED
-2018-11-11 12:22:52,996 DEBUG t.OccurencesSearcher [main] --------Occurences---------
-2018-11-11 12:22:52,998 DEBUG t.OccurencesSearcher [main] D - nouveau gourvenement 			0 times found
-2018-11-11 12:22:52,998 DEBUG t.OccurencesSearcher [main] C - projecteur 			0 times found
-2018-11-11 12:22:52,998 DEBUG t.OccurencesSearcher [main] B - eau 			2 times found
-2018-11-11 12:22:52,999 DEBUG t.OccurencesSearcher [main] A - tresor 			4 times found
-2018-11-11 12:22:52,999 DEBUG t.OccurencesSearcher [main] ---------------------------
-2018-11-11 12:22:53,189 DEBUG t.OccurencesSearcher [main] --------Occurences---------
-2018-11-11 12:22:53,190 DEBUG t.OccurencesSearcher [main] B - ctrl + z 			2 times found
-2018-11-11 12:22:53,190 DEBUG t.OccurencesSearcher [main] D - ctrl + v 			0 times found
-2018-11-11 12:22:53,191 DEBUG t.OccurencesSearcher [main] A - ctrl + c 			0 times found
-2018-11-11 12:22:53,191 DEBUG t.OccurencesSearcher [main] C - ctrl + a 			0 times found
-2018-11-11 12:22:53,191 DEBUG t.OccurencesSearcher [main] ---------------------------
-2018-11-11 12:22:53,251 DEBUG t.OccurencesSearcher [main] --------Occurences---------
-2018-11-11 12:22:53,251 DEBUG t.OccurencesSearcher [main] B - rpg 			0 times found
-2018-11-11 12:22:53,251 DEBUG t.OccurencesSearcher [main] A - fps 			1 times found
-2018-11-11 12:22:53,251 DEBUG t.OccurencesSearcher [main] C - battle royale 			14 times found
-2018-11-11 12:22:53,252 DEBUG t.OccurencesSearcher [main] D - plateforme 			0 times found
-2018-11-11 12:22:53,252 DEBUG t.OccurencesSearcher [main] ---------------------------
-2018-11-11 12:28:59,096 DEBUG t.OccurencesSearcher [main] --------Occurences---------
-2018-11-11 12:28:59,099 DEBUG t.OccurencesSearcher [main] D - nouveau gourvenement 			0 times found
-2018-11-11 12:28:59,099 DEBUG t.OccurencesSearcher [main] A - tresor 			4 times found
-2018-11-11 12:28:59,099 DEBUG t.OccurencesSearcher [main] C - projecteur 			0 times found
-2018-11-11 12:28:59,099 DEBUG t.OccurencesSearcher [main] B - eau 			2 times found
-2018-11-11 12:28:59,099 DEBUG t.OccurencesSearcher [main] ---------------------------
-2018-11-11 12:28:59,290 DEBUG t.OccurencesSearcher [main] --------Occurences---------
-2018-11-11 12:28:59,290 DEBUG t.OccurencesSearcher [main] B - ctrl + z 			2 times found
-2018-11-11 12:28:59,290 DEBUG t.OccurencesSearcher [main] C - ctrl + a 			0 times found
-2018-11-11 12:28:59,290 DEBUG t.OccurencesSearcher [main] D - ctrl + v 			0 times found
-2018-11-11 12:28:59,290 DEBUG t.OccurencesSearcher [main] A - ctrl + c 			0 times found
-2018-11-11 12:28:59,290 DEBUG t.OccurencesSearcher [main] ---------------------------
-2018-11-11 12:28:59,350 DEBUG t.OccurencesSearcher [main] --------Occurences---------
-2018-11-11 12:28:59,350 DEBUG t.OccurencesSearcher [main] B - rpg 			0 times found
-2018-11-11 12:28:59,350 DEBUG t.OccurencesSearcher [main] D - plateforme 			0 times found
-2018-11-11 12:28:59,350 DEBUG t.OccurencesSearcher [main] C - battle royale 			14 times found
-2018-11-11 12:28:59,350 DEBUG t.OccurencesSearcher [main] A - fps 			1 times found
-2018-11-11 12:28:59,350 DEBUG t.OccurencesSearcher [main] ---------------------------
-2018-11-11 12:29:32,652 DEBUG t.OccurencesSearcher [main] --------Occurences---------
-2018-11-11 12:29:32,654 DEBUG t.OccurencesSearcher [main] D - nouveau gourvenement 			0 times found
-2018-11-11 12:29:32,654 DEBUG t.OccurencesSearcher [main] A - tresor 			4 times found
-2018-11-11 12:29:32,654 DEBUG t.OccurencesSearcher [main] C - projecteur 			0 times found
-2018-11-11 12:29:32,655 DEBUG t.OccurencesSearcher [main] B - eau 			2 times found
-2018-11-11 12:29:32,655 DEBUG t.OccurencesSearcher [main] ---------------------------
-2018-11-11 12:29:32,901 DEBUG t.OccurencesSearcher [main] --------Occurences---------
-2018-11-11 12:29:32,901 DEBUG t.OccurencesSearcher [main] C - ctrl + a 			0 times found
-2018-11-11 12:29:32,901 DEBUG t.OccurencesSearcher [main] B - ctrl + z 			2 times found
-2018-11-11 12:29:32,901 DEBUG t.OccurencesSearcher [main] A - ctrl + c 			0 times found
-2018-11-11 12:29:32,902 DEBUG t.OccurencesSearcher [main] D - ctrl + v 			0 times found
-2018-11-11 12:29:32,902 DEBUG t.OccurencesSearcher [main] ---------------------------
-2018-11-11 12:29:32,965 DEBUG t.OccurencesSearcher [main] --------Occurences---------
-2018-11-11 12:29:32,965 DEBUG t.OccurencesSearcher [main] D - plateforme 			0 times found
-2018-11-11 12:29:32,965 DEBUG t.OccurencesSearcher [main] B - rpg 			0 times found
-2018-11-11 12:29:32,965 DEBUG t.OccurencesSearcher [main] C - battle royale 			14 times found
-2018-11-11 12:29:32,966 DEBUG t.OccurencesSearcher [main] A - fps 			1 times found
-2018-11-11 12:29:32,966 DEBUG t.OccurencesSearcher [main] ---------------------------
-2018-11-11 12:29:52,098 DEBUG t.OccurencesSearcher [main] --------Occurences---------
-2018-11-11 12:29:52,101 DEBUG t.OccurencesSearcher [main] B - eau 			2 times found
-2018-11-11 12:29:52,101 DEBUG t.OccurencesSearcher [main] A - tresor 			4 times found
-2018-11-11 12:29:52,101 DEBUG t.OccurencesSearcher [main] D - nouveau gourvenement 			0 times found
-2018-11-11 12:29:52,101 DEBUG t.OccurencesSearcher [main] C - projecteur 			0 times found
-2018-11-11 12:29:52,101 DEBUG t.OccurencesSearcher [main] ---------------------------
-2018-11-11 12:30:57,689 DEBUG t.OccurencesSearcher [main] --------Occurences---------
-2018-11-11 12:30:57,690 DEBUG t.OccurencesSearcher [main] D - ctrl + v 			0 times found
-2018-11-11 12:30:57,690 DEBUG t.OccurencesSearcher [main] B - ctrl + z 			2 times found
-2018-11-11 12:30:57,690 DEBUG t.OccurencesSearcher [main] A - ctrl + c 			0 times found
-2018-11-11 12:30:57,690 DEBUG t.OccurencesSearcher [main] C - ctrl + a 			0 times found
-2018-11-11 12:30:57,690 DEBUG t.OccurencesSearcher [main] ---------------------------
-2018-11-11 12:30:57,760 DEBUG t.OccurencesSearcher [main] --------Occurences---------
-2018-11-11 12:30:57,760 DEBUG t.OccurencesSearcher [main] C - battle royale 			14 times found
-2018-11-11 12:30:57,761 DEBUG t.OccurencesSearcher [main] D - plateforme 			0 times found
-2018-11-11 12:30:57,761 DEBUG t.OccurencesSearcher [main] B - rpg 			0 times found
-2018-11-11 12:30:57,761 DEBUG t.OccurencesSearcher [main] A - fps 			1 times found
-2018-11-11 12:30:57,761 DEBUG t.OccurencesSearcher [main] ---------------------------
-2018-11-11 12:31:05,440 DEBUG t.OccurencesSearcher [main] --------Occurences---------
-2018-11-11 12:31:05,443 DEBUG t.OccurencesSearcher [main] B - eau 			2 times found
-2018-11-11 12:31:05,443 DEBUG t.OccurencesSearcher [main] D - nouveau gourvenement 			0 times found
-2018-11-11 12:31:05,443 DEBUG t.OccurencesSearcher [main] C - projecteur 			0 times found
-2018-11-11 12:31:05,444 DEBUG t.OccurencesSearcher [main] A - tresor 			4 times found
-2018-11-11 12:31:05,444 DEBUG t.OccurencesSearcher [main] ---------------------------
-2018-11-11 12:32:36,257 DEBUG t.OccurencesSearcher [main] --------Occurences---------
-2018-11-11 12:32:36,260 DEBUG t.OccurencesSearcher [main] B - eau 			2 times found
-2018-11-11 12:32:36,260 DEBUG t.OccurencesSearcher [main] C - projecteur 			0 times found
-2018-11-11 12:32:36,260 DEBUG t.OccurencesSearcher [main] D - nouveau gourvenement 			0 times found
-2018-11-11 12:32:36,260 DEBUG t.OccurencesSearcher [main] A - tresor 			4 times found
-2018-11-11 12:32:36,261 DEBUG t.OccurencesSearcher [main] ---------------------------
-2018-11-11 12:32:36,518 DEBUG t.OccurencesSearcher [main] --------Occurences---------
-2018-11-11 12:32:36,519 DEBUG t.OccurencesSearcher [main] D - ctrl + v 			0 times found
-2018-11-11 12:32:36,519 DEBUG t.OccurencesSearcher [main] C - ctrl + a 			0 times found
-2018-11-11 12:32:36,519 DEBUG t.OccurencesSearcher [main] B - ctrl + z 			2 times found
-2018-11-11 12:32:36,519 DEBUG t.OccurencesSearcher [main] A - ctrl + c 			0 times found
-2018-11-11 12:32:36,519 DEBUG t.OccurencesSearcher [main] ---------------------------
-2018-11-11 12:32:36,578 DEBUG t.OccurencesSearcher [main] --------Occurences---------
-2018-11-11 12:32:36,578 DEBUG t.OccurencesSearcher [main] B - rpg 			0 times found
-2018-11-11 12:32:36,578 DEBUG t.OccurencesSearcher [main] A - fps 			1 times found
-2018-11-11 12:32:36,579 DEBUG t.OccurencesSearcher [main] D - plateforme 			0 times found
-2018-11-11 12:32:36,579 DEBUG t.OccurencesSearcher [main] C - battle royale 			14 times found
-2018-11-11 12:32:36,579 DEBUG t.OccurencesSearcher [main] ---------------------------
-2018-11-11 12:33:22,017 DEBUG t.OccurencesSearcher [main] --------Occurences---------
-2018-11-11 12:33:22,019 DEBUG t.OccurencesSearcher [main] B - eau 			2 times found
-2018-11-11 12:33:22,019 DEBUG t.OccurencesSearcher [main] C - projecteur 			0 times found
-2018-11-11 12:33:22,020 DEBUG t.OccurencesSearcher [main] D - nouveau gourvenement 			0 times found
-2018-11-11 12:33:22,020 DEBUG t.OccurencesSearcher [main] A - tresor 			4 times found
-2018-11-11 12:33:22,020 DEBUG t.OccurencesSearcher [main] ---------------------------
-2018-11-11 12:33:22,268 DEBUG t.OccurencesSearcher [main] --------Occurences---------
-2018-11-11 12:33:22,268 DEBUG t.OccurencesSearcher [main] D - ctrl + v 			0 times found
-2018-11-11 12:33:22,268 DEBUG t.OccurencesSearcher [main] C - ctrl + a 			0 times found
-2018-11-11 12:33:22,268 DEBUG t.OccurencesSearcher [main] B - ctrl + z 			2 times found
-2018-11-11 12:33:22,269 DEBUG t.OccurencesSearcher [main] A - ctrl + c 			0 times found
-2018-11-11 12:33:22,269 DEBUG t.OccurencesSearcher [main] ---------------------------
-2018-11-11 12:33:22,326 DEBUG t.OccurencesSearcher [main] --------Occurences---------
-2018-11-11 12:33:22,326 DEBUG t.OccurencesSearcher [main] B - rpg 			0 times found
-2018-11-11 12:33:22,327 DEBUG t.OccurencesSearcher [main] A - fps 			1 times found
-2018-11-11 12:33:22,327 DEBUG t.OccurencesSearcher [main] D - plateforme 			0 times found
-2018-11-11 12:33:22,327 DEBUG t.OccurencesSearcher [main] C - battle royale 			14 times found
-2018-11-11 12:33:22,327 DEBUG t.OccurencesSearcher [main] ---------------------------
-2018-11-11 12:33:34,108 DEBUG t.OccurencesSearcher [main] --------Occurences---------
-2018-11-11 12:33:34,111 DEBUG t.OccurencesSearcher [main] B - eau 			2 times found
-2018-11-11 12:33:34,111 DEBUG t.OccurencesSearcher [main] D - nouveau gourvenement 			0 times found
-2018-11-11 12:33:34,112 DEBUG t.OccurencesSearcher [main] C - projecteur 			0 times found
-2018-11-11 12:33:34,112 DEBUG t.OccurencesSearcher [main] A - tresor 			4 times found
-2018-11-11 12:33:34,113 DEBUG t.OccurencesSearcher [main] ---------------------------
-2018-11-11 12:35:36,188 DEBUG t.OccurencesSearcher [main] --------Occurences---------
-2018-11-11 12:35:36,190 DEBUG t.OccurencesSearcher [main] D - nouveau gourvenement 			0 times found
-2018-11-11 12:35:36,190 DEBUG t.OccurencesSearcher [main] A - tresor 			4 times found
-2018-11-11 12:35:36,190 DEBUG t.OccurencesSearcher [main] C - projecteur 			0 times found
-2018-11-11 12:35:36,191 DEBUG t.OccurencesSearcher [main] B - eau 			2 times found
-2018-11-11 12:35:36,191 DEBUG t.OccurencesSearcher [main] ---------------------------
-2018-11-11 12:35:36,463 DEBUG t.OccurencesSearcher [main] --------Occurences---------
-2018-11-11 12:35:36,463 DEBUG t.OccurencesSearcher [main] C - ctrl + a 			0 times found
-2018-11-11 12:35:36,463 DEBUG t.OccurencesSearcher [main] B - ctrl + z 			2 times found
-2018-11-11 12:35:36,464 DEBUG t.OccurencesSearcher [main] A - ctrl + c 			0 times found
-2018-11-11 12:35:36,464 DEBUG t.OccurencesSearcher [main] D - ctrl + v 			0 times found
-2018-11-11 12:35:36,464 DEBUG t.OccurencesSearcher [main] ---------------------------
-2018-11-11 12:35:36,525 DEBUG t.OccurencesSearcher [main] --------Occurences---------
-2018-11-11 12:35:36,526 DEBUG t.OccurencesSearcher [main] D - plateforme 			0 times found
-2018-11-11 12:35:36,526 DEBUG t.OccurencesSearcher [main] B - rpg 			0 times found
-2018-11-11 12:35:36,526 DEBUG t.OccurencesSearcher [main] C - battle royale 			14 times found
-2018-11-11 12:35:36,526 DEBUG t.OccurencesSearcher [main] A - fps 			1 times found
-2018-11-11 12:35:36,526 DEBUG t.OccurencesSearcher [main] ---------------------------
-2018-11-11 12:35:45,280 DEBUG t.OccurencesSearcher [main] --------Occurences---------
-2018-11-11 12:35:45,282 DEBUG t.OccurencesSearcher [main] D - nouveau gourvenement 			0 times found
-2018-11-11 12:35:45,283 DEBUG t.OccurencesSearcher [main] A - tresor 			4 times found
-2018-11-11 12:35:45,283 DEBUG t.OccurencesSearcher [main] C - projecteur 			0 times found
-2018-11-11 12:35:45,283 DEBUG t.OccurencesSearcher [main] B - eau 			2 times found
-2018-11-11 12:35:45,283 DEBUG t.OccurencesSearcher [main] ---------------------------
-2018-11-11 12:35:45,553 DEBUG t.OccurencesSearcher [main] --------Occurences---------
-2018-11-11 12:35:45,553 DEBUG t.OccurencesSearcher [main] C - ctrl + a 			0 times found
-2018-11-11 12:35:45,553 DEBUG t.OccurencesSearcher [main] B - ctrl + z 			2 times found
-2018-11-11 12:35:45,554 DEBUG t.OccurencesSearcher [main] A - ctrl + c 			0 times found
-2018-11-11 12:35:45,554 DEBUG t.OccurencesSearcher [main] D - ctrl + v 			0 times found
-2018-11-11 12:35:45,554 DEBUG t.OccurencesSearcher [main] ---------------------------
-2018-11-11 12:35:45,615 DEBUG t.OccurencesSearcher [main] --------Occurences---------
-2018-11-11 12:35:45,615 DEBUG t.OccurencesSearcher [main] D - plateforme 			0 times found
-2018-11-11 12:35:45,616 DEBUG t.OccurencesSearcher [main] B - rpg 			0 times found
-2018-11-11 12:35:45,616 DEBUG t.OccurencesSearcher [main] C - battle royale 			14 times found
-2018-11-11 12:35:45,616 DEBUG t.OccurencesSearcher [main] A - fps 			1 times found
-2018-11-11 12:35:45,616 DEBUG t.OccurencesSearcher [main] ---------------------------
-2018-11-11 12:36:10,091 DEBUG t.OccurencesSearcher [main] --------Occurences---------
-2018-11-11 12:36:10,093 DEBUG t.OccurencesSearcher [main] D - nouveau gourvenement 			0 times found
-2018-11-11 12:36:10,093 DEBUG t.OccurencesSearcher [main] A - tresor 			4 times found
-2018-11-11 12:36:10,094 DEBUG t.OccurencesSearcher [main] C - projecteur 			0 times found
-2018-11-11 12:36:10,094 DEBUG t.OccurencesSearcher [main] B - eau 			2 times found
-2018-11-11 12:36:10,094 DEBUG t.OccurencesSearcher [main] ---------------------------
-2018-11-11 12:36:10,356 DEBUG t.OccurencesSearcher [main] --------Occurences---------
-2018-11-11 12:36:10,357 DEBUG t.OccurencesSearcher [main] C - ctrl + a 			0 times found
-2018-11-11 12:36:10,357 DEBUG t.OccurencesSearcher [main] B - ctrl + z 			2 times found
-2018-11-11 12:36:10,357 DEBUG t.OccurencesSearcher [main] A - ctrl + c 			0 times found
-2018-11-11 12:36:10,357 DEBUG t.OccurencesSearcher [main] D - ctrl + v 			0 times found
-2018-11-11 12:36:10,357 DEBUG t.OccurencesSearcher [main] ---------------------------
-2018-11-11 12:36:10,415 DEBUG t.OccurencesSearcher [main] --------Occurences---------
-2018-11-11 12:36:10,415 DEBUG t.OccurencesSearcher [main] C - battle royale 			14 times found
-2018-11-11 12:36:10,416 DEBUG t.OccurencesSearcher [main] D - plateforme 			0 times found
-2018-11-11 12:36:10,416 DEBUG t.OccurencesSearcher [main] B - rpg 			0 times found
-2018-11-11 12:36:10,416 DEBUG t.OccurencesSearcher [main] A - fps 			1 times found
-2018-11-11 12:36:10,416 DEBUG t.OccurencesSearcher [main] ---------------------------
-2018-11-11 13:12:09,069 INFO c.t.l.TCPServer [Thread-1] TCP SERVER LAUNCHED
-2018-11-11 13:28:42,590 DEBUG c.t.l.HTMLBuilder [main] Get URL : 
-2018-11-11 13:30:12,324 DEBUG c.t.l.HTMLBuilder [main] Get URL : https://www.google.com/search?q=En+quelle+ann%C3%A9e+eut+lieu+le+concert+du+Live-Aid%2C+consid%C3%A9r%C3%A9+comme+l%27un+des+plus+grands+concerts+de+l%27histoire+%3F
-2018-11-11 13:31:24,627 DEBUG c.t.l.HTMLBuilder [main] Get URL : https://www.google.com/search?q=En+quelle+ann%C3%A9e+eut+lieu+le+concert+du+Live-Aid%2C+consid%C3%A9r%C3%A9+comme+l%27un+des+plus+grands+concerts+de+l%27histoire+%3F
+2018-11-13 20:32:14,687 INFO c.t.l.TCPServer [Thread-1] TCP SERVER LAUNCHED
+2018-11-13 20:35:10,992 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-13 20:35:10,996 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Antoine de Saint-Exupéry"
+    },
+    {
+      "label": "B",
+      "title": "Lewis Carroll"
+    },
+    {
+      "label": "C",
+      "title": "Charles Perrault"
+    },
+    {
+      "label": "D",
+      "title": "J.K. Rowling"
+    }
+  ],
+  "questionEntitled": "Quel est l\u0027auteur du \"Petit Prince\" ?"
+}
+
+2018-11-13 20:35:11,226 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Quel+est+l%27auteur+du+%22Petit+Prince%22+%3F
+2018-11-13 20:35:12,963 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-13 20:35:12,968 DEBUG t.OccurencesSearcher [Thread-1] D - j.k. rowling 			0 times found
+2018-11-13 20:35:12,968 DEBUG t.OccurencesSearcher [Thread-1] A - antoine de saint-exupery 			9 times found
+2018-11-13 20:35:12,968 DEBUG t.OccurencesSearcher [Thread-1] C - charles perrault 			0 times found
+2018-11-13 20:35:12,970 DEBUG t.OccurencesSearcher [Thread-1] B - lewis carroll 			4 times found
+2018-11-13 20:35:12,970 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-13 20:35:12,988 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : A - antoine de saint-exupery
+2018-11-13 20:35:12,988 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-13 20:36:54,744 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-13 20:36:54,745 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Hello Kitty"
+    },
+    {
+      "label": "B",
+      "title": "Cute Cat"
+    },
+    {
+      "label": "C",
+      "title": "Grosminet"
+    },
+    {
+      "label": "D",
+      "title": "Grumpy Cat"
+    }
+  ],
+  "questionEntitled": "Comment est surnommé ce chat sur les réseaux sociaux ?"
+}
+
+2018-11-13 20:36:54,769 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Comment+est+surnomm%C3%A9+ce+chat+sur+les+r%C3%A9seaux+sociaux+%3F
+2018-11-13 20:36:55,472 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-13 20:36:55,472 DEBUG t.OccurencesSearcher [Thread-1] C - grosminet 			0 times found
+2018-11-13 20:36:55,472 DEBUG t.OccurencesSearcher [Thread-1] A - hello kitty 			0 times found
+2018-11-13 20:36:55,473 DEBUG t.OccurencesSearcher [Thread-1] B - cute cat 			0 times found
+2018-11-13 20:36:55,473 DEBUG t.OccurencesSearcher [Thread-1] D - grumpy cat 			4 times found
+2018-11-13 20:36:55,473 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-13 20:36:55,473 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : D - grumpy cat
+2018-11-13 20:36:55,473 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-13 20:38:10,088 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-13 20:38:10,089 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Le Vatican"
+    },
+    {
+      "label": "B",
+      "title": "Monaco"
+    },
+    {
+      "label": "C",
+      "title": "Singapour"
+    },
+    {
+      "label": "D",
+      "title": "Le Maroc"
+    }
+  ],
+  "questionEntitled": "Parmi ces propositions, laquelle n\u0027est pas une Cité-Etat ?"
+}
+
+2018-11-13 20:38:10,121 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Parmi+ces+propositions%2C+laquelle+n%27est+pas+une+Cit%C3%A9-Etat+%3F
+2018-11-13 20:38:10,814 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-13 20:38:10,815 DEBUG t.OccurencesSearcher [Thread-1] B - monaco 			0 times found
+2018-11-13 20:38:10,815 DEBUG t.OccurencesSearcher [Thread-1] D - maroc 			0 times found
+2018-11-13 20:38:10,815 DEBUG t.OccurencesSearcher [Thread-1] A - vatican 			1 times found
+2018-11-13 20:38:10,815 DEBUG t.OccurencesSearcher [Thread-1] C - singapour 			0 times found
+2018-11-13 20:38:10,819 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-13 20:38:10,819 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : A - vatican
+2018-11-13 20:38:10,819 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-13 20:39:27,771 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-13 20:39:27,773 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "À Arles"
+    },
+    {
+      "label": "B",
+      "title": "À Pise"
+    },
+    {
+      "label": "C",
+      "title": "À Rome"
+    },
+    {
+      "label": "D",
+      "title": "À Madrid"
+    }
+  ],
+  "questionEntitled": "Où se situe cette tour ?"
+}
+
+2018-11-13 20:39:27,797 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=O%C3%B9+se+situe+cette+tour+%3F
+2018-11-13 20:39:28,764 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-13 20:39:28,764 DEBUG t.OccurencesSearcher [Thread-1] D - a madrid 			0 times found
+2018-11-13 20:39:28,764 DEBUG t.OccurencesSearcher [Thread-1] C - a rome 			0 times found
+2018-11-13 20:39:28,764 DEBUG t.OccurencesSearcher [Thread-1] B - a pise 			1 times found
+2018-11-13 20:39:28,764 DEBUG t.OccurencesSearcher [Thread-1] A - a arles 			0 times found
+2018-11-13 20:39:28,764 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-13 20:39:28,765 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : B - a pise
+2018-11-13 20:39:28,765 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-13 20:40:55,878 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-13 20:40:55,879 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "+"
+    },
+    {
+      "label": "B",
+      "title": "-"
+    },
+    {
+      "label": "C",
+      "title": "x"
+    },
+    {
+      "label": "D",
+      "title": ":"
+    }
+  ],
+  "questionEntitled": "Quel est le nom le plus probable du prochain album de l\u0027artiste que vous avez écouté ?"
+}
+
+2018-11-13 20:40:55,906 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Quel+est+le+nom+le+plus+probable+du+prochain+album+de+l%27artiste+que+vous+avez+%C3%A9cout%C3%A9+%3F
+2018-11-13 20:40:56,712 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-13 20:40:56,713 DEBUG t.OccurencesSearcher [Thread-1] B - - 			4013 times found
+2018-11-13 20:40:56,713 DEBUG t.OccurencesSearcher [Thread-1] C - x 			116 times found
+2018-11-13 20:40:56,713 DEBUG t.OccurencesSearcher [Thread-1] D - : 			4033 times found
+2018-11-13 20:40:56,713 DEBUG t.OccurencesSearcher [Thread-1] A - + 			575 times found
+2018-11-13 20:40:56,713 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-13 20:40:56,713 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : D - :
+2018-11-13 20:40:56,713 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-13 20:42:10,148 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-13 20:42:10,149 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "100"
+    },
+    {
+      "label": "B",
+      "title": "5000"
+    },
+    {
+      "label": "C",
+      "title": "15000"
+    },
+    {
+      "label": "D",
+      "title": "25000"
+    }
+  ],
+  "questionEntitled": "Combien d\u0027espèces compte la famille des orchidées ?"
+}
+
+2018-11-13 20:42:10,180 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Combien+d%27esp%C3%A8ces+compte+la+famille+des+orchid%C3%A9es+%3F
+2018-11-13 20:42:10,859 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-13 20:42:10,859 DEBUG t.OccurencesSearcher [Thread-1] C - 15000 			0 times found
+2018-11-13 20:42:10,859 DEBUG t.OccurencesSearcher [Thread-1] A - 100 			76 times found
+2018-11-13 20:42:10,861 DEBUG t.OccurencesSearcher [Thread-1] B - 5000 			0 times found
+2018-11-13 20:42:10,862 DEBUG t.OccurencesSearcher [Thread-1] D - 25000 			0 times found
+2018-11-13 20:42:10,862 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-13 20:42:10,862 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : A - 100
+2018-11-13 20:42:10,862 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-13 20:43:42,014 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-13 20:43:42,015 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Les martiens"
+    },
+    {
+      "label": "B",
+      "title": "Les détracteurs"
+    },
+    {
+      "label": "C",
+      "title": "Les Goa\u0027ulds"
+    },
+    {
+      "label": "D",
+      "title": "Les Ziconiens"
+    }
+  ],
+  "questionEntitled": "Quels sont les méchants de la Porte des Étoiles ?"
+}
+
+2018-11-13 20:43:42,041 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Quels+sont+les+m%C3%A9chants+de+la+Porte+des+%C3%89toiles+%3F
+2018-11-13 20:43:42,857 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-13 20:43:42,857 DEBUG t.OccurencesSearcher [Thread-1] A - martiens 			0 times found
+2018-11-13 20:43:42,857 DEBUG t.OccurencesSearcher [Thread-1] B - detracteurs 			0 times found
+2018-11-13 20:43:42,857 DEBUG t.OccurencesSearcher [Thread-1] D - ziconiens 			0 times found
+2018-11-13 20:43:42,857 DEBUG t.OccurencesSearcher [Thread-1] C - goa ulds 			0 times found
+2018-11-13 20:43:42,857 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-13 20:43:42,859 ERROR c.t.l.TCPServer [Thread-1] Cannot predict most relevant answer
+2018-11-13 20:43:42,859 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-13 20:45:01,338 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-13 20:45:01,339 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "8"
+    },
+    {
+      "label": "B",
+      "title": "13"
+    },
+    {
+      "label": "C",
+      "title": "17"
+    },
+    {
+      "label": "D",
+      "title": "22"
+    }
+  ],
+  "questionEntitled": "Quel est le record du monde de buts marqués par le même joueur en une seule édition de la Coupe du Monde de football ?"
+}
+
+2018-11-13 20:45:01,364 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Quel+est+le+record+du+monde+de+buts+marqu%C3%A9s+par+le+m%C3%AAme+joueur+en+une+seule+%C3%A9dition+de+la+Coupe+du+Monde+de+football+%3F
+2018-11-13 20:45:02,253 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-13 20:45:02,253 DEBUG t.OccurencesSearcher [Thread-1] A - 8 			55 times found
+2018-11-13 20:45:02,255 DEBUG t.OccurencesSearcher [Thread-1] B - 13 			35 times found
+2018-11-13 20:45:02,255 DEBUG t.OccurencesSearcher [Thread-1] D - 22 			11 times found
+2018-11-13 20:45:02,256 DEBUG t.OccurencesSearcher [Thread-1] C - 17 			9 times found
+2018-11-13 20:45:02,256 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-13 20:45:02,256 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : A - 8
+2018-11-13 20:45:02,256 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-13 20:46:11,991 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-13 20:46:11,991 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Dota 2"
+    },
+    {
+      "label": "B",
+      "title": "Minecraft"
+    },
+    {
+      "label": "C",
+      "title": "League of Legends"
+    },
+    {
+      "label": "D",
+      "title": "CounterStrike"
+    }
+  ],
+  "questionEntitled": "Avant Fortnite, quel jeu vidéo a bénéficié du plus important cashprize pour des tournois compétitifs ?"
+}
+
+2018-11-13 20:46:12,018 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Avant+Fortnite%2C+quel+jeu+vid%C3%A9o+a+b%C3%A9n%C3%A9fici%C3%A9+du+plus+important+cashprize+pour+des+tournois+comp%C3%A9titifs+%3F
+2018-11-13 20:46:12,719 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-13 20:46:12,720 DEBUG t.OccurencesSearcher [Thread-1] B - minecraft 			0 times found
+2018-11-13 20:46:12,720 DEBUG t.OccurencesSearcher [Thread-1] D - counterstrike 			0 times found
+2018-11-13 20:46:12,721 DEBUG t.OccurencesSearcher [Thread-1] A - dota 2 			1 times found
+2018-11-13 20:46:12,721 DEBUG t.OccurencesSearcher [Thread-1] C - league of legends 			0 times found
+2018-11-13 20:46:12,721 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-13 20:46:12,722 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : A - dota 2
+2018-11-13 20:46:12,722 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-13 20:47:14,050 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-13 20:47:14,051 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [
+    {
+      "label": "A",
+      "title": "Dimitri Pavlovitch IV"
+    },
+    {
+      "label": "B",
+      "title": "Nicolas II"
+    },
+    {
+      "label": "C",
+      "title": "Alexandre III"
+    },
+    {
+      "label": "D",
+      "title": "Guillaume Ier"
+    }
+  ],
+  "questionEntitled": "Qui fut le dernier Romanov à être Tsar ?"
+}
+
+2018-11-13 20:47:14,069 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Qui+fut+le+dernier+Romanov+%C3%A0+%C3%AAtre+Tsar+%3F
+2018-11-13 20:47:14,781 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-13 20:47:14,781 DEBUG t.OccurencesSearcher [Thread-1] A - dimitri pavlovitch iv 			0 times found
+2018-11-13 20:47:14,781 DEBUG t.OccurencesSearcher [Thread-1] D - guillaume ier 			0 times found
+2018-11-13 20:47:14,781 DEBUG t.OccurencesSearcher [Thread-1] C - alexandre iii 			4 times found
+2018-11-13 20:47:14,782 DEBUG t.OccurencesSearcher [Thread-1] B - nicolas ii 			13 times found
+2018-11-13 20:47:14,782 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------
+2018-11-13 20:47:14,782 INFO c.t.l.TCPServer [Thread-1] Most probable answer is : B - nicolas ii
+2018-11-13 20:47:14,783 DEBUG c.t.l.TCPServer [Thread-1] Client connection closed
+2018-11-13 20:48:18,527 DEBUG c.t.l.TCPServer [Thread-1] Client connection opened
+2018-11-13 20:48:18,528 DEBUG c.t.l.TCPServer [Thread-1] {
+  "answers": [],
+  "questionEntitled": "Quel âge la NASA a-t-elle eu cette année ?"
+}
+
+2018-11-13 20:48:18,552 DEBUG c.t.l.HTMLBuilder [Thread-1] Get URL : https://www.google.com/search?q=Quel+%C3%A2ge+la+NASA+a-t-elle+eu+cette+ann%C3%A9e+%3F
+2018-11-13 20:48:19,221 DEBUG t.OccurencesSearcher [Thread-1] --------Occurences---------
+2018-11-13 20:48:19,222 DEBUG t.OccurencesSearcher [Thread-1] ---------------------------

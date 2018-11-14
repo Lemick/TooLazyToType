@@ -23,6 +23,7 @@ import java.util.regex.Pattern;
  * fausse les resultats) Faire une implem différente pour la derniére question
  * -> chercher tout les chiffres de la page Enlever les escapes de """ dans les
  * questions
+ * Quand detect "cette semaine" mettre dans actualité
  */
 public class QueryNavigator {
 

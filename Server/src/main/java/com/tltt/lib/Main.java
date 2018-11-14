@@ -23,15 +23,15 @@ public class Main {
 	public static TCPServer server;
 
 	public static void main(String[] args) throws InterruptedException, IOException, URISyntaxException {
-		testDlJsoup("https://www.google.com/search?q=En+quelle+ann%C3%A9e+eut+lieu+le+concert+du+Live-Aid%2C+consid%C3%A9r%C3%A9+comme+l%27un+des+plus+grands+concerts+de+l%27histoire+%3F");
-		OccurencesSearcher occurencesSearcher = new OccurencesSearcher(quidQuestionDTO, textToSearch)
+		//testDlJsoup("https://www.google.com/search?q=En+quelle+ann%C3%A9e+eut+lieu+le+concert+du+Live-Aid%2C+consid%C3%A9r%C3%A9+comme+l%27un+des+plus+grands+concerts+de+l%27histoire+%3F");
+		//OccurencesSearcher occurencesSearcher = new OccurencesSearcher(quidQuestionDTO, textToSearch)
 		
 		// QuidQuestionDTO questionContext = new QuidQuestionDTO();
 		// questionContext.setQuestionEntitled("");
 		// Navigate navigate = new Navigate(questionContext);
 		// navigate.openSearchPage();
 		
-		//launchServer();
+		launchServer();
 
 	}
 
