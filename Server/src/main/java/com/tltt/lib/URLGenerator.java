@@ -19,12 +19,12 @@ public class URLGenerator {
 		buildURL(quidQuestionDTO);
 	}
 
-	public void buildURL(QuidQuestionDTO quidQuestionDTO) {
+	private void buildURL(QuidQuestionDTO quidQuestionDTO) {
 		try {
 			if (normalizer.isTopicalSubjectSentence(quidQuestionDTO.getQuestionEntitled())) {
-				urlQuery = String.format(BASE_SEARCH_URL, URLEncoder.encode(quidQuestionDTO.getQuestionEntitled(), "UTF-8"));
-			} else {
 				urlQuery = String.format(BASE_TOPICAL_SEARCH_URL, URLEncoder.encode(quidQuestionDTO.getQuestionEntitled(), "UTF-8"));
+			} else {
+				urlQuery = String.format(BASE_SEARCH_URL, URLEncoder.encode(quidQuestionDTO.getQuestionEntitled(), "UTF-8"));
 			}
 		} catch (UnsupportedEncodingException e) {
 			e.printStackTrace();
