@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import text.normalizer.QueryNormalizer;
+import com.tltt.lib.text.normalizer.QueryNormalizer;
 
 public class TestQueryNormalizer {
 
@@ -27,7 +27,34 @@ public class TestQueryNormalizer {
 		
 		actual = queryNormalizer.removeLeadingStopWords("de l'air");
 		assertEquals("air", actual);
+		
+		actual = queryNormalizer.removeLeadingStopWords("Sot-l'y-laisse");
+		assertEquals("sot-l'y-laisse", actual);
 	}
+	
+	@Test
+	public void containsTopicalSubjects() {
+		QueryNormalizer queryNormalizer = new QueryNormalizer();
+		boolean actual;
+				
+		actual = queryNormalizer.isTopicalSubjectSentence("Qui à eu ce mois-ci le césar du meilleur acteur ?");
+		assertEquals(true, actual);
+		
+		actual = queryNormalizer.isTopicalSubjectSentence("Cette semaine, quelle ville à été decernée meilleure ville du monde ?");
+		assertEquals(true, actual);
+		
+		actual = queryNormalizer.isTopicalSubjectSentence("Qui a été nommé homme de l'année aujourd'hui?");
+		assertEquals(true, actual);
+		
+		actual = queryNormalizer.isTopicalSubjectSentence("Quel film sort bientôt au cinéma ?");
+		assertEquals(true, actual);
+		
+		actual = queryNormalizer.isTopicalSubjectSentence("Qui est l'inventeur de l'ampoule ?");
+		assertEquals(false, actual);
+		
+
+	}
+	
 	
 	@Test
 	public void removeDoubleQuotes() {

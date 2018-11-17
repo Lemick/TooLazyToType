@@ -3,8 +3,7 @@ package com.tltt.lib;
 import com.google.gson.Gson;
 import com.tltt.lib.dto.QuidAnswerDTO;
 import com.tltt.lib.dto.QuidQuestionDTO;
-
-import text.NoPredictionException;
+import com.tltt.lib.text.NoPredictionException;
 
 import java.io.DataInputStream;
 import java.io.IOException;

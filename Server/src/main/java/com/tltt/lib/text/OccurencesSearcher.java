@@ -1,22 +1,18 @@
-package text;
+package com.tltt.lib.text;
 
 import java.util.HashMap;
-import java.util.HashSet;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import javax.management.Query;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.tltt.lib.dto.QuidAnswerDTO;
 import com.tltt.lib.dto.QuidQuestionDTO;
-
-import text.normalizer.QueryNormalizer;
+import com.tltt.lib.text.normalizer.QueryNormalizer;
 
 public class OccurencesSearcher {
 
@@ -47,7 +43,7 @@ public class OccurencesSearcher {
 	}
 
 	public QuidAnswerDTO getMostOccuredAnswer() throws NoPredictionException {
-		Map<QuidAnswerDTO, Integer> answersOccurences = new HashMap<>();
+		Map<QuidAnswerDTO, Integer> answersOccurences = new LinkedHashMap<>();
 		for (QuidAnswerDTO quidAnswerDTO : quidQuestionDTO.getAnswers()) {
 			int occurences = countWord(quidAnswerDTO.getTitle());
 			answersOccurences.put(quidAnswerDTO, occurences);
@@ -58,7 +54,7 @@ public class OccurencesSearcher {
 	}
 
 	public Map<String, Integer> extractNumbers() {
-		Map<String, Integer> numbersOccurences = new HashMap<>();
+		Map<String, Integer> numbersOccurences = new LinkedHashMap<>();
 
 		Pattern p = Pattern.compile("\\b[0-9]*\\b");
 		Matcher m = p.matcher(textToSearch);
@@ -95,7 +91,7 @@ public class OccurencesSearcher {
 	public static void logOccurencesMap(Map<QuidAnswerDTO, Integer> answersOccurences) {
 		logger.debug("--------Occurences---------");
 		for (Map.Entry<QuidAnswerDTO, Integer> entry : answersOccurences.entrySet()) {
-			logger.debug(String.format("%s - %s \t\t\t%d times found", entry.getKey().getLabel(), entry.getKey().getTitle(), entry.getValue()));
+			logger.debug(String.format("%1s - %-25s %d times found", entry.getKey().getLabel(), entry.getKey().getTitle(), entry.getValue()));
 		}
 		logger.debug("---------------------------");
 	}

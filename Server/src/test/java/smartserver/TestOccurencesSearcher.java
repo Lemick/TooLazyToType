@@ -15,10 +15,9 @@ import org.mockito.MockitoAnnotations;
 
 import com.tltt.lib.dto.QuidAnswerDTO;
 import com.tltt.lib.dto.QuidQuestionDTO;
-
-import file.ResourceFile;
-import text.NoPredictionException;
-import text.OccurencesSearcher;
+import com.tltt.lib.file.ResourceFile;
+import com.tltt.lib.text.NoPredictionException;
+import com.tltt.lib.text.OccurencesSearcher;
 
 public class TestOccurencesSearcher {
 

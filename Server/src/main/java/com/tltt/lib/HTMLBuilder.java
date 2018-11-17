@@ -7,7 +7,7 @@ import org.apache.logging.log4j.Logger;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
-import text.normalizer.QueryNormalizer;
+import com.tltt.lib.text.normalizer.QueryNormalizer;
 
 public class HTMLBuilder {
 

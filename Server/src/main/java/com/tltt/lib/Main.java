@@ -14,7 +14,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jsoup.Jsoup;
 
-import text.OccurencesSearcher;
+import com.tltt.lib.text.OccurencesSearcher;
 
 public class Main { 
 	
