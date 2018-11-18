@@ -11,14 +11,23 @@ public class ResourceFile {
 
 	private File file;
 	
+	public File getFile() {
+		return file;
+	}
+
 	public ResourceFile(String resourceName) {
 		ClassLoader classLoader = getClass().getClassLoader();
 		URL resource = classLoader.getResource(resourceName);
 		file = new File(resource.getPath()); 
 	}
 
-	public String getContent() throws IOException {
-		return FileUtils.readFileToString(file);
+	public String getContent() {
+		try {
+			return FileUtils.readFileToString(file);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return "";
 	}
 	
 	public List<String> getLines() {

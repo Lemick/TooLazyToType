@@ -29,6 +29,9 @@ public class TestOccurencesSearcher {
 	@Mock
 	QuidQuestionDTO mockQuestionDTO;
 	
+	@Mock
+	Map<QuidAnswerDTO, Integer> mockOccurencesMap;
+	
 	@Before
 	public void initFile() throws IOException {
 		MockitoAnnotations.initMocks(this);
@@ -53,7 +56,7 @@ public class TestOccurencesSearcher {
 		quidQuestionDTO.getAnswers().add(new QuidAnswerDTO("D", "Plateforme"));
 
 		OccurencesSearcher occurencesSearcher = new OccurencesSearcher(quidQuestionDTO, testFileBR);
-		QuidAnswerDTO actual = occurencesSearcher.getMostOccuredAnswer();
+		QuidAnswerDTO actual = occurencesSearcher.predictAnswer();
 		assertEquals(expected, actual);
 	}
 
@@ -69,7 +72,7 @@ public class TestOccurencesSearcher {
 		quidQuestionDTO.getAnswers().add(new QuidAnswerDTO("D", "Le nouveau gourvenement"));
 
 		OccurencesSearcher occurencesSearcher = new OccurencesSearcher(quidQuestionDTO, testFileArcEnCiel);
-		QuidAnswerDTO actual = occurencesSearcher.getMostOccuredAnswer();
+		QuidAnswerDTO actual = occurencesSearcher.predictAnswer();
 		assertEquals(expected, actual);
 	}
 
@@ -85,7 +88,7 @@ public class TestOccurencesSearcher {
 		quidQuestionDTO.getAnswers().add(new QuidAnswerDTO("D", "Ctrl + V"));
 
 		OccurencesSearcher occurencesSearcher = new OccurencesSearcher(quidQuestionDTO, testFileRaccourci);
-		QuidAnswerDTO actual = occurencesSearcher.getMostOccuredAnswer();
+		QuidAnswerDTO actual = occurencesSearcher.predictAnswer();
 		assertEquals(expected, actual);
 	}
 
@@ -142,20 +145,23 @@ public class TestOccurencesSearcher {
 
 	@Test
 	public void testMaxMapBR() throws NoPredictionException {
-		Map<QuidAnswerDTO, Integer> map = new HashMap<>();
-		map.put(new QuidAnswerDTO("A", "Eau"), 8);
-		map.put(new QuidAnswerDTO("B", "Feu"), 16);
-		map.put(new QuidAnswerDTO("C", "Terre"), 3);
-		map.put(new QuidAnswerDTO("D", "Air"), 0);
-		QuidAnswerDTO result = OccurencesSearcher.getMostFrequentAnswer(map);
+		OccurencesSearcher occurencesSearcher;
+		
+		occurencesSearcher = new OccurencesSearcher(mockQuestionDTO, testFileRaccourci);
+		occurencesSearcher.getAnswersOccurences().clear();
+		occurencesSearcher.getAnswersOccurences().put(new QuidAnswerDTO("A", "Eau"), 8);
+		occurencesSearcher.getAnswersOccurences().put(new QuidAnswerDTO("B", "Feu"), 16);
+		occurencesSearcher.getAnswersOccurences().put(new QuidAnswerDTO("C", "Terre"), 3);
+		occurencesSearcher.getAnswersOccurences().put(new QuidAnswerDTO("D", "Air"), 0);
+		QuidAnswerDTO result = occurencesSearcher.getMostFrequentAnswer();
 		assertEquals("B", result.getLabel());
 
-		map = new HashMap<>();
-		map.put(new QuidAnswerDTO("A", "AA"), 0);
-		map.put(new QuidAnswerDTO("B", "AA"), 1);
-		map.put(new QuidAnswerDTO("C", "BB"), 0);
-		map.put(new QuidAnswerDTO("D", "BB"), 2);
-		result = OccurencesSearcher.getMostFrequentAnswer(map);
+		occurencesSearcher = new OccurencesSearcher(mockQuestionDTO, testFileRaccourci);
+		occurencesSearcher.getAnswersOccurences().put(new QuidAnswerDTO("A", "AA"), 0);
+		occurencesSearcher.getAnswersOccurences().put(new QuidAnswerDTO("B", "AA"), 1);
+		occurencesSearcher.getAnswersOccurences().put(new QuidAnswerDTO("C", "BB"), 0);
+		occurencesSearcher.getAnswersOccurences().put(new QuidAnswerDTO("D", "BB"), 2);
+		result = occurencesSearcher.getMostFrequentAnswer();
 		assertEquals("D", result.getLabel());
 
 	}

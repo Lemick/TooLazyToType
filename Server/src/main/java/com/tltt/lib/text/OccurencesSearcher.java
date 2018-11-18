@@ -1,6 +1,5 @@
 package com.tltt.lib.text;
 
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -18,14 +17,17 @@ public class OccurencesSearcher {
 
 	private static Logger logger = LogManager.getLogger();
 
+
 	private QueryNormalizer queryNormalizer;
 	private QuidQuestionDTO quidQuestionDTO;
 	private String textToSearch;
-
+	private Map<QuidAnswerDTO, Integer> answersOccurences;
+	
 	public OccurencesSearcher(QuidQuestionDTO quidQuestionDTO, String textToSearch) {
 		queryNormalizer = new QueryNormalizer();
 		this.quidQuestionDTO = quidQuestionDTO;
 		this.textToSearch = textToSearch;
+		answersOccurences = new LinkedHashMap<>();
 		normalizeElements();
 	}
 
@@ -42,15 +44,18 @@ public class OccurencesSearcher {
 		}
 	}
 
-	public QuidAnswerDTO getMostOccuredAnswer() throws NoPredictionException {
-		Map<QuidAnswerDTO, Integer> answersOccurences = new LinkedHashMap<>();
+	public QuidAnswerDTO predictAnswer() throws NoPredictionException {
+		buildOccurencesMap();	
+		
+		QuidAnswerDTO mostAccurateAnswer = getMostFrequentAnswer();
+		return mostAccurateAnswer;
+	}
+
+	private void buildOccurencesMap() {
 		for (QuidAnswerDTO quidAnswerDTO : quidQuestionDTO.getAnswers()) {
 			int occurences = countWord(quidAnswerDTO.getTitle());
 			answersOccurences.put(quidAnswerDTO, occurences);
-		}
-		logOccurencesMap(answersOccurences);
-		QuidAnswerDTO mostAccurateAnswer = getMostFrequentAnswer(answersOccurences);
-		return mostAccurateAnswer;
+		}	
 	}
 
 	public Map<String, Integer> extractNumbers() {
@@ -67,7 +72,7 @@ public class OccurencesSearcher {
 		return numbersOccurences;
 	}
 
-	public static QuidAnswerDTO getMostFrequentAnswer(Map<QuidAnswerDTO, Integer> answersOccurences) throws NoPredictionException {
+	public QuidAnswerDTO getMostFrequentAnswer() throws NoPredictionException {
 		Entry<QuidAnswerDTO, Integer> mostRelevantEntry = answersOccurences.entrySet().stream().max((entry1, entry2) -> entry1.getValue() > entry2.getValue() ? 1 : -1).get();
 
 		for (Entry<QuidAnswerDTO, Integer> entry : answersOccurences.entrySet()) {
@@ -87,20 +92,8 @@ public class OccurencesSearcher {
 			count++;
 		return count;
 	}
-
-	public static void logOccurencesMap(Map<QuidAnswerDTO, Integer> answersOccurences) {
-		logger.debug("--------Occurences---------");
-		for (Map.Entry<QuidAnswerDTO, Integer> entry : answersOccurences.entrySet()) {
-			logger.debug(String.format("%1s - %-25s %d times found", entry.getKey().getLabel(), entry.getKey().getTitle(), entry.getValue()));
-		}
-		logger.debug("---------------------------");
-	}
 	
-	public static void logOccurencesIntMap(Map<String, Integer> numbersOccurences) {
-		logger.debug("--------Occurences---------");
-		for (Entry<String, Integer> entry : numbersOccurences.entrySet()) {
-			logger.debug(String.format("%s \t\t\t%d times found", entry.getKey(), entry.getValue()));
-		}
-		logger.debug("---------------------------");
+	public Map<QuidAnswerDTO, Integer> getAnswersOccurences() {
+		return answersOccurences;
 	}
 }

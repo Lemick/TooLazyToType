@@ -40,6 +40,7 @@ local.properties
 # sbteclipse plugin
 .target
 
+discordwebhook.txt
 # Tern plugin
 .tern-project
 
@@ -110,3 +111,5 @@ buildNumber.properties
 .mvn/wrapper/maven-wrapper.jar
 
 # End of https://www.gitignore.io/api/java,maven,eclipse
+
+discordwebhook.txt
