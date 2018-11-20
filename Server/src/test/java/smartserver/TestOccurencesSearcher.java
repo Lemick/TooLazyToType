@@ -25,13 +25,11 @@ public class TestOccurencesSearcher {
 	public String testFileArcEnCiel;
 	public String testFileRaccourci;
 	public String testFileVanGogh;
-
+	public String testFileMeilleurAct;
+	
 	@Mock
 	QuidQuestionDTO mockQuestionDTO;
-	
-	@Mock
-	Map<QuidAnswerDTO, Integer> mockOccurencesMap;
-	
+
 	@Before
 	public void initFile() throws IOException {
 		MockitoAnnotations.initMocks(this);
@@ -42,6 +40,7 @@ public class TestOccurencesSearcher {
 		testFileArcEnCiel = new ResourceFile("QuestionMytheArcEnCiel.html").getContent();
 		testFileRaccourci = new ResourceFile("QuestionRaccourciClavierAnnule.html").getContent();
 		testFileVanGogh = new ResourceFile("QuestionVanGogh.html").getContent();
+		testFileMeilleurAct = new ResourceFile("QuestionMeilleureActrice.html").getContent();
 	}
 
 	@Test
@@ -91,7 +90,6 @@ public class TestOccurencesSearcher {
 		QuidAnswerDTO actual = occurencesSearcher.predictAnswer();
 		assertEquals(expected, actual);
 	}
-
 	@Test
 	public void countWordsBR() {
 		int actual;
@@ -113,6 +111,7 @@ public class TestOccurencesSearcher {
 		assertEquals(0, actual);
 	}
 
+	
 	@Test
 	public void countWordsArc() {
 		int actual;
@@ -142,6 +141,7 @@ public class TestOccurencesSearcher {
 		actual = occurencesSearcher.countWord("Ctrl + V");
 		assertEquals(0, actual);
 	}
+	
 
 	@Test
 	public void testMaxMapBR() throws NoPredictionException {

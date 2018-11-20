@@ -47,7 +47,7 @@ public class ReportBuilder {
 			sbl.appendLine(url);
 		}
 		if (answersOccurences != null) {
-			sbl.appendLine(String.format(HEADER, "Occurences trouvées dans la page Google"));
+			sbl.appendLine(String.format(HEADER, "Occurences found with Google"));
 			for (Map.Entry<QuidAnswerDTO, Integer> entry : answersOccurences.entrySet()) {
 				sbl.appendLine(String.format("%1s - %-30s %d times found", entry.getKey().getLabel(), entry.getKey().getTitle(), entry.getValue()));
 			}

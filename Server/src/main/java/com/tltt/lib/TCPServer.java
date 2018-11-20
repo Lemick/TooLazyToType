@@ -72,17 +72,22 @@ public class TCPServer {
 				}
 			}
 
-			private void doSearch(QuidQuestionDTO questionContext) throws UnsupportedEncodingException, URISyntaxException, IOException, NoPredictionException {
-				QueryNavigator navigator = new QueryNavigator(questionContext);
-				navigator.openInBrowser();
-				QuidAnswerDTO mostRelevantAnswer = navigator.searchMostRelevantAnswer(questionContext);
-				navigator.publishReport(discordWebhook);
-				logger.info(String.format("Most probable answer is : %s - %s", mostRelevantAnswer.getLabel(), mostRelevantAnswer.getTitle()));
-			}
 		});
 		t.start();
 	}
 
+	private void doSearch(QuidQuestionDTO questionContext) throws UnsupportedEncodingException, URISyntaxException, IOException, NoPredictionException {
+		QueryNavigator navigator = new QueryNavigator(questionContext);
+		navigator.openInBrowser();
+		navigator.publishReport(discordWebhook);
+		try {
+			QuidAnswerDTO mostRelevantAnswer = navigator.searchMostRelevantAnswer(questionContext);
+			logger.info(String.format("Most probable answer is : %s - %s", mostRelevantAnswer.getLabel(), mostRelevantAnswer.getTitle()));
+		} catch (NoPredictionException e) {
+			logger.error("No best answer found");
+		}
+	}
+	
 	public void close() {
 		isRunning = false;
 	}

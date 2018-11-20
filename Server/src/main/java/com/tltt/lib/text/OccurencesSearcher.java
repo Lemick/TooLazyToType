@@ -17,18 +17,18 @@ public class OccurencesSearcher {
 
 	private static Logger logger = LogManager.getLogger();
 
-
 	private QueryNormalizer queryNormalizer;
 	private QuidQuestionDTO quidQuestionDTO;
 	private String textToSearch;
 	private Map<QuidAnswerDTO, Integer> answersOccurences;
-	
+
 	public OccurencesSearcher(QuidQuestionDTO quidQuestionDTO, String textToSearch) {
 		queryNormalizer = new QueryNormalizer();
 		this.quidQuestionDTO = quidQuestionDTO;
 		this.textToSearch = textToSearch;
 		answersOccurences = new LinkedHashMap<>();
 		normalizeElements();
+		buildOccurencesMap();
 	}
 
 	private void normalizeElements() {
@@ -45,8 +45,6 @@ public class OccurencesSearcher {
 	}
 
 	public QuidAnswerDTO predictAnswer() throws NoPredictionException {
-		buildOccurencesMap();	
-		
 		QuidAnswerDTO mostAccurateAnswer = getMostFrequentAnswer();
 		return mostAccurateAnswer;
 	}
@@ -55,7 +53,7 @@ public class OccurencesSearcher {
 		for (QuidAnswerDTO quidAnswerDTO : quidQuestionDTO.getAnswers()) {
 			int occurences = countWord(quidAnswerDTO.getTitle());
 			answersOccurences.put(quidAnswerDTO, occurences);
-		}	
+		}
 	}
 
 	public Map<String, Integer> extractNumbers() {
@@ -79,7 +77,6 @@ public class OccurencesSearcher {
 			if (!entry.equals(mostRelevantEntry) && entry.getValue().intValue() == mostRelevantEntry.getValue().intValue())
 				throw new NoPredictionException();
 		}
-
 		return mostRelevantEntry.getKey();
 	}
 
@@ -92,7 +89,7 @@ public class OccurencesSearcher {
 			count++;
 		return count;
 	}
-	
+
 	public Map<QuidAnswerDTO, Integer> getAnswersOccurences() {
 		return answersOccurences;
 	}

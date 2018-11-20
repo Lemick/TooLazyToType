@@ -65,19 +65,19 @@ public class TestTokenizer {
 		String actual;
 		tokenizer = new Tokenizer("Ceci est l'art");
 		
-		tokenizer.removeLeadingWord();
+		tokenizer.removeCurrentWord();
 		actual = tokenizer.joinTokens();
 		assertEquals(actual, "est l'art");
 		
-		tokenizer.removeLeadingWord();
+		tokenizer.removeCurrentWord();
 		actual = tokenizer.joinTokens();
 		assertEquals(actual, "l'art");
 		
-		tokenizer.removeLeadingWord();
+		tokenizer.removeCurrentWord();
 		actual = tokenizer.joinTokens();
 		assertEquals(actual, "art");
 		
-		tokenizer.removeLeadingWord();
+		tokenizer.removeCurrentWord();
 		actual = tokenizer.joinTokens();
 		assertEquals(actual, "");
 	}

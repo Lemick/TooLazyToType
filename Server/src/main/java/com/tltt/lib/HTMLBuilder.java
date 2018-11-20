@@ -6,6 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.select.Elements;
 
 import com.tltt.lib.text.normalizer.QueryNormalizer;
 
@@ -16,11 +17,13 @@ public class HTMLBuilder {
 	private String urlQuery;
 	private boolean hasToRemoveAccent;
 	private boolean hasToCleanMetaCode;
-
+	private int subLinksToExplore;
+	
 	public HTMLBuilder(String urlQuery) {
 		this.urlQuery = urlQuery;
 		hasToRemoveAccent = false;
 		hasToCleanMetaCode = false;
+		subLinksToExplore = 0;
 	}
 
 	public HTMLBuilder setSearchQueryHtml(String urlQuery) throws IOException {
@@ -38,12 +41,25 @@ public class HTMLBuilder {
 		return this;
 	}
 
+	public HTMLBuilder subLinksToExplore(int subLinksToExplore) {
+		this.subLinksToExplore = subLinksToExplore;
+		return this;
+	}
+
 	
 	public String build() {
 		String resultHtml = "";
 		try {
 			logger.debug(String.format("Get URL : %s", urlQuery));
 			Document doc = Jsoup.connect(urlQuery).get();
+			
+			/**
+			Elements resLinks = doc.select(".r > a:first-child");
+			for(int i = 0; i < subLinksToExplore; i++) {
+				Element resLinks.get(i);
+			}
+			**/
+			
 			
 			if (hasToCleanMetaCode) {
 				doc.select("script,style").remove();

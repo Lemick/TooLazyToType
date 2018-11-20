@@ -14,11 +14,11 @@ public class Tokenizer {
 	private List<String> words;
 	
 	public Tokenizer(String text) {
-		delimiters = retrieveDelimiters(text);
-		words =  retrieveData(text);
+		delimiters = explodeDelimiters(text);
+		words =  explodeWords(text);
 	}
 
-	public List<String> retrieveDelimiters(String text) {
+	public List<String> explodeDelimiters(String text) {
 		List<String> delimiters = new ArrayList<String>();
 		Matcher matcher = patternDelimiter.matcher(text);
 		while (matcher.find()) {
@@ -27,12 +27,12 @@ public class Tokenizer {
 		return delimiters;
 	}
 
-	public List<String> retrieveData(String text) {
+	public List<String> explodeWords(String text) {
 		String[] arr = text.split(REG_DELIMITER_TOKEN);
 		return new ArrayList<String>(Arrays.asList(arr));
 	}
 
-	public void removeLeadingWord() {
+	public void removeCurrentWord() {
 		if (words.size() > 0) {
 			words.remove(0);
 			if (delimiters.size() > 0)

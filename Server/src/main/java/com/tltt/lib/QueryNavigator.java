@@ -17,7 +17,10 @@ import com.tltt.lib.text.OccurencesSearcher;
  * NOTE TODO Bug quand les réponses sont des chiffres (le JS est aussi parsé
  * etfausse les resultats) Faire une implem différente pour la derniére question
  * -> chercher tout les chiffres de la page Parser le contenu de la premiere
- * page pour avoir de meilleurs résultats ?
+ * page pour avoir de meilleurs résultats ? oui Parser si la question est une
+ * question négative ?
+ * Implementer la normalization des intutulés de question
+ * Stopper d'utiliser les DTO dans la logique (remplacer par une class abstraite représentant une question)
  */
 public class QueryNavigator {
 
@@ -46,8 +49,10 @@ public class QueryNavigator {
 	public void publishReport(DiscordWebhook discordWebhook) {
 		ReportBuilder reportBuilder = new ReportBuilder().question(quidQuestionDTO).queryUrl(urlQuery).answersOccurences(occurencesSearcher.getAnswersOccurences());
 		String strReport = reportBuilder.build();
-		discordWebhook.addMessage(strReport);
-		discordWebhook.send();
+		if (discordWebhook != null) {
+			discordWebhook.addMessage(strReport);
+			discordWebhook.send();
+		}
 		logger.debug(strReport);
 	}
 

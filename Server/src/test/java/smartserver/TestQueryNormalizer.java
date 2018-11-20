@@ -54,7 +54,7 @@ public class TestQueryNormalizer {
 		
 
 	}
-	
+
 	
 	@Test
 	public void removeDoubleQuotes() {

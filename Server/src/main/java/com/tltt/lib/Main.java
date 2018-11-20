@@ -14,6 +14,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jsoup.Jsoup;
 
+import com.tltt.lib.dto.QuidAnswerDTO;
+import com.tltt.lib.dto.QuidQuestionDTO;
 import com.tltt.lib.text.OccurencesSearcher;
 
 public class Main {
@@ -23,7 +25,15 @@ public class Main {
 	public static TCPServer server;
 
 	public static void main(String[] args) throws InterruptedException, IOException, URISyntaxException {
-		// testDlJsoup("https://www.google.com/search?q=En+quelle+ann%C3%A9e+eut+lieu+le+concert+du+Live-Aid%2C+consid%C3%A9r%C3%A9+comme+l%27un+des+plus+grands+concerts+de+l%27histoire+%3F");
+		//testDlJsoup("https://www.google.com/search?q=La+chair+de+poule+vient+%3A");
+		//QuidQuestionDTO quid = new QuidQuestionDTO();
+		//quid.setQuestionEntitled("événement historique entraîné gouvernance Paris État pendant plus siècle ?");
+		//quid.getAnswers().add(new QuidAnswerDTO("A", "revolution francaise"));
+		//quid.getAnswers().add(new QuidAnswerDTO("B", "commune"));
+		//quid.getAnswers().add(new QuidAnswerDTO("C", "revolution de juillet"));
+		//quid.getAnswers().add(new QuidAnswerDTO("D", "liberation de 1944e"));
+		//testOccurences(quid);
+		
 		launchServer();
 	}
 
@@ -36,8 +46,17 @@ public class Main {
 
 	}
 
+
+	/**
+	 * TEST UTILS
+	 */
 	private static void testDlJsoup(String url) throws IOException {
 		String html = (new HTMLBuilder(url)).cleanMetaCode(true).removeAccents(true).build();
 		FileUtils.writeStringToFile(new File("test.txt"), html);
+	}
+	
+	private static void testOccurences(QuidQuestionDTO quidQuestionDTO) throws IOException {
+		QueryNavigator navigator = new QueryNavigator(quidQuestionDTO);
+		navigator.publishReport(null);
 	}
 }

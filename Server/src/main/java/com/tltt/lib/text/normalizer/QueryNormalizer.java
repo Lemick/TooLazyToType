@@ -8,6 +8,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.StringTokenizer;
 
+import com.tltt.lib.dto.QuidAnswerDTO;
+import com.tltt.lib.dto.QuidQuestionDTO;
 import com.tltt.lib.file.ResourceFile;
 
 public class QueryNormalizer {
@@ -48,7 +50,7 @@ public class QueryNormalizer {
 		while (tokenizer.hasNext()) {
 			String token = tokenizer.nextWord();
 			if (isStopWord(token))
-				tokenizer.removeLeadingWord();
+				tokenizer.removeCurrentWord();
 			else
 				break;
 		}
@@ -56,7 +58,10 @@ public class QueryNormalizer {
 		return result;
 	}
 	
-	
+	public String removeAllStopWords(String text) {	
+		return text;
+		//TODO
+	}
 
 	public boolean isStopWord(String word) {
 		word = word.toLowerCase();
@@ -74,5 +79,19 @@ public class QueryNormalizer {
 				return true;
 		}
 		return false;
+	}
+	
+	public void normalizeQuestion(QuidQuestionDTO quidQuestionDTO) {
+		String questionEntitledNorm;
+		questionEntitledNorm = QueryNormalizer.removeDoubleQuotes(quidQuestionDTO.getQuestionEntitled());
+		questionEntitledNorm = this.removeAllStopWords(questionEntitledNorm);
+		quidQuestionDTO.setQuestionEntitled(questionEntitledNorm);
+
+		for (QuidAnswerDTO quidAnswerDTO : quidQuestionDTO.getAnswers()) {
+			String normAnswerTitle = quidAnswerDTO.getTitle();
+			normAnswerTitle = QueryNormalizer.removeDiacritics(normAnswerTitle);
+			normAnswerTitle = this.removeLeadingStopWords(normAnswerTitle);
+			quidAnswerDTO.setTitle(normAnswerTitle);
+		}
 	}
 }
