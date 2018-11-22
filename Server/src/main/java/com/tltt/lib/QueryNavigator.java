@@ -23,6 +23,7 @@ import com.tltt.lib.text.OccurencesSearcher;
  * Stopper d'utiliser les DTO dans la logique (remplacer par une class abstraite représentant une question)
  * Normalisation des élements de réponses enlevés les plueries( question sulky)
  * Ajouter un user agent d'ordinateur de bureau pour l'appel a la page google
+ * Enlever les classes et id css qui polluent les réponses (cf question zorro)
  */
 public class QueryNavigator {
 
