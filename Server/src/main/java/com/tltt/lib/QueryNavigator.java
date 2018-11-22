@@ -14,14 +14,15 @@ import com.tltt.lib.text.NoPredictionException;
 import com.tltt.lib.text.OccurencesSearcher;
 
 /**
- * NOTE TODO Bug quand les réponses sont des chiffres (le JS est aussi parsé
- * etfausse les resultats) Faire une implem différente pour la derniére question
- * -> chercher tout les chiffres de la page Parser le contenu de la premiere
+ * NOTE TODO 
+ * Bug quand les réponses sont des chiffres (le JS est aussi parsé et fausse les resultats) 
+ * Faire une implem différente pour la derniére question chercher tout les chiffres de la page Parser le contenu de la premiere
  * page pour avoir de meilleurs résultats ? oui Parser si la question est une
  * question négative ?
  * Implementer la normalization des intutulés de question
  * Stopper d'utiliser les DTO dans la logique (remplacer par une class abstraite représentant une question)
- * Normlisation des élements de réponses enlevés les plueries( question sulky)
+ * Normalisation des élements de réponses enlevés les plueries( question sulky)
+ * Ajouter un user agent d'ordinateur de bureau pour l'appel a la page google
  */
 public class QueryNavigator {
 
