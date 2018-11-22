@@ -11,10 +11,6 @@ public class QuidQuestionDTO {
     public QuidQuestionDTO() {
         answers = new ArrayList<>();
     }
-    
-    public QuidQuestionDTO(QuidQuestionDTO copy) {
-        answers = new ArrayList<>();
-    }
 
     public String getQuestionEntitled() {
         return questionEntitled;

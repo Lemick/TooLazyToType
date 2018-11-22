@@ -21,6 +21,7 @@ import com.tltt.lib.text.OccurencesSearcher;
  * question négative ?
  * Implementer la normalization des intutulés de question
  * Stopper d'utiliser les DTO dans la logique (remplacer par une class abstraite représentant une question)
+ * Normlisation des élements de réponses enlevés les plueries( question sulky)
  */
 public class QueryNavigator {
 

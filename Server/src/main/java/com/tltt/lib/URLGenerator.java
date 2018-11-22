@@ -15,7 +15,7 @@ public class URLGenerator {
 	private QueryNormalizer normalizer;
 
 	public URLGenerator(QuidQuestionDTO quidQuestionDTO) {
-		normalizer = new QueryNormalizer();
+		normalizer = QueryNormalizer.getInstance();
 		buildURL(quidQuestionDTO);
 	}
 

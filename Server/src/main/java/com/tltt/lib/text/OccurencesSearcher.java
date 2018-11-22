@@ -17,13 +17,11 @@ public class OccurencesSearcher {
 
 	private static Logger logger = LogManager.getLogger();
 
-	private QueryNormalizer queryNormalizer;
 	private QuidQuestionDTO quidQuestionDTO;
 	private String textToSearch;
 	private Map<QuidAnswerDTO, Integer> answersOccurences;
 
-	public OccurencesSearcher(QuidQuestionDTO quidQuestionDTO, String textToSearch) {
-		queryNormalizer = new QueryNormalizer();
+	public OccurencesSearcher(QuidQuestionDTO quidQuestionDTO, String textToSearch) {;
 		this.quidQuestionDTO = quidQuestionDTO;
 		this.textToSearch = textToSearch;
 		answersOccurences = new LinkedHashMap<>();
@@ -32,14 +30,14 @@ public class OccurencesSearcher {
 	}
 
 	private void normalizeElements() {
-		textToSearch = QueryNormalizer.removeDiacritics(textToSearch);
-		String questionEntitledNorm = QueryNormalizer.removeDoubleQuotes(quidQuestionDTO.getQuestionEntitled());
+		textToSearch = QueryNormalizer.getInstance().removeDiacritics(textToSearch);
+		String questionEntitledNorm = QueryNormalizer.getInstance().removeDoubleQuotes(quidQuestionDTO.getQuestionEntitled());
 		quidQuestionDTO.setQuestionEntitled(questionEntitledNorm);
 
 		for (QuidAnswerDTO quidAnswerDTO : quidQuestionDTO.getAnswers()) {
 			String normAnswerTitle = quidAnswerDTO.getTitle();
-			normAnswerTitle = QueryNormalizer.removeDiacritics(normAnswerTitle);
-			normAnswerTitle = queryNormalizer.removeLeadingStopWords(normAnswerTitle);
+			normAnswerTitle = QueryNormalizer.getInstance().removeDiacritics(normAnswerTitle);
+			normAnswerTitle = QueryNormalizer.getInstance().removeLeadingStopWords(normAnswerTitle);
 			quidAnswerDTO.setTitle(normAnswerTitle);
 		}
 	}

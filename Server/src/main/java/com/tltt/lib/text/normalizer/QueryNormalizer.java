@@ -12,15 +12,21 @@ import com.tltt.lib.dto.QuidAnswerDTO;
 import com.tltt.lib.dto.QuidQuestionDTO;
 import com.tltt.lib.file.ResourceFile;
 
-public class QueryNormalizer {
+public final class QueryNormalizer {
 
 	private static final String STOP_WORDS_FILENAME = "normalizer/stop_words_fr.txt";
 	private static final String TOPICAL_SUBJECTS_FILENAME = "normalizer/topical_subjects_words_fr.txt";
 	
+	private static final QueryNormalizer instance = new QueryNormalizer();
+	
 	private List<String> stopWords;
 	private List<String> topicalSubjectsWords;
 	
-	public QueryNormalizer() {
+	public static QueryNormalizer getInstance() {
+		return instance;
+	}
+	
+	private QueryNormalizer() {
 		loadStopWordsFile();
 		loadTopicalSubjectsFile();
 	}
@@ -35,11 +41,11 @@ public class QueryNormalizer {
 		topicalSubjectsWords = file.getLines();
 	}
 
-	public static String removeDiacritics(String text) {
+	public String removeDiacritics(String text) {
 		return Normalizer.normalize(text, Form.NFD).replaceAll("\\p{InCombiningDiacriticalMarks}+", "");
 	}
 
-	public static String removeDoubleQuotes(String text) {
+	public String removeDoubleQuotes(String text) {
 		return text.replace("\"", "");
 	}
 
@@ -47,20 +53,30 @@ public class QueryNormalizer {
 		String lowerCased = text.toLowerCase();
 		Tokenizer tokenizer = new Tokenizer(lowerCased);	
 		
-		while (tokenizer.hasNext()) {
-			String token = tokenizer.nextWord();
+		while (tokenizer.hasWord()) {
+			String token = tokenizer.currentWord();
 			if (isStopWord(token))
 				tokenizer.removeCurrentWord();
 			else
 				break;
 		}
-		String result = tokenizer.joinTokens();
+		String result = tokenizer.joinTokensWithDelimiters();
 		return result;
 	}
 	
 	public String removeAllStopWords(String text) {	
-		return text;
-		//TODO
+		String lowerCased = text.toLowerCase();
+		Tokenizer tokenizer = new Tokenizer(lowerCased);	
+		
+		while (tokenizer.hasWord()) {
+			String token = tokenizer.currentWord();
+			if (isStopWord(token))
+				tokenizer.removeCurrentWord();
+			else
+				tokenizer.skipCurrentWord();
+		}
+		String result = tokenizer.joinTokensWithDelimiters();
+		return result;
 	}
 
 	public boolean isStopWord(String word) {
@@ -81,17 +97,5 @@ public class QueryNormalizer {
 		return false;
 	}
 	
-	public void normalizeQuestion(QuidQuestionDTO quidQuestionDTO) {
-		String questionEntitledNorm;
-		questionEntitledNorm = QueryNormalizer.removeDoubleQuotes(quidQuestionDTO.getQuestionEntitled());
-		questionEntitledNorm = this.removeAllStopWords(questionEntitledNorm);
-		quidQuestionDTO.setQuestionEntitled(questionEntitledNorm);
 
-		for (QuidAnswerDTO quidAnswerDTO : quidQuestionDTO.getAnswers()) {
-			String normAnswerTitle = quidAnswerDTO.getTitle();
-			normAnswerTitle = QueryNormalizer.removeDiacritics(normAnswerTitle);
-			normAnswerTitle = this.removeLeadingStopWords(normAnswerTitle);
-			quidAnswerDTO.setTitle(normAnswerTitle);
-		}
-	}
 }

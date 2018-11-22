@@ -10,7 +10,7 @@ public class TestQueryNormalizer {
 
 	@Test
 	public void removeLeadingStopWords() {
-		QueryNormalizer queryNormalizer = new QueryNormalizer();
+		QueryNormalizer queryNormalizer = QueryNormalizer.getInstance();
 		String actual;
 		
 		actual = queryNormalizer.removeLeadingStopWords("Le foc");
@@ -30,11 +30,50 @@ public class TestQueryNormalizer {
 		
 		actual = queryNormalizer.removeLeadingStopWords("Sot-l'y-laisse");
 		assertEquals("sot-l'y-laisse", actual);
+		
+		actual = queryNormalizer.removeLeadingStopWords("de la");
+		assertEquals("", actual);
+		
+		actual = queryNormalizer.removeLeadingStopWords("");
+		assertEquals("", actual);
+	}
+	
+	@Test
+	public void removeStopWords() {
+		QueryNormalizer queryNormalizer = QueryNormalizer.getInstance();
+		String actual;
+		
+		actual = queryNormalizer.removeAllStopWords("Le foc");
+		assertEquals("foc", actual);
+		
+		actual = queryNormalizer.removeAllStopWords("le foc");
+		assertEquals("foc", actual);
+		
+		actual = queryNormalizer.removeAllStopWords("Foc");
+		assertEquals("foc", actual);
+		
+		actual = queryNormalizer.removeAllStopWords("éclair de lumière");
+		assertEquals("éclair lumière", actual);
+		
+		actual = queryNormalizer.removeAllStopWords("de l'air de la");
+		assertEquals("air ", actual);
+		
+		actual = queryNormalizer.removeAllStopWords("Sot-l'y-laisse");
+		assertEquals("sot-l'y-laisse", actual);
+		
+		actual = queryNormalizer.removeAllStopWords("de la");
+		assertEquals("", actual);
+		
+		actual = queryNormalizer.removeAllStopWords("");
+		assertEquals("", actual);
+		
+		actual = queryNormalizer.removeAllStopWords("Quel réseau social propose désormais des émissions de divertissement en partenariat avec des médias, \"les show\" ?");
+		assertEquals("réseau social propose émissions divertissement partenariat médias, \"les show\" ?", actual);
 	}
 	
 	@Test
 	public void containsTopicalSubjects() {
-		QueryNormalizer queryNormalizer = new QueryNormalizer();
+		QueryNormalizer queryNormalizer = QueryNormalizer.getInstance();
 		boolean actual;
 				
 		actual = queryNormalizer.isTopicalSubjectSentence("Qui à eu ce mois-ci le césar du meilleur acteur ?");
@@ -51,8 +90,6 @@ public class TestQueryNormalizer {
 		
 		actual = queryNormalizer.isTopicalSubjectSentence("Qui est l'inventeur de l'ampoule ?");
 		assertEquals(false, actual);
-		
-
 	}
 
 	
@@ -60,7 +97,7 @@ public class TestQueryNormalizer {
 	public void removeDoubleQuotes() {
 		String actual;
 		
-		actual = QueryNormalizer.removeDoubleQuotes("\"Qui a dit \"\"Eh bien : dansez maintenant.\"\" ?\"");
+		actual = QueryNormalizer.getInstance().removeDoubleQuotes("\"Qui a dit \"\"Eh bien : dansez maintenant.\"\" ?\"");
 		assertEquals("Qui a dit Eh bien : dansez maintenant. ?", actual);
 
 	}

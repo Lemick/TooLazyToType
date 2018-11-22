@@ -52,7 +52,7 @@ public class ReportBuilder {
 				sbl.appendLine(String.format("%1s - %-30s %d times found", entry.getKey().getLabel(), entry.getKey().getTitle(), entry.getValue()));
 			}
 		}
-		
+		sbl.appendLine("");
 		return sbl.toString();
 	}
 

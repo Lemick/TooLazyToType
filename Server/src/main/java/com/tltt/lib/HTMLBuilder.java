@@ -53,6 +53,7 @@ public class HTMLBuilder {
 			logger.debug(String.format("Get URL : %s", urlQuery));
 			Document doc = Jsoup.connect(urlQuery).get();
 			
+			// DEBUT IMPLEM 
 			/**
 			Elements resLinks = doc.select(".r > a:first-child");
 			for(int i = 0; i < subLinksToExplore; i++) {
@@ -67,7 +68,7 @@ public class HTMLBuilder {
 			
 			resultHtml = doc.html();
 			if (hasToRemoveAccent) {
-				resultHtml = QueryNormalizer.removeDiacritics(resultHtml);
+				resultHtml = QueryNormalizer.getInstance().removeDiacritics(resultHtml);
 			}
 		} catch (IOException e) {
 			e.printStackTrace();

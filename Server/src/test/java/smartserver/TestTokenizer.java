@@ -47,15 +47,15 @@ public class TestTokenizer {
 		String actual;
 		
 		tokenizer = new Tokenizer("");
-		actual = tokenizer.joinTokens();
+		actual = tokenizer.joinTokensWithDelimiters();
 		assertEquals(actual, "");
 		
 		tokenizer = new Tokenizer("42");
-		actual = tokenizer.joinTokens();
+		actual = tokenizer.joinTokensWithDelimiters();
 		assertEquals(actual, "42");
 		
 		tokenizer = new Tokenizer("hey l'ami");
-		actual = tokenizer.joinTokens();
+		actual = tokenizer.joinTokensWithDelimiters();
 		assertEquals(actual, "hey l'ami");
 	}
 	
@@ -66,19 +66,19 @@ public class TestTokenizer {
 		tokenizer = new Tokenizer("Ceci est l'art");
 		
 		tokenizer.removeCurrentWord();
-		actual = tokenizer.joinTokens();
+		actual = tokenizer.joinTokensWithDelimiters();
 		assertEquals(actual, "est l'art");
 		
 		tokenizer.removeCurrentWord();
-		actual = tokenizer.joinTokens();
+		actual = tokenizer.joinTokensWithDelimiters();
 		assertEquals(actual, "l'art");
 		
 		tokenizer.removeCurrentWord();
-		actual = tokenizer.joinTokens();
+		actual = tokenizer.joinTokensWithDelimiters();
 		assertEquals(actual, "art");
 		
 		tokenizer.removeCurrentWord();
-		actual = tokenizer.joinTokens();
+		actual = tokenizer.joinTokensWithDelimiters();
 		assertEquals(actual, "");
 	}
 }
