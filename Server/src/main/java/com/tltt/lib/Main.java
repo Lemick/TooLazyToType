@@ -16,6 +16,7 @@ import org.jsoup.Jsoup;
 
 import com.tltt.lib.dto.QuidAnswerDTO;
 import com.tltt.lib.dto.QuidQuestionDTO;
+import com.tltt.lib.question.Question;
 import com.tltt.lib.text.OccurencesSearcher;
 
 public class Main {
@@ -55,8 +56,8 @@ public class Main {
 		FileUtils.writeStringToFile(new File("test.txt"), html);
 	}
 	
-	private static void testOccurences(QuidQuestionDTO quidQuestionDTO) throws IOException {
-		QueryNavigator navigator = new QueryNavigator(quidQuestionDTO);
+	private static void testOccurences(Question question) throws IOException {
+		QueryNavigator navigator = new QueryNavigator(question);
 		navigator.publishReport(null);
 	}
 }

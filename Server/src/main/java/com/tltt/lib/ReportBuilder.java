@@ -1,9 +1,12 @@
 package com.tltt.lib;
 
 import java.util.Map;
+import java.util.Map.Entry;
 
 import com.tltt.lib.dto.QuidAnswerDTO;
 import com.tltt.lib.dto.QuidQuestionDTO;
+import com.tltt.lib.question.Answer;
+import com.tltt.lib.question.Question;
 import com.tltt.lib.text.StringBuilderLiner;
 
 public class ReportBuilder {
@@ -11,8 +14,8 @@ public class ReportBuilder {
 	private final static String HEADER = "------------ %s ------------";
 
 	private String url;
-	private Map<QuidAnswerDTO, Integer> answersOccurences;
-	private QuidQuestionDTO question;
+	private Map<Answer, Integer> answersOccurences;
+	private Question question;
 
 	public ReportBuilder() {
 		url = null;
@@ -25,12 +28,12 @@ public class ReportBuilder {
 		return this;
 	}
 
-	public ReportBuilder answersOccurences(Map<QuidAnswerDTO, Integer> answersOccurences) {
+	public ReportBuilder answersOccurences(Map<Answer, Integer> answersOccurences) {
 		this.answersOccurences = answersOccurences;
 		return this;
 	}
 
-	public ReportBuilder question(QuidQuestionDTO question) {
+	public ReportBuilder question(Question question) {
 		this.question = question;
 		return this;
 	}
@@ -40,7 +43,7 @@ public class ReportBuilder {
 		
 		if (question != null) {
 			sbl.appendLine(String.format(HEADER, "Question"));
-			sbl.appendLine(question.getQuestionEntitled());
+			sbl.appendLine(question.getTitle());
 		}
 		if (url != null) {
 			sbl.appendLine(String.format(HEADER, "URL Google"));
@@ -48,8 +51,8 @@ public class ReportBuilder {
 		}
 		if (answersOccurences != null) {
 			sbl.appendLine(String.format(HEADER, "Occurences found with Google"));
-			for (Map.Entry<QuidAnswerDTO, Integer> entry : answersOccurences.entrySet()) {
-				sbl.appendLine(String.format("%1s - %-30s %d times found", entry.getKey().getLabel(), entry.getKey().getTitle(), entry.getValue()));
+			for (Entry<Answer, Integer> entry : answersOccurences.entrySet()) {
+				sbl.appendLine(String.format("%1s - %-30s %d times found", entry.getKey().getTitle(), entry.getKey().getTitle(), entry.getValue()));
 			}
 		}
 		sbl.appendLine("");

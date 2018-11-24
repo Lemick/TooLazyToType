@@ -4,6 +4,9 @@ import com.google.gson.Gson;
 import com.tltt.lib.dto.QuidAnswerDTO;
 import com.tltt.lib.dto.QuidQuestionDTO;
 import com.tltt.lib.file.ResourceFile;
+import com.tltt.lib.question.Answer;
+import com.tltt.lib.question.Question;
+import com.tltt.lib.question.QuestionConverter;
 import com.tltt.lib.text.NoPredictionException;
 
 import java.io.DataInputStream;
@@ -56,7 +59,8 @@ public class TCPServer {
 						try {
 							String content = readSocket();
 							logger.debug(content);
-							QuidQuestionDTO questionContext = gson.fromJson(content, QuidQuestionDTO.class);
+							QuidQuestionDTO questionContextDTO = gson.fromJson(content, QuidQuestionDTO.class);
+							Question questionContext = QuestionConverter.convertToQuestion(questionContextDTO);
 							doSearch(questionContext);
 						} catch (NoPredictionException e) {
 							logger.error("Cannot predict most relevant answer");
@@ -76,13 +80,13 @@ public class TCPServer {
 		t.start();
 	}
 
-	private void doSearch(QuidQuestionDTO questionContext) throws UnsupportedEncodingException, URISyntaxException, IOException, NoPredictionException {
+	private void doSearch(Question questionContext) throws UnsupportedEncodingException, URISyntaxException, IOException, NoPredictionException {
 		QueryNavigator navigator = new QueryNavigator(questionContext);
 		navigator.openInBrowser();
 		navigator.publishReport(discordWebhook);
 		try {
-			QuidAnswerDTO mostRelevantAnswer = navigator.searchMostRelevantAnswer(questionContext);
-			logger.info(String.format("Most probable answer is : %s - %s", mostRelevantAnswer.getLabel(), mostRelevantAnswer.getTitle()));
+			Answer mostRelevantAnswer = navigator.searchMostRelevantAnswer(questionContext);
+			logger.info(String.format("Most probable answer is : %s - %s", mostRelevantAnswer.getTitle(), mostRelevantAnswer.getTitle()));
 		} catch (NoPredictionException e) {
 			logger.error("No best answer found");
 		}

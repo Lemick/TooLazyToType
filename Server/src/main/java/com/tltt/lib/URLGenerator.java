@@ -4,6 +4,7 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
 import com.tltt.lib.dto.QuidQuestionDTO;
+import com.tltt.lib.question.Question;
 import com.tltt.lib.text.normalizer.QueryNormalizer;
 
 public class URLGenerator {
@@ -14,17 +15,17 @@ public class URLGenerator {
 	private String urlQuery;
 	private QueryNormalizer normalizer;
 
-	public URLGenerator(QuidQuestionDTO quidQuestionDTO) {
+	public URLGenerator(Question question) {
 		normalizer = QueryNormalizer.getInstance();
-		buildURL(quidQuestionDTO);
+		buildURL(question);
 	}
 
-	private void buildURL(QuidQuestionDTO quidQuestionDTO) {
+	private void buildURL(Question question) {
 		try {
-			if (normalizer.isTopicalSubjectSentence(quidQuestionDTO.getQuestionEntitled())) {
-				urlQuery = String.format(BASE_TOPICAL_SEARCH_URL, URLEncoder.encode(quidQuestionDTO.getQuestionEntitled(), "UTF-8"));
+			if (normalizer.isTopicalSubjectSentence(question.getTitle())) {
+				urlQuery = String.format(BASE_TOPICAL_SEARCH_URL, URLEncoder.encode(question.getTitle(), "UTF-8"));
 			} else {
-				urlQuery = String.format(BASE_SEARCH_URL, URLEncoder.encode(quidQuestionDTO.getQuestionEntitled(), "UTF-8"));
+				urlQuery = String.format(BASE_SEARCH_URL, URLEncoder.encode(question.getTitle(), "UTF-8"));
 			}
 		} catch (UnsupportedEncodingException e) {
 			e.printStackTrace();

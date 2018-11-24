@@ -8,8 +8,9 @@ import java.net.URISyntaxException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.tltt.lib.dto.QuidAnswerDTO;
 import com.tltt.lib.dto.QuidQuestionDTO;
+import com.tltt.lib.question.Answer;
+import com.tltt.lib.question.Question;
 import com.tltt.lib.text.NoPredictionException;
 import com.tltt.lib.text.OccurencesSearcher;
 
@@ -30,18 +31,18 @@ public class QueryNavigator {
 	private static Logger logger = LogManager.getLogger();
 	private String urlQuery;
 	private OccurencesSearcher occurencesSearcher;
-	private QuidQuestionDTO quidQuestionDTO;
+	private Question question;
 
-	public QueryNavigator(QuidQuestionDTO quidQuestionDTO) throws UnsupportedEncodingException {
-		this.quidQuestionDTO = quidQuestionDTO;
-		this.urlQuery = new URLGenerator(quidQuestionDTO).getUrlQuery();
+	public QueryNavigator(Question question) throws UnsupportedEncodingException {
+		this.question = question;
+		this.urlQuery = new URLGenerator(question).getUrlQuery();
 		String html = new HTMLBuilder(urlQuery).removeAccents(true).build();
-		occurencesSearcher = new OccurencesSearcher(quidQuestionDTO, html);
+		occurencesSearcher = new OccurencesSearcher(question, html);
 	}
 
-	public QuidAnswerDTO searchMostRelevantAnswer(QuidQuestionDTO quidQuestionDTO) throws NoPredictionException {
-		QuidAnswerDTO quidAnswerDTO = occurencesSearcher.predictAnswer();
-		return quidAnswerDTO;
+	public Answer searchMostRelevantAnswer(Question quesion) throws NoPredictionException {
+		Answer answer = occurencesSearcher.predictAnswer();
+		return answer;
 	}
 
 	public void openInBrowser() throws URISyntaxException, IOException {
@@ -50,7 +51,7 @@ public class QueryNavigator {
 	}
 
 	public void publishReport(DiscordWebhook discordWebhook) {
-		ReportBuilder reportBuilder = new ReportBuilder().question(quidQuestionDTO).queryUrl(urlQuery).answersOccurences(occurencesSearcher.getAnswersOccurences());
+		ReportBuilder reportBuilder = new ReportBuilder().question(question).queryUrl(urlQuery).answersOccurences(occurencesSearcher.getAnswersOccurences());
 		String strReport = reportBuilder.build();
 		if (discordWebhook != null) {
 			discordWebhook.addMessage(strReport);

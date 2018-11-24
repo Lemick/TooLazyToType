@@ -10,19 +10,20 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.tltt.lib.dto.QuidAnswerDTO;
-import com.tltt.lib.dto.QuidQuestionDTO;
+import com.tltt.lib.question.Answer;
+import com.tltt.lib.question.Question;
 import com.tltt.lib.text.normalizer.QueryNormalizer;
 
 public class OccurencesSearcher {
 
 	private static Logger logger = LogManager.getLogger();
 
-	private QuidQuestionDTO quidQuestionDTO;
+	private Question question;
 	private String textToSearch;
-	private Map<QuidAnswerDTO, Integer> answersOccurences;
+	private Map<Answer, Integer> answersOccurences;
 
-	public OccurencesSearcher(QuidQuestionDTO quidQuestionDTO, String textToSearch) {;
-		this.quidQuestionDTO = quidQuestionDTO;
+	public OccurencesSearcher(Question question, String textToSearch) {;
+		this.question = question;
 		this.textToSearch = textToSearch;
 		answersOccurences = new LinkedHashMap<>();
 		normalizeElements();
@@ -31,26 +32,26 @@ public class OccurencesSearcher {
 
 	private void normalizeElements() {
 		textToSearch = QueryNormalizer.getInstance().removeDiacritics(textToSearch);
-		String questionEntitledNorm = QueryNormalizer.getInstance().removeDoubleQuotes(quidQuestionDTO.getQuestionEntitled());
-		quidQuestionDTO.setQuestionEntitled(questionEntitledNorm);
+		String questionEntitledNorm = QueryNormalizer.getInstance().removeDoubleQuotes(question.getTitle());
+		question.setTitle(questionEntitledNorm);
 
-		for (QuidAnswerDTO quidAnswerDTO : quidQuestionDTO.getAnswers()) {
-			String normAnswerTitle = quidAnswerDTO.getTitle();
+		for (Answer answer : question.getAnswers()) {
+			String normAnswerTitle = answer.getTitle();
 			normAnswerTitle = QueryNormalizer.getInstance().removeDiacritics(normAnswerTitle);
 			normAnswerTitle = QueryNormalizer.getInstance().removeLeadingStopWords(normAnswerTitle);
-			quidAnswerDTO.setTitle(normAnswerTitle);
+			answer.setTitle(normAnswerTitle);
 		}
 	}
 
-	public QuidAnswerDTO predictAnswer() throws NoPredictionException {
-		QuidAnswerDTO mostAccurateAnswer = getMostFrequentAnswer();
+	public Answer predictAnswer() throws NoPredictionException {
+		Answer mostAccurateAnswer = getMostFrequentAnswer();
 		return mostAccurateAnswer;
 	}
 
 	private void buildOccurencesMap() {
-		for (QuidAnswerDTO quidAnswerDTO : quidQuestionDTO.getAnswers()) {
-			int occurences = countWord(quidAnswerDTO.getTitle());
-			answersOccurences.put(quidAnswerDTO, occurences);
+		for (Answer answer : question.getAnswers()) {
+			int occurences = countWord(answer.getTitle());
+			answersOccurences.put(answer, occurences);
 		}
 	}
 
@@ -68,10 +69,10 @@ public class OccurencesSearcher {
 		return numbersOccurences;
 	}
 
-	public QuidAnswerDTO getMostFrequentAnswer() throws NoPredictionException {
-		Entry<QuidAnswerDTO, Integer> mostRelevantEntry = answersOccurences.entrySet().stream().max((entry1, entry2) -> entry1.getValue() > entry2.getValue() ? 1 : -1).get();
+	public Answer getMostFrequentAnswer() throws NoPredictionException {
+		Entry<Answer, Integer> mostRelevantEntry = answersOccurences.entrySet().stream().max((entry1, entry2) -> entry1.getValue() > entry2.getValue() ? 1 : -1).get();
 
-		for (Entry<QuidAnswerDTO, Integer> entry : answersOccurences.entrySet()) {
+		for (Entry<Answer, Integer> entry : answersOccurences.entrySet()) {
 			if (!entry.equals(mostRelevantEntry) && entry.getValue().intValue() == mostRelevantEntry.getValue().intValue())
 				throw new NoPredictionException();
 		}
@@ -88,7 +89,7 @@ public class OccurencesSearcher {
 		return count;
 	}
 
-	public Map<QuidAnswerDTO, Integer> getAnswersOccurences() {
+	public Map<Answer, Integer> getAnswersOccurences() {
 		return answersOccurences;
 	}
 }
