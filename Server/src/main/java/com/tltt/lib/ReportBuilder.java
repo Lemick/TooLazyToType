@@ -52,7 +52,7 @@ public class ReportBuilder {
 		if (answersOccurences != null) {
 			sbl.appendLine(String.format(HEADER, "Occurences found with Google"));
 			for (Entry<Answer, Integer> entry : answersOccurences.entrySet()) {
-				sbl.appendLine(String.format("%1s - %-30s %d times found", entry.getKey().getTitle(), entry.getKey().getTitle(), entry.getValue()));
+				sbl.appendLine(String.format("%1s - %-30s %d times found", entry.getKey().getId(), entry.getKey().getTitle(), entry.getValue()));
 			}
 		}
 		sbl.appendLine("");

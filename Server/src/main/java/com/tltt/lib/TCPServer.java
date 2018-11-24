@@ -55,29 +55,26 @@ public class TCPServer {
 					try {
 						client = server.accept();
 						logger.debug("Client connection opened");
-
-						try {
-							String content = readSocket();
-							logger.debug(content);
-							QuidQuestionDTO questionContextDTO = gson.fromJson(content, QuidQuestionDTO.class);
-							Question questionContext = QuestionConverter.convertToQuestion(questionContextDTO);
-							doSearch(questionContext);
-						} catch (NoPredictionException e) {
-							logger.error("Cannot predict most relevant answer");
-						} catch (URISyntaxException e) {
-							logger.error("Cannot open browser", e);
-						}
-
+						String content = readSocket();
+						logger.debug(content);
+						QuidQuestionDTO questionContextDTO = gson.fromJson(content, QuidQuestionDTO.class);
+						Question questionContext = QuestionConverter.convertToQuestion(questionContextDTO);
+						doSearch(questionContext);
 						client.close();
 						logger.debug("Client connection closed");
 					} catch (IOException e) {
 						e.printStackTrace();
+					} catch (NoPredictionException e) {
+						logger.error("Cannot predict most relevant answer");
+					} catch (URISyntaxException e) {
+						logger.error("Cannot open browser", e);
 					}
 				}
 			}
 
 		});
 		t.start();
+
 	}
 
 	private void doSearch(Question questionContext) throws UnsupportedEncodingException, URISyntaxException, IOException, NoPredictionException {
@@ -91,7 +88,7 @@ public class TCPServer {
 			logger.error("No best answer found");
 		}
 	}
-	
+
 	public void close() {
 		isRunning = false;
 	}
