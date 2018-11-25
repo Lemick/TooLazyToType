@@ -9,6 +9,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.tltt.lib.dto.QuidQuestionDTO;
+import com.tltt.lib.html.HTMLBuildConfiguration;
+import com.tltt.lib.html.HTMLExtractor;
 import com.tltt.lib.question.Answer;
 import com.tltt.lib.question.Question;
 import com.tltt.lib.text.NoPredictionException;
@@ -21,8 +23,7 @@ import com.tltt.lib.text.OccurencesSearcher;
  * page pour avoir de meilleurs résultats ? oui Parser si la question est une
  * question négative ?
  * Implementer la normalization des intutulés de question
- * Stopper d'utiliser les DTO dans la logique (remplacer par une class abstraite représentant une question)
- * Normalisation des élements de réponses enlevés les plueries( question sulky)
+ * Normalisation des élements de réponses enlevés les plueriels( question sulky)
  * Ajouter un user agent d'ordinateur de bureau pour l'appel a la page google
  * Enlever les classes et id css qui polluent les réponses (cf question zorro)
  */
@@ -36,7 +37,8 @@ public class QueryNavigator {
 	public QueryNavigator(Question question) throws UnsupportedEncodingException {
 		this.question = question;
 		this.urlQuery = new URLGenerator(question).getUrlQuery();
-		String html = new HTMLBuilder(urlQuery).removeAccents(true).build();
+		HTMLBuildConfiguration config = new HTMLBuildConfiguration(urlQuery).removeAccents(true).cleanMetaCode(true);
+		String html = new HTMLExtractor(config).build();
 		occurencesSearcher = new OccurencesSearcher(question, html);
 	}
 

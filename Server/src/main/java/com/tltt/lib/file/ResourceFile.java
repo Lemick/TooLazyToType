@@ -1,7 +1,10 @@
 package com.tltt.lib.file;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URL;
 import java.util.List;
 
@@ -28,6 +31,15 @@ public class ResourceFile {
 			e.printStackTrace();
 		}
 		return "";
+	}
+	
+	public InputStream getInputStream() {
+		try {
+			return new FileInputStream(file);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		return null;
 	}
 	
 	public List<String> getLines() {

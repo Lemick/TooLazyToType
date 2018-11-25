@@ -16,6 +16,8 @@ import org.jsoup.Jsoup;
 
 import com.tltt.lib.dto.QuidAnswerDTO;
 import com.tltt.lib.dto.QuidQuestionDTO;
+import com.tltt.lib.html.HTMLBuildConfiguration;
+import com.tltt.lib.html.HTMLExtractor;
 import com.tltt.lib.question.Question;
 import com.tltt.lib.text.OccurencesSearcher;
 
@@ -26,7 +28,7 @@ public class Main {
 	public static TCPServer server;
 
 	public static void main(String[] args) throws InterruptedException, IOException, URISyntaxException {
-		//testDlJsoup("https://www.google.com/search?q=La+chair+de+poule+vient+%3A");
+		testDlJsoup("https://www.google.com/search?q=La+chair+de+poule+vient+%3A");
 		//QuidQuestionDTO quid = new QuidQuestionDTO();
 		//quid.setQuestionEntitled("événement historique entraîné gouvernance Paris État pendant plus siècle ?");
 		//quid.getAnswers().add(new QuidAnswerDTO("A", "revolution francaise"));
@@ -35,7 +37,7 @@ public class Main {
 		//quid.getAnswers().add(new QuidAnswerDTO("D", "liberation de 1944e"));
 		//testOccurences(quid);
 		
-		launchServer();
+		//launchServer();
 	}
 
 	public static void launchServer() throws InterruptedException {
@@ -52,7 +54,8 @@ public class Main {
 	 * TEST UTILS
 	 */
 	private static void testDlJsoup(String url) throws IOException {
-		String html = (new HTMLBuilder(url)).cleanMetaCode(true).removeAccents(true).build();
+		HTMLBuildConfiguration config = new HTMLBuildConfiguration(url).cleanMetaCode(true).removeAccents(true).subLinksToExplore(2);
+		String html = new HTMLExtractor(config).build();
 		FileUtils.writeStringToFile(new File("test.txt"), html);
 	}
 	
