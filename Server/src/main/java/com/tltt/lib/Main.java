@@ -23,30 +23,21 @@ import com.tltt.lib.text.OccurencesSearcher;
 
 public class Main {
 
+	private static int TCP_PORT = 5000;
 	private static Logger logger = LogManager.getLogger();
 
 	public static TCPServer server;
 
 	public static void main(String[] args) throws InterruptedException, IOException, URISyntaxException {
-		testDlJsoup("https://www.google.com/search?q=La+chair+de+poule+vient+%3A");
-		//QuidQuestionDTO quid = new QuidQuestionDTO();
-		//quid.setQuestionEntitled("événement historique entraîné gouvernance Paris État pendant plus siècle ?");
-		//quid.getAnswers().add(new QuidAnswerDTO("A", "revolution francaise"));
-		//quid.getAnswers().add(new QuidAnswerDTO("B", "commune"));
-		//quid.getAnswers().add(new QuidAnswerDTO("C", "revolution de juillet"));
-		//quid.getAnswers().add(new QuidAnswerDTO("D", "liberation de 1944e"));
-		//testOccurences(quid);
-		
-		//launchServer();
+		launchServer();
 	}
 
 	public static void launchServer() throws InterruptedException {
-		server = new TCPServer("0.0.0.0", 5000);
+		server = new TCPServer("0.0.0.0", TCP_PORT);
 		server.open();
 
 		while (server.isRunning())
 			TimeUnit.SECONDS.sleep(1);
-
 	}
 
 
