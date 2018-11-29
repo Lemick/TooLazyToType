@@ -31,7 +31,6 @@ public class TCPServer {
 	private Socket client;
 	private boolean isRunning = true;
 	private Gson gson = new Gson();
-
 	private DiscordWebhook discordWebhook;
 
 	public TCPServer(String pHost, int pPort) {
@@ -39,7 +38,6 @@ public class TCPServer {
 		port = pPort;
 		try {
 			server = new ServerSocket(port, 100, InetAddress.getByName(host));
-			initDiscordWebhook();
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -81,12 +79,6 @@ public class TCPServer {
 		QueryNavigator navigator = new QueryNavigator(questionContext);
 		navigator.openInBrowser();
 		navigator.publishReport(discordWebhook);
-		try {
-			Answer mostRelevantAnswer = navigator.searchMostRelevantAnswer(questionContext);
-			logger.info(String.format("Most probable answer is : %s - %s", mostRelevantAnswer.getTitle(), mostRelevantAnswer.getTitle()));
-		} catch (NoPredictionException e) {
-			logger.error("No best answer found");
-		}
 	}
 
 	public void close() {
@@ -119,15 +111,12 @@ public class TCPServer {
 		return isRunning;
 	}
 
-	public void initDiscordWebhook() {
-		final String RESOURCEPATH_DISC_URL_WEBHOOK = "discordwebhook.txt";
-		try {
-			ResourceFile resource = new ResourceFile(RESOURCEPATH_DISC_URL_WEBHOOK);
-			logger.info("Discord webhook configured");
-			String urlWebhook = resource.getLines().get(0);
-			this.discordWebhook = new DiscordWebhook(urlWebhook);
-		} catch (Exception e) {
-			logger.error(String.format("Error during reading file %s for retrieving discord URL, cannot webhook to Discord", RESOURCEPATH_DISC_URL_WEBHOOK), e);
-		}
+	public DiscordWebhook getDiscordWebhook() {
+		return discordWebhook;
 	}
+
+	public void setDiscordWebhook(DiscordWebhook discordWebhook) {
+		this.discordWebhook = discordWebhook;
+	}
+
 }

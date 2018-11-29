@@ -42,11 +42,6 @@ public class QueryNavigator {
 		occurencesSearcher = new OccurencesSearcher(question, html);
 	}
 
-	public Answer searchMostRelevantAnswer(Question quesion) throws NoPredictionException {
-		Answer answer = occurencesSearcher.predictAnswer();
-		return answer;
-	}
-
 	public void openInBrowser() throws URISyntaxException, IOException {
 		URI uri = new URI(urlQuery);
 		java.awt.Desktop.getDesktop().browse(uri);

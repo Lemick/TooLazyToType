@@ -37,8 +37,8 @@ public class OccurencesSearcher {
 
 		for (Answer answer : question.getAnswers()) {
 			String normAnswerTitle = answer.getTitle();
-			normAnswerTitle = QueryNormalizer.getInstance().removeDiacritics(normAnswerTitle);
 			normAnswerTitle = QueryNormalizer.getInstance().removeLeadingStopWords(normAnswerTitle);
+			normAnswerTitle = QueryNormalizer.getInstance().removeDiacritics(normAnswerTitle);
 			answer.setTitle(normAnswerTitle);
 		}
 	}

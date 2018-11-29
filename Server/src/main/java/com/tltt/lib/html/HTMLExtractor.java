@@ -46,7 +46,7 @@ public class HTMLExtractor {
 			}
 			stringBuilder.append(rootHtml);
 			appendSublinksHtml(stringBuilder);
-			
+
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -86,9 +86,9 @@ public class HTMLExtractor {
 			String nextSublink = sublinkExtractor.getNextSublink();
 			if (nextSublink != null) {
 				HTMLBuildConfiguration sublinksConfig = new HTMLBuildConfiguration(this.configuration).subLinksToExplore(0).urlQuery(nextSublink);
-				HTMLExtractor htmlExtractor = new HTMLExtractor(sublinksConfig);
+				HTMLExtractor sublinksHtmlExtractor = new HTMLExtractor(sublinksConfig);
 				stringBuilder.append(String.format("<!-- Following HTML is extracted from %s -->", sublinksConfig.getUrlQuery()));
-				stringBuilder.append(htmlExtractor.build());
+				stringBuilder.append(sublinksHtmlExtractor.build());
 			}
 		}
 	}

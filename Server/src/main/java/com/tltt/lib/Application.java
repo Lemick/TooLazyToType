@@ -16,42 +16,48 @@ import org.jsoup.Jsoup;
 
 import com.tltt.lib.dto.QuidAnswerDTO;
 import com.tltt.lib.dto.QuidQuestionDTO;
+import com.tltt.lib.file.ResourceFile;
 import com.tltt.lib.html.HTMLBuildConfiguration;
 import com.tltt.lib.html.HTMLExtractor;
 import com.tltt.lib.question.Question;
 import com.tltt.lib.text.OccurencesSearcher;
 
-public class Main {
+public class Application {
 
 	private static int TCP_PORT = 5000;
 	private static Logger logger = LogManager.getLogger();
 
 	public static TCPServer server;
-
+	private static DiscordWebhook discordWebhook;
+	
 	public static void main(String[] args) throws InterruptedException, IOException, URISyntaxException {
+		initializeConfiguration();
 		launchServer();
 	}
-
+	
 	public static void launchServer() throws InterruptedException {
 		server = new TCPServer("0.0.0.0", TCP_PORT);
+		server.setDiscordWebhook(discordWebhook);
 		server.open();
 
 		while (server.isRunning())
 			TimeUnit.SECONDS.sleep(1);
 	}
 
+	private static void initializeConfiguration() {
+		initDiscordWebhook();
+	}
 
-	/**
-	 * TEST UTILS
-	 */
-	private static void testDlJsoup(String url) throws IOException {
-		HTMLBuildConfiguration config = new HTMLBuildConfiguration(url).cleanMetaCode(true).removeAccents(true).subLinksToExplore(2);
-		String html = new HTMLExtractor(config).build();
-		FileUtils.writeStringToFile(new File("test.txt"), html);
+	public static void initDiscordWebhook() {
+		final String RESOURCEPATH_DISC_URL_WEBHOOK = "discordwebhook.txt";
+		try {
+			ResourceFile resource = new ResourceFile(RESOURCEPATH_DISC_URL_WEBHOOK);
+			logger.info("Discord webhook configured");
+			String urlWebhook = resource.getLines().get(0);
+			discordWebhook = new DiscordWebhook(urlWebhook);
+		} catch (Exception e) {
+			logger.error(String.format("Error during reading file %s for retrieving discord URL, cannot webhook to Discord", RESOURCEPATH_DISC_URL_WEBHOOK), e);
+		}
 	}
-	
-	private static void testOccurences(Question question) throws IOException {
-		QueryNavigator navigator = new QueryNavigator(question);
-		navigator.publishReport(null);
-	}
+
 }
