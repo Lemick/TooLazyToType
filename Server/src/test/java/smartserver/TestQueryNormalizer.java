@@ -32,7 +32,7 @@ public class TestQueryNormalizer {
 		assertEquals("sot-l'y-laisse", actual);
 		
 		actual = queryNormalizer.removeLeadingStopWords("de la");
-		assertEquals("", actual);
+		assertEquals("la", actual);
 		
 		actual = queryNormalizer.removeLeadingStopWords("");
 		assertEquals("", actual);
@@ -100,6 +100,17 @@ public class TestQueryNormalizer {
 		actual = QueryNormalizer.getInstance().removeDoubleQuotes("\"Qui a dit \"\"Eh bien : dansez maintenant.\"\" ?\"");
 		assertEquals("Qui a dit Eh bien : dansez maintenant. ?", actual);
 
+	}
+	
+	@Test
+	public void testRemoveLeadingStopWordsNeverEmpty() {
+		String actual;
+		
+		actual = QueryNormalizer.getInstance().removeLeadingStopWords("Elle et Lui");
+		assertEquals("lui", actual);
+
+		actual = QueryNormalizer.getInstance().removeLeadingStopWords("Lui");
+		assertEquals("lui", actual);
 	}
 	
 }

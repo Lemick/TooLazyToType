@@ -78,6 +78,10 @@ public class Tokenizer {
 		index++;
 	}
 	
+	public int wordsCount() {
+		return words.size();
+	}
+	
 	public List<String> getDelimiters() {
 		return delimiters;
 	}

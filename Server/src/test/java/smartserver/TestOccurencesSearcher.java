@@ -4,15 +4,18 @@ import static org.junit.Assert.assertEquals;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Map;
 
+import static org.hamcrest.CoreMatchers.*;
+import static org.hamcrest.MatcherAssert.*;
+import org.hamcrest.collection.IsMapContaining;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
-import com.tltt.lib.dto.QuidAnswerDTO;
-import com.tltt.lib.dto.QuidQuestionDTO;
 import com.tltt.lib.file.ResourceFile;
 import com.tltt.lib.question.Answer;
 import com.tltt.lib.question.Question;
@@ -25,8 +28,8 @@ public class TestOccurencesSearcher {
 	public String testFileArcEnCiel;
 	public String testFileRaccourci;
 	public String testFileVanGogh;
-	public String testFileMeilleurAct;
-	
+	public String testFileVictorHugo;
+
 	@Mock
 	Question mockQuestion;
 
@@ -35,12 +38,12 @@ public class TestOccurencesSearcher {
 		MockitoAnnotations.initMocks(this);
 		Mockito.when(mockQuestion.getTitle()).thenReturn("Quelle est la capitable de la France?");
 		Mockito.when(mockQuestion.getAnswers()).thenReturn(new ArrayList<Answer>());
-		
+
 		testFileBR = new ResourceFile("QuestionBattleRoyal.html").getContent();
 		testFileArcEnCiel = new ResourceFile("QuestionMytheArcEnCiel.html").getContent();
 		testFileRaccourci = new ResourceFile("QuestionRaccourciClavierAnnule.html").getContent();
 		testFileVanGogh = new ResourceFile("QuestionVanGogh.html").getContent();
-		testFileMeilleurAct = new ResourceFile("QuestionMeilleureActrice.html").getContent();
+		testFileVictorHugo = new ResourceFile("QuestionVictorHugo.html").getContent();
 	}
 
 	@Test
@@ -90,6 +93,25 @@ public class TestOccurencesSearcher {
 		Answer actual = occurencesSearcher.predictAnswer();
 		assertEquals(expected, actual);
 	}
+
+	@Test
+	public void mostOccurenceVictorHugo() throws NoPredictionException {
+		Question question = new Question();
+		question.setTitle("Parmi ces romans, lequel n'a pas été écrit par Victor Hugo ?");
+
+		Answer answerA = new Answer("A", "Notre-Dame de Paris");
+		Answer answerB = new Answer("B", "Les Misérables");
+		Answer answerC = new Answer("C", "Au Bonheur des Dames");
+		Answer answerD = new Answer("D", "Le Dernier Jour d'un Condamné");
+		question.setAnswers(Arrays.asList(answerA, answerB, answerC, answerD));
+		
+		OccurencesSearcher occurencesSearcher = new OccurencesSearcher(question, testFileRaccourci);
+		Map<Answer, Integer> actual = occurencesSearcher.getAnswersOccurences();
+
+		assertThat(actual.size(), is(4));
+		assertThat(actual, IsMapContaining.hasEntry("n", "node"));
+	}
+
 	@Test
 	public void countWordsBR() {
 		int actual;
@@ -111,7 +133,6 @@ public class TestOccurencesSearcher {
 		assertEquals(0, actual);
 	}
 
-	
 	@Test
 	public void countWordsArc() {
 		int actual;
@@ -141,12 +162,11 @@ public class TestOccurencesSearcher {
 		actual = occurencesSearcher.countWord("Ctrl + V");
 		assertEquals(0, actual);
 	}
-	
 
 	@Test
 	public void testMaxMapBR() throws NoPredictionException {
 		OccurencesSearcher occurencesSearcher;
-		
+
 		occurencesSearcher = new OccurencesSearcher(mockQuestion, testFileRaccourci);
 		occurencesSearcher.getAnswersOccurences().clear();
 		occurencesSearcher.getAnswersOccurences().put(new Answer("A", "Eau"), 8);

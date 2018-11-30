@@ -49,13 +49,16 @@ public final class QueryNormalizer {
 		return text.replace("\"", "");
 	}
 
+	/**
+	 * TODO : this function always returns lowercased results, not that good
+	 */
 	public String removeLeadingStopWords(String text) {	
 		String lowerCased = text.toLowerCase();
 		Tokenizer tokenizer = new Tokenizer(lowerCased);	
 		
 		while (tokenizer.hasWord()) {
 			String token = tokenizer.currentWord();
-			if (isStopWord(token))
+			if (isStopWord(token) && tokenizer.wordsCount() > 1)
 				tokenizer.removeCurrentWord();
 			else
 				break;

@@ -81,4 +81,30 @@ public class TestTokenizer {
 		actual = tokenizer.joinTokensWithDelimiters();
 		assertEquals(actual, "");
 	}
+	
+	@Test
+	public void testSize() {
+		Tokenizer tokenizer;
+		int actual;
+		tokenizer = new Tokenizer("Ceci est l'art");
+		
+		actual = tokenizer.wordsCount();
+		assertEquals(4, actual);
+		
+		tokenizer.removeCurrentWord();
+		actual = tokenizer.wordsCount();
+		assertEquals(3, actual);
+		
+		tokenizer.removeCurrentWord();
+		actual = tokenizer.wordsCount();
+		assertEquals(2, actual);		
+		
+		tokenizer.removeCurrentWord();
+		actual = tokenizer.wordsCount();
+		assertEquals(1, actual);
+		
+		tokenizer.removeCurrentWord();
+		actual = tokenizer.wordsCount();
+		assertEquals(0, actual);
+	}
 }
