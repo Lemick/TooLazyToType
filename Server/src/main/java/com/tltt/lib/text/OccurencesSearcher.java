@@ -1,15 +1,16 @@
 package com.tltt.lib.text;
 
+import java.io.IOException;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.apache.commons.lang3.time.StopWatch;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.tltt.lib.dto.QuidAnswerDTO;
 import com.tltt.lib.question.Answer;
 import com.tltt.lib.question.Question;
 import com.tltt.lib.text.normalizer.QueryNormalizer;
@@ -55,7 +56,7 @@ public class OccurencesSearcher {
 		}
 	}
 
-	public Map<String, Integer> extractNumbers() {
+	public Map<String, Integer> extractNumbers() throws IOException {
 		Map<String, Integer> numbersOccurences = new LinkedHashMap<>();
 
 		Pattern p = Pattern.compile("\\b[0-9]*\\b");

@@ -105,11 +105,14 @@ public class TestOccurencesSearcher {
 		Answer answerD = new Answer("D", "Le Dernier Jour d'un Condamné");
 		question.setAnswers(Arrays.asList(answerA, answerB, answerC, answerD));
 		
-		OccurencesSearcher occurencesSearcher = new OccurencesSearcher(question, testFileRaccourci);
-		Map<Answer, Integer> actual = occurencesSearcher.getAnswersOccurences();
+		OccurencesSearcher occurencesSearcher = new OccurencesSearcher(question, testFileVictorHugo);
+		Map<Answer, Integer> mapAnswersOccurences = occurencesSearcher.getAnswersOccurences();
 
-		assertThat(actual.size(), is(4));
-		assertThat(actual, IsMapContaining.hasEntry("n", "node"));
+		assertThat(mapAnswersOccurences.size(), is(4));
+		assertThat(mapAnswersOccurences, IsMapContaining.hasEntry(answerA, 2));
+		assertThat(mapAnswersOccurences, IsMapContaining.hasEntry(answerB, 4));
+		assertThat(mapAnswersOccurences, IsMapContaining.hasEntry(answerC, 0));
+		assertThat(mapAnswersOccurences, IsMapContaining.hasEntry(answerD, 1));
 	}
 
 	@Test

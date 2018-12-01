@@ -4,16 +4,15 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.lang3.time.StopWatch;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.tltt.lib.dto.QuidQuestionDTO;
 import com.tltt.lib.html.HTMLBuildConfiguration;
 import com.tltt.lib.html.HTMLExtractor;
-import com.tltt.lib.question.Answer;
 import com.tltt.lib.question.Question;
-import com.tltt.lib.text.NoPredictionException;
 import com.tltt.lib.text.OccurencesSearcher;
 
 /**
@@ -24,8 +23,6 @@ import com.tltt.lib.text.OccurencesSearcher;
  * question négative ?
  * Implementer la normalization des intutulés de question
  * Normalisation des élements de réponses enlevés les plueriels( question sulky)
- * Ajouter un user agent d'ordinateur de bureau pour l'appel a la page google
- * Enlever les classes et id css qui polluent les réponses (cf question zorro)
  */
 public class QueryNavigator {
 
@@ -37,9 +34,14 @@ public class QueryNavigator {
 	public QueryNavigator(Question question) throws UnsupportedEncodingException {
 		this.question = question;
 		this.urlQuery = new URLGenerator(question).getUrlQuery();
-		HTMLBuildConfiguration config = new HTMLBuildConfiguration(urlQuery).removeAccents(true).cleanMetaCode(true);
+		
+		SuperStopWatch stopWatch = new SuperStopWatch();
+		HTMLBuildConfiguration config = new HTMLBuildConfiguration(urlQuery).removeAccents(true).cleanMetaCode(true).subLinksToExplore(1);
 		String html = new HTMLExtractor(config).build();
+		logger.debug(String.format("HTML parsed took %s ms", stopWatch.getMsElaspedAndRestart()));
+		
 		occurencesSearcher = new OccurencesSearcher(question, html);
+		logger.debug(String.format("Occurences extracted took %s ms",  stopWatch.getMsElaspedAndRestart()));
 	}
 
 	public void openInBrowser() throws URISyntaxException, IOException {
