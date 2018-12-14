@@ -104,7 +104,7 @@ public class TestOccurencesSearcher {
 		Answer answerC = new Answer("C", "Au Bonheur des Dames");
 		Answer answerD = new Answer("D", "Le Dernier Jour d'un Condamné");
 		question.setAnswers(Arrays.asList(answerA, answerB, answerC, answerD));
-		
+
 		OccurencesSearcher occurencesSearcher = new OccurencesSearcher(question, testFileVictorHugo);
 		Map<Answer, Integer> mapAnswersOccurences = occurencesSearcher.getAnswersOccurences();
 
@@ -186,6 +186,19 @@ public class TestOccurencesSearcher {
 		occurencesSearcher.getAnswersOccurences().put(new Answer("D", "BB"), 2);
 		result = occurencesSearcher.getMostFrequentAnswer();
 		assertEquals("D", result.getId());
+
+	}
+
+	@Test
+	public void testCountWordsWithPercents() {
+		OccurencesSearcher occurencesSearcher;
+		int actual;
+
+		occurencesSearcher = new OccurencesSearcher(mockQuestion, "</span>Les prelevements constituent desormais 60% du <em>prix</em>");
+		actual = occurencesSearcher.countWord("60%");
+		assertEquals(1, actual);
+		
+		//TODO la solution ici est d'écrire un boundaries a la main qui laisse passer les %
 
 	}
 

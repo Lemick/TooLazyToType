@@ -34,7 +34,7 @@ public class HTMLExtractor {
 		StringBuilder stringBuilder = new StringBuilder();
 		try {
 			logger.debug(String.format("Get URL : %s", configuration.getUrlQuery()));
-			Document document = Jsoup.connect(configuration.getUrlQuery()).userAgent(USER_AGENT).get();
+			Document document = Jsoup.connect(configuration.getUrlQuery()).userAgent(USER_AGENT).timeout(3000).get();
 			sublinkExtractor = new GoogleSublinkExtractor(document);
 
 			if (configuration.hasToCleanMetaCode()) {

@@ -36,6 +36,10 @@ public class TestQueryNormalizer {
 		
 		actual = queryNormalizer.removeLeadingStopWords("");
 		assertEquals("", actual);
+		
+		actual = queryNormalizer.removeLeadingStopWords("l'impeachment");
+		assertEquals("impeachment", actual);
+		
 	}
 	
 	@Test

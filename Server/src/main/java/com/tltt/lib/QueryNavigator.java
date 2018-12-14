@@ -23,6 +23,7 @@ import com.tltt.lib.text.OccurencesSearcher;
  * question négative ?
  * Implementer la normalization des intutulés de question
  * Normalisation des élements de réponses enlevés les plueriels( question sulky)
+ *question essence 60 % bug (pas occurence alors que sur google oui)
  */
 public class QueryNavigator {
 

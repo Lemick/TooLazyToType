@@ -17,11 +17,11 @@ import com.tltt.lib.question.Question;
 public class MainTest {
 	
 	public static void main(String[] args) throws InterruptedException, IOException, URISyntaxException {
-		//testDlJsoup("https://www.google.com/search?q=Parmi+ces+romans%2C+lequel+n%27a+pas+%C3%A9t%C3%A9+%C3%A9crit+par+Victor+Hugo+%3F");
+		testDlJsoup("https://www.google.com/search?q=Quel+est+en+2018+la+part+des+taxes+dans+le+prix+du+carburant+automobile+%3F");
 	
 		
 		Question question = new Question();
-		question.setTitle("Parmi ces romans, lequel n'a pas été écrit par Victor Hugo ?");
+		question.setTitle("Quel est en 2018 la part des taxes dans le prix du carburant automobile ?");
 		List<Answer> answers = new ArrayList<Answer>();
 
 		/**
@@ -31,10 +31,10 @@ public class MainTest {
 		answers.add(new Answer("D", "jour d'un condamne"));
 **/
 		
-		answers.add(new Answer("A", "Notre-Dame de Paris"));
-		answers.add(new Answer("B", "Les Misérables"));
-		answers.add(new Answer("C", "Au Bonheur des Dames"));
-		answers.add(new Answer("D", "Le Dernier Jour d'un Condamné"));
+		answers.add(new Answer("A", "50%"));
+		answers.add(new Answer("B", "60%"));
+		answers.add(new Answer("C", "70%"));
+		answers.add(new Answer("D", "80%"));
 		
 		
 		question.setAnswers(answers);
